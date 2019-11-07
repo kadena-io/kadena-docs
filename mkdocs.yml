@@ -1,0 +1,49 @@
+# Project information
+site_name: 'Chainweaver Support'
+
+site_description: 'Chainweaver Support'
+site_author: 'Kadena'
+# site_url: 'pactlang.org'
+
+# Repository
+repo_name: 'kadena-io/pact'
+repo_url: 'https://github.com/kadena-io/pact'
+
+# Copyright
+copyright: 'Copyright &copy; 2018 - 2019 Kadena'
+
+    # Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'Cyan'
+    accent: 'Cyan'
+  feature:
+    tabs: true
+  font:
+    text: 'Helvetica'
+    code: 'Helvetica'
+  favicon: 'assets/images/logo.png'
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/kadena-io'
+    - type: 'twitter'
+      link: 'https://twitter.com/kadena_io'
+
+## google_analytics:
+  ## - 'UA-127512784-3'
+  ## - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: true
+  - toc:
+      permalink: true
+
+nav:
+  - 'Coming Soon': './coming-soon/coming-soon.md'
