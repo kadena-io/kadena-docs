@@ -47,3 +47,4 @@ markdown_extensions:
 
 nav:
   - 'Coming Soon': './coming-soon/coming-soon.md'
+  - 'My File': './coming-soon/my-file.md'
