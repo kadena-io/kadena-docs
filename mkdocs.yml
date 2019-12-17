@@ -1,13 +1,13 @@
 # Project information
-site_name: 'Chainweaver Support'
+site_name: 'Kadena Documentation'
 
 site_description: 'Chainweaver Support'
 site_author: 'Kadena'
 # site_url: 'pactlang.org'
 
 # Repository
-repo_name: 'kadena-io/pact'
-repo_url: 'https://github.com/kadena-io/pact'
+repo_name: 'kadena-io/chainweaver-support'
+repo_url: 'https://github.com/kadena-io/chainweaver-support/'
 
 # Copyright
 copyright: 'Copyright &copy; 2018 - 2019 Kadena'
@@ -46,5 +46,20 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - 'Coming Soon': './coming-soon/coming-soon.md'
-  - 'My File': './coming-soon/my-file.md'
+- Chainweb:
+  - 'Networks': './Chainweb/chainweb-networks.md'
+  - 'Node Actions': './Chainweb/chainweb-node-actions.md'
+  - 'Block Explorer': https://explorer.chainweb.com/mainnet
+  - 'Miner Actions': './Chainweb/chainweb-miner-actions.md'
+ # - 'Kadena Community':
+
+- Pact:
+  - 'Main Page': https://pactlang.org/
+
+- Chainweaver:
+  - 'Test file': ./Chainweaver/chainweaver-first-file.md
+  - 'Second File': './Chainweaver/chainweaver-second-file.md'
+
+ # - Kuro:
+ # - 'Coming Soon'
+ # - 'My File'
