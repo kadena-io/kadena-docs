@@ -49,9 +49,12 @@ nav:
 - Chainweb:
   - 'Networks': './Chainweb/chainweb-networks.md'
   - 'Node Actions': './Chainweb/chainweb-node-actions.md'
-  - 'Block Explorer': https://explorer.chainweb.com/mainnet
+  #- 'Block Explorer': https://explorer.chainweb.com/mainnet
   - 'Miner Actions': './Chainweb/chainweb-miner-actions.md'
-  - 'Kadena Community': './Chainweb/chainweb-community.md'
+  #- 'Kadena Community Resources': './Chainweb/chainweb-community.md'
+  - 'Keys and Wallets': './Chainweb/Keys-and-Wallets.md'
+  - 'Articles': './Chainweb/Articles.md'
+  - 'Other': './Chainweb/Other.md'
 
 - Pact:
   - 'Main Page': https://pactlang.org/

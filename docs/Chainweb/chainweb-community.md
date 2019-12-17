@@ -1,3 +1,3 @@
-# Coming Soon
+# Community Developed Resources
 
-Kadena Community page
+
