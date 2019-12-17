@@ -51,15 +51,15 @@ nav:
   - 'Node Actions': './Chainweb/chainweb-node-actions.md'
   - 'Block Explorer': https://explorer.chainweb.com/mainnet
   - 'Miner Actions': './Chainweb/chainweb-miner-actions.md'
- # - 'Kadena Community':
+  - 'Kadena Community': './Chainweb/chainweb-community.md'
 
 - Pact:
   - 'Main Page': https://pactlang.org/
 
 - Chainweaver:
-  - 'Test file': ./Chainweaver/chainweaver-first-file.md
+  - 'First file': ./Chainweaver/chainweaver-first-file.md
   - 'Second File': './Chainweaver/chainweaver-second-file.md'
 
- # - Kuro:
- # - 'Coming Soon'
- # - 'My File'
+- Kuro:
+  - 'First file': ./Kuro/kuro-first-file.md
+  - 'Second File': './Kuro/kuro-second-file.md'
