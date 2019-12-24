@@ -1,4 +1,4 @@
-### **Accounts, Keys and Addresses**
+### **Accounts, Keys, and Addresses**
 
 **Can I import and see the balance of an non-Chainweaver account that I may have created through mining?**
 We will be providing more support for this user flow in the future. For now, once you have gone to the wallet section of Chainweaver and created an account, you can hit ”Receive” at the right side of the screen to bring up the Receive screen and choose “Option 2: Transfer from non-Chainweaver Account.” Then, input details of your non-Chainweaver account and receive the money from that account into the Chainweaver account. Please note that this transaction will charge a small amount of gas.
