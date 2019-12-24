@@ -46,7 +46,10 @@ markdown_extensions:
       permalink: true
 
 nav:
-- Chainweb:
+- FAQs:
+  - 'FAQs': './FAQs/FAQs.md'
+
+- Public Chain:
   - 'Networks': './Chainweb/chainweb-networks.md'
   - 'Node Actions': './Chainweb/chainweb-node-actions.md'
   #- 'Block Explorer': https://explorer.chainweb.com/mainnet
@@ -56,13 +59,13 @@ nav:
   - 'Articles': './Chainweb/Articles.md'
   - 'Other': './Chainweb/Other.md'
 
-- Pact:
-  - 'Main Page': https://pactlang.org/
+#- Pact:
+#  - 'Main Page': https://pactlang.org/
 
 - Chainweaver:
-  - 'First file': ./Chainweaver/chainweaver-first-file.md
-  - 'Second File': './Chainweaver/chainweaver-second-file.md'
+  - 'Support Page': https://www.kadena.io/chainweaver-support
+#  - 'Second File': './Chainweaver/chainweaver-second-file.md'
 
-- Kuro:
-  - 'First file': ./Kuro/kuro-first-file.md
-  - 'Second File': './Kuro/kuro-second-file.md'
+#- Kuro:
+#  - 'First file': ./Kuro/kuro-first-file.md
+#  - 'Second File': './Kuro/kuro-second-file.md'
