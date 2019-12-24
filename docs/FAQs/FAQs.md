@@ -32,7 +32,7 @@ The “Receive” button at the right side of the screen in main accounts sectio
 Yes, the contracts screen has the same functionality as pact.kadena.io, with some minor changes for the Mac application.
 
 
-**Security & Access**
+### **Security & Access**
 
 **Where are my private keys stored?**
 The private keys are stored in encrypted form in ~/Library/Application Support/io.kadena.chainweaver. The password is what decrypts the encrypted file on your disk.
