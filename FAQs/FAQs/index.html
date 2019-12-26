@@ -328,8 +328,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#transactions-sendreceive" class="md-nav__link">
-    Transactions (Send/Receive)
+  <a href="#nodes" class="md-nav__link">
+    Nodes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platforms-operating-systems" class="md-nav__link">
+    Platforms / Operating Systems
   </a>
   
 </li>
@@ -349,8 +356,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#platforms-operating-systems" class="md-nav__link">
-    Platforms / Operating Systems
+  <a href="#transactions" class="md-nav__link">
+    Transactions
   </a>
   
 </li>
@@ -529,8 +536,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#transactions-sendreceive" class="md-nav__link">
-    Transactions (Send/Receive)
+  <a href="#nodes" class="md-nav__link">
+    Nodes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platforms-operating-systems" class="md-nav__link">
+    Platforms / Operating Systems
   </a>
   
 </li>
@@ -550,8 +564,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#platforms-operating-systems" class="md-nav__link">
-    Platforms / Operating Systems
+  <a href="#transactions" class="md-nav__link">
+    Transactions
   </a>
   
 </li>
@@ -590,9 +604,25 @@ Yes, once you create an account in Chainweaver, you can copy the public key by c
 For now, we are focused on creating the core building blocks of single-chain and cross-chain transfers. We expect tools that care of these things for you to evolve over time.</p>
 <p><strong>What is a Kadena address?</strong>
 Kadena address is a concatenation of the account name, chain id, possibly the public key if the account name is different, and a checksum (in order to protect against loss of funds from typos).</p>
-<h3 id="transactions-sendreceive"><strong>Transactions (Send/Receive)</strong><a class="headerlink" href="#transactions-sendreceive" title="Permanent link">&para;</a></h3>
-<p><strong>What does the “Receive” button do?</strong>
-The “Receive” button at the right side of the screen in main accounts section of the wallet screen shows you a Kadena address that you can then copy and send to the sender. The sender can then use it to send coins to your account. Currently, the button also allows you to receive money into a Chainweaver account from a non-Chainweaver account. </p>
+<h3 id="nodes"><strong>Nodes</strong><a class="headerlink" href="#nodes" title="Permanent link">&para;</a></h3>
+<p><strong>Is my node caught up?</strong>
+Compare your node’s cut or block height with one in the network.  To get a node’s cut height, run the following command: </p>
+<p><code>curl -s https://us-e1.chainweb.com/chainweb/0.0/mainnet01/cut</code></p>
+<p>replacing “us-e1.chainweb.com” with the address of whatever node you want to check.</p>
+<p>You can also go to the <a href="https://explorer.chainweb.com/">block explorer</a> and see the current block height there.  Also, the <a href="https://kadena.banteg.xyz/peers">third-party Kadena Peers page</a> provides an easy way to see the recent block height for many of the nodes in the network.</p>
+<p><strong>What is cut height?</strong>
+Cut height is the sum of the most recent block height across all chains.</p>
+<p><strong>Do I need a cert for better reward / node stability?</strong>
+No, chainweb-node produces its own self-signed certificate if not given one. Many nodes run this way without issue.</p>
+<p>History: This rumour arose in the opening days of the network, when a bug still existed in the P2P logic. Having a pre-made cert improved node health then, but this is no longer an issue.</p>
+<p><strong>How often should I restart my node?</strong>
+Never. If you're having resource issues, check the other questions here.</p>
+<p>History: Misconfigured nodes often have performance problems, which temporarily disappear after restarting.</p>
+<h3 id="platforms-operating-systems"><strong>Platforms / Operating Systems</strong><a class="headerlink" href="#platforms-operating-systems" title="Permanent link">&para;</a></h3>
+<p><strong>What operating systems does Chainweaver support?</strong>
+Currently, Chainweaver is only available for Mac. We are also working on a Linux application as a very high priority.  As we develop our roadmap, we will be looking at iOS and Android apps as well.</p>
+<p><strong>Does Chainweaver support a hardware wallet?</strong>
+Hardware wallet support is on our roadmap, further down the line.</p>
 <h3 id="smart-contracts"><strong>Smart Contracts</strong><a class="headerlink" href="#smart-contracts" title="Permanent link">&para;</a></h3>
 <p><strong>Is the Smart Contracts screen the same as pact.kadena.io?</strong>
 Yes, the contracts screen has the same functionality as pact.kadena.io, with some minor changes for the Mac application.</p>
@@ -601,11 +631,13 @@ Yes, the contracts screen has the same functionality as pact.kadena.io, with som
 The private keys are stored in encrypted form in ~/Library/Application Support/io.kadena.chainweaver. The password is what decrypts the encrypted file on your disk.</p>
 <p><strong>How does Recovery work?</strong>
 The 12-word recovery phrase is the only thing required to recover all your keys since the phrase is a deterministic generation of keys. Currently, there is no way to recover the vanity accounts or “Notes”; this is something that we are working on. We believe that recovery is a break-glass and often painful process. Still,we are working to improve this.</p>
-<h3 id="platforms-operating-systems"><strong>Platforms / Operating Systems</strong><a class="headerlink" href="#platforms-operating-systems" title="Permanent link">&para;</a></h3>
-<p><strong>What operating systems does Chainweaver support?</strong>
-Currently, Chainweaver is only available for Mac. We are also working on a Linux application as a very high priority.  As we develop our roadmap, we will be looking at iOS and Android apps as well.</p>
-<p><strong>Does Chainweaver support a hardware wallet?</strong>
-Hardware wallet support is on our roadmap, further down the line.</p>
+<h3 id="transactions"><strong>Transactions</strong><a class="headerlink" href="#transactions" title="Permanent link">&para;</a></h3>
+<p><strong>How do I check my balance?</strong>
+Go to <a href="https://balance.chainweb.com/">balance checker</a> and enter your account name.</p>
+<p><strong>When I try to transfer coins to another account it says "you don’t have enough gas". What am I doing wrong?</strong>
+You probably don’t have enough coins on the chain you are trying to send from.  Coin transfers can only come from one chain at a time.  Use the <a href="https://balance.chainweb.com/">balance checker</a> to check your balance on all chains</p>
+<p><strong>What does the “Receive” button do?</strong>
+The “Receive” button at the right side of the screen in main accounts section of the wallet screen shows you a Kadena address that you can then copy and send to the sender. The sender can then use it to send coins to your account. Currently, the button also allows you to receive money into a Chainweaver account from a non-Chainweaver account. </p>
                 
                   
                 
