@@ -20,11 +20,38 @@ For now, we are focused on creating the core building blocks of single-chain and
 Kadena address is a concatenation of the account name, chain id, possibly the public key if the account name is different, and a checksum (in order to protect against loss of funds from typos).
 
 
-### **Transactions (Send/Receive)**
+### **Nodes**
 
-**What does the “Receive” button do?**
-The “Receive” button at the right side of the screen in main accounts section of the wallet screen shows you a Kadena address that you can then copy and send to the sender. The sender can then use it to send coins to your account. Currently, the button also allows you to receive money into a Chainweaver account from a non-Chainweaver account. 
+**Is my node caught up?**
+Compare your node’s cut or block height with one in the network.  To get a node’s cut height, run the following command: 
 
+```curl -s https://us-e1.chainweb.com/chainweb/0.0/mainnet01/cut```
+
+replacing “us-e1.chainweb.com” with the address of whatever node you want to check.
+
+You can also go to the [block explorer](https://explorer.chainweb.com/) and see the current block height there.  Also, the [third-party Kadena Peers page](https://kadena.banteg.xyz/peers) provides an easy way to see the recent block height for many of the nodes in the network.
+
+**What is cut height?**
+Cut height is the sum of the most recent block height across all chains.
+
+**Do I need a cert for better reward / node stability?**
+No, chainweb-node produces its own self-signed certificate if not given one. Many nodes run this way without issue.
+
+History: This rumour arose in the opening days of the network, when a bug still existed in the P2P logic. Having a pre-made cert improved node health then, but this is no longer an issue.
+
+**How often should I restart my node?**
+Never. If you're having resource issues, check the other questions here.
+
+History: Misconfigured nodes often have performance problems, which temporarily disappear after restarting.
+
+
+### **Platforms / Operating Systems**
+
+**What operating systems does Chainweaver support?**
+Currently, Chainweaver is only available for Mac. We are also working on a Linux application as a very high priority.  As we develop our roadmap, we will be looking at iOS and Android apps as well.
+
+**Does Chainweaver support a hardware wallet?**
+Hardware wallet support is on our roadmap, further down the line.
 
 ### **Smart Contracts**
 
@@ -41,10 +68,17 @@ The private keys are stored in encrypted form in ~/Library/Application Support/i
 The 12-word recovery phrase is the only thing required to recover all your keys since the phrase is a deterministic generation of keys. Currently, there is no way to recover the vanity accounts or “Notes”; this is something that we are working on. We believe that recovery is a break-glass and often painful process. Still,we are working to improve this.
 
 
-### **Platforms / Operating Systems**
+### **Transactions**
 
-**What operating systems does Chainweaver support?**
-Currently, Chainweaver is only available for Mac. We are also working on a Linux application as a very high priority.  As we develop our roadmap, we will be looking at iOS and Android apps as well.
+**How do I check my balance?**
+Go to [balance checker](https://balance.chainweb.com/) and enter your account name.
 
-**Does Chainweaver support a hardware wallet?**
-Hardware wallet support is on our roadmap, further down the line.
+**When I try to transfer coins to another account it says "you don’t have enough gas". What am I doing wrong?**
+You probably don’t have enough coins on the chain you are trying to send from.  Coin transfers can only come from one chain at a time.  This is possible if you increased the gas price from the default price, or you have a REALLY small balance. 
+
+Use the [balance checker](https://balance.chainweb.com/) to check your balance on all chains
+
+The other possibility for this validation failure is that you didn't sign the transaction appropriately (i.e. the account specified in the "sender" field does not correspond with the account that signed the transaction and is being charged for gas).
+
+**What does the “Receive” button do?**
+The “Receive” button at the right side of the screen in main accounts section of the wallet screen shows you a Kadena address that you can then copy and send to the sender. The sender can then use it to send coins to your account. Currently, the button also allows you to receive money into a Chainweaver account from a non-Chainweaver account. 
