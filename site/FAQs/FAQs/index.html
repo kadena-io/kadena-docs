@@ -635,7 +635,9 @@ The 12-word recovery phrase is the only thing required to recover all your keys 
 <p><strong>How do I check my balance?</strong>
 Go to <a href="https://balance.chainweb.com/">balance checker</a> and enter your account name.</p>
 <p><strong>When I try to transfer coins to another account it says "you don’t have enough gas". What am I doing wrong?</strong>
-You probably don’t have enough coins on the chain you are trying to send from.  Coin transfers can only come from one chain at a time.  Use the <a href="https://balance.chainweb.com/">balance checker</a> to check your balance on all chains</p>
+You probably don’t have enough coins on the chain you are trying to send from.  Coin transfers can only come from one chain at a time.  This is possible if you increased the gas price from the default price, or you have a REALLY small balance. </p>
+<p>Use the <a href="https://balance.chainweb.com/">balance checker</a> to check your balance on all chains</p>
+<p>The other possibility for this validation failure is that you didn't sign the transaction appropriately (i.e. the account specified in the "sender" field does not correspond with the account that signed the transaction and is being charged for gas).</p>
 <p><strong>What does the “Receive” button do?</strong>
 The “Receive” button at the right side of the screen in main accounts section of the wallet screen shows you a Kadena address that you can then copy and send to the sender. The sender can then use it to send coins to your account. Currently, the button also allows you to receive money into a Chainweaver account from a non-Chainweaver account. </p>
                 
