@@ -46,16 +46,19 @@ markdown_extensions:
       permalink: true
 
 nav:
-- FAQs:
-  - 'FAQs': './FAQs/FAQs.md'
+- FAQs: 
+  - './FAQs.md'
+
+- Glossary:
+  - './Glossary.md'
 
 - Public Chain:
   - 'Networks': './Chainweb/chainweb-networks.md'
-  - 'Node Actions': './Chainweb/chainweb-node-actions.md'
+  - 'I want to run my own node': './Chainweb/chainweb-node-actions.md'
   #- 'Block Explorer': https://explorer.chainweb.com/mainnet
-  - 'Miner Actions': './Chainweb/chainweb-miner-actions.md'
+  - 'I want to mine': './Chainweb/chainweb-miner-actions.md'
   #- 'Kadena Community Resources': './Chainweb/chainweb-community.md'
-  - 'Keys and Wallets': './Chainweb/Keys-and-Wallets.md'
+  - 'I want to create keys': './Chainweb/Keys-and-Wallets.md'
   - 'Articles': './Chainweb/Articles.md'
   - 'Other': './Chainweb/Other.md'
 
@@ -63,7 +66,7 @@ nav:
 #  - 'Main Page': https://pactlang.org/
 
 - Chainweaver:
-  - 'Support Page': https://www.kadena.io/chainweaver-support
+  - 'Support Page': https://www.kadena.io/chainweaver
 #  - 'Second File': './Chainweaver/chainweaver-second-file.md'
 
 #- Kuro:
