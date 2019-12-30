@@ -22,6 +22,38 @@ Kadena address is a concatenation of the account name, chain id, possibly the pu
 
 ### **Nodes**
 
+**What are the bootstrap nodes?**
+
+Here are the Mainnet bootstrap nodes:
+
+ - us-e1.chainweb.com
+ - us-e2.chainweb.com
+ - us-e3.chainweb.com
+ - us-w1.chainweb.com
+ - us-w2.chainweb.com
+ - us-w3.chainweb.com
+ - jp1.chainweb.com
+ - jp2.chainweb.com
+ - jp3.chainweb.com
+ - fr1.chainweb.com
+ - fr2.chainweb.com
+ - fr3.chainweb.com
+
+
+Here are the Testnet bootstrap nodes:
+
+ - us1.testnet.chainweb.com
+ - us2.testnet.chainweb.com
+ - eu1.testnet.chainweb.com
+ - eu2.testnet.chainweb.com
+ - ap1.testnet.chainweb.com
+ - ap2.testnet.chainweb.com
+
+All bootstrap nodes are running on port 443.
+
+
+
+
 **Is my node caught up?**
 Compare your node’s cut or block height with one in the network.  To get a node’s cut height, run the following command: 
 

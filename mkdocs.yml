@@ -53,22 +53,13 @@ nav:
   - './Glossary.md'
 
 - Public Chain:
-  - 'Networks': './Chainweb/chainweb-networks.md'
   - 'I want to run my own node': './Chainweb/chainweb-node-actions.md'
-  #- 'Block Explorer': https://explorer.chainweb.com/mainnet
   - 'I want to mine': './Chainweb/chainweb-miner-actions.md'
-  #- 'Kadena Community Resources': './Chainweb/chainweb-community.md'
-  - 'I want to create keys': './Chainweb/Keys-and-Wallets.md'
-  - 'Articles': './Chainweb/Articles.md'
+  - 'I want to create keys / transfer coins': './Chainweb/Keys-and-Wallets.md'
   - 'Other': './Chainweb/Other.md'
 
-#- Pact:
-#  - 'Main Page': https://pactlang.org/
+- Pact:
+  - 'Main Page': './Pact/Pact.md'
 
 - Chainweaver:
   - 'Support Page': https://www.kadena.io/chainweaver
-#  - 'Second File': './Chainweaver/chainweaver-second-file.md'
-
-#- Kuro:
-#  - 'First file': ./Kuro/kuro-first-file.md
-#  - 'Second File': './Kuro/kuro-second-file.md'

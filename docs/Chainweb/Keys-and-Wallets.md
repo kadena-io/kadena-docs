@@ -1,13 +1,13 @@
 ### **Kadena Developed**
 
-- [Chainweaver - MacOS Wallet](https://github.com/kadena-io/chainweaver/releases)
+- [Chainweaver](https://github.com/kadena-io/chainweaver/releases) - Chainweaver is the official cryptocurrency and smart contract wallet software for the Kadena public blockchain.  Currently supports MacOs.
 
 ### **Community Developed**
 
-- [Bag of Holding - Terminal Wallet](https://github.com/kadena-community/bag-of-holding)
+- [Bag of Holding](https://github.com/kadena-community/bag-of-holding) - Terminal Wallet
 
-- [Linux Key Generator](https://github.com/kadena-community/secure-keygen)
+- [Linux Key Generator](https://github.com/kadena-community/secure-keygen) - Tools for doing high security key generation
 
- - [Simple Javascript Tools to transfer Kadena coins](https://github.com/kadena-community/kadena-transfer-js)
+ - [Simple Javascript Tools to transfer Kadena coins](https://github.com/kadena-community/kadena-transfer-js) - Simple Javascript tools to transfer Kadena coins
 
- - [How to generate a KDA address](https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05) - by [Thanos](https://medium.com/@Thanos_42)
+ - [How to generate a KDA address](https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05) - A medium article by [Thanos](https://medium.com/@Thanos_42) on how to Generate a KDA address
