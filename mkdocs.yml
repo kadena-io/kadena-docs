@@ -1,16 +1,16 @@
 # Project information
 site_name: 'Kadena Documentation'
 
-site_description: 'Chainweaver Support'
+site_description: 'Kadena Dcocumentation'
 site_author: 'Kadena'
 # site_url: 'pactlang.org'
 
 # Repository
-repo_name: 'kadena-io/chainweaver-support'
-repo_url: 'https://github.com/kadena-io/chainweaver-support/'
+repo_name: 'kadena-io/kadena-docs'
+repo_url: 'https://github.com/kadena-io/kadena-docs/'
 
 # Copyright
-copyright: 'Copyright &copy; 2018 - 2019 Kadena'
+copyright: 'Copyright &copy; 2018 - 2020 Kadena'
 
     # Configuration
 theme:
@@ -59,7 +59,7 @@ nav:
   - 'Other': './Chainweb/Other.md'
 
 - Pact:
-  - 'Main Page': './Pact/Pact.md'
+  - 'Pact': './Pact/Pact.md'
 
 - Chainweaver:
   - 'Support Page': https://www.kadena.io/chainweaver

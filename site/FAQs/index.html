@@ -220,8 +220,21 @@
   
     <li class="md-tabs__item">
       
-        <a href="../Chainweb/chainweb-networks/" class="md-tabs__link">
+        <a href="../Chainweb/chainweb-node-actions/" class="md-tabs__link">
           Public Chain
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Pact/Pact/" class="md-tabs__link">
+          Pact
         </a>
       
     </li>
@@ -452,18 +465,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Chainweb/chainweb-networks/" title="Networks" class="md-nav__link">
-      Networks
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Chainweb/chainweb-node-actions/" title="I want to run my own node" class="md-nav__link">
       I want to run my own node
     </a>
@@ -488,20 +489,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Chainweb/Keys-and-Wallets/" title="I want to create keys" class="md-nav__link">
-      I want to create keys
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Chainweb/Articles/" title="Articles" class="md-nav__link">
-      Articles
+    <a href="../Chainweb/Keys-and-Wallets/" title="I want to create keys / transfer coins" class="md-nav__link">
+      I want to create keys / transfer coins
     </a>
   </li>
 
@@ -533,10 +522,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Chainweaver
+      Pact
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
+        Pact
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Pact/Pact/" title="Main Page" class="md-nav__link">
+      Main Page
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Chainweaver
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
         Chainweaver
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -654,6 +679,32 @@ For now, we are focused on creating the core building blocks of single-chain and
 <p><strong>What is a Kadena address?</strong>
 Kadena address is a concatenation of the account name, chain id, possibly the public key if the account name is different, and a checksum (in order to protect against loss of funds from typos).</p>
 <h3 id="nodes"><strong>Nodes</strong><a class="headerlink" href="#nodes" title="Permanent link">&para;</a></h3>
+<p><strong>What are the bootstrap nodes?</strong></p>
+<p>Here are the Mainnet bootstrap nodes:</p>
+<ul>
+<li>us-e1.chainweb.com</li>
+<li>us-e2.chainweb.com</li>
+<li>us-e3.chainweb.com</li>
+<li>us-w1.chainweb.com</li>
+<li>us-w2.chainweb.com</li>
+<li>us-w3.chainweb.com</li>
+<li>jp1.chainweb.com</li>
+<li>jp2.chainweb.com</li>
+<li>jp3.chainweb.com</li>
+<li>fr1.chainweb.com</li>
+<li>fr2.chainweb.com</li>
+<li>fr3.chainweb.com</li>
+</ul>
+<p>Here are the Testnet bootstrap nodes:</p>
+<ul>
+<li>us1.testnet.chainweb.com</li>
+<li>us2.testnet.chainweb.com</li>
+<li>eu1.testnet.chainweb.com</li>
+<li>eu2.testnet.chainweb.com</li>
+<li>ap1.testnet.chainweb.com</li>
+<li>ap2.testnet.chainweb.com</li>
+</ul>
+<p>All bootstrap nodes are running on port 443.</p>
 <p><strong>Is my node caught up?</strong>
 Compare your node’s cut or block height with one in the network.  To get a node’s cut height, run the following command: </p>
 <p><code>curl -s https://us-e1.chainweb.com/chainweb/0.0/mainnet01/cut</code></p>
