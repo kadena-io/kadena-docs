@@ -93,10 +93,10 @@ Yes, the contracts screen has the same functionality as pact.kadena.io, with som
 
 ### **Security & Access**
 
-**Where are my private keys stored?**
+**Where are my private keys stored for Chainweaver accounts?**
 The private keys are stored in encrypted form in ~/Library/Application Support/io.kadena.chainweaver. The password is what decrypts the encrypted file on your disk.
 
-**How does Recovery work?**
+**How does Recovery work in Chaiweaver?**
 The 12-word recovery phrase is the only thing required to recover all your keys since the phrase is a deterministic generation of keys. Currently, there is no way to recover the vanity accounts or “Notes”; this is something that we are working on. We believe that recovery is a break-glass and often painful process. Still,we are working to improve this.
 
 
@@ -112,5 +112,5 @@ Use the [balance checker](https://balance.chainweb.com/) to check your balance o
 
 The other possibility for this validation failure is that you didn't sign the transaction appropriately (i.e. the account specified in the "sender" field does not correspond with the account that signed the transaction and is being charged for gas).
 
-**What does the “Receive” button do?**
+**What does the “Receive” button do in Chaiweaver?**
 The “Receive” button at the right side of the screen in main accounts section of the wallet screen shows you a Kadena address that you can then copy and send to the sender. The sender can then use it to send coins to your account. Currently, the button also allows you to receive money into a Chainweaver account from a non-Chainweaver account. 

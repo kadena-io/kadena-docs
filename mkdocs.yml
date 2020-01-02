@@ -59,7 +59,7 @@ nav:
   - 'Other': './Chainweb/Other.md'
 
 - Pact:
-  - 'Pact': './Pact/Pact.md'
+  - 'Pact': https://pactlang.org/
 
 - Chainweaver:
   - 'Support Page': https://www.kadena.io/chainweaver
