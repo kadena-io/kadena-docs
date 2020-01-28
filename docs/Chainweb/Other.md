@@ -1,6 +1,7 @@
 ### **Kadena Developed**
 
  - [Block Explorer](https://explorer.chainweb.com/mainnet) - Block Explorer is an analytics tool for the Kadena platform which visualizes the mining, propagation and braiding of blocks across multiple Kadena chains in real time.
+  - [Online Pact Editor](https://pact.kadena.io/)
  
 ### **Community Developed**
 

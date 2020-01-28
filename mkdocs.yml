@@ -52,14 +52,14 @@ nav:
 - Glossary:
   - './Glossary.md'
 
-- Public Chain:
-  - 'I want to run my own node': './Chainweb/chainweb-node-actions.md'
-  - 'I want to mine': './Chainweb/chainweb-miner-actions.md'
-  - 'I want to create keys / transfer coins': './Chainweb/Keys-and-Wallets.md'
-  - 'Other': './Chainweb/Other.md'
+#- Public Chain:
+#  - 'I want to run my own node': './Chainweb/chainweb-node-actions.md'
+#  - 'I want to mine': './Chainweb/chainweb-miner-actions.md'
+#  - 'I want to create keys / transfer coins': './Chainweb/Keys-and-Wallets.md'
+#  - 'Other': './Chainweb/Other.md'
 
-- Pact:
-  - 'Pact': https://pactlang.org/
+# - Pact:
+#   - 'Pact': https://pactlang.org/
 
-- Chainweaver:
-  - 'Support Page': https://www.kadena.io/chainweaver
+# - Chainweaver:
+#   - 'Support Page': https://www.kadena.io/chainweaver

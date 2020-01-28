@@ -2,6 +2,10 @@
 
 - [Chainweaver](https://www.kadena.io/chainweaver) - Chainweaver is the official cryptocurrency and smart contract wallet software for the Kadena public blockchain.  Currently supports MacOs.
 
+- [Transaction Tester Tool](http://local.testnet.chainweb.com)
+
+- [Official Balance Checker](https://balance.chainweb.com)
+
 ### **Community Developed**
 
 - [Bag of Holding](https://github.com/kadena-community/bag-of-holding) - Terminal Wallet
@@ -11,5 +15,3 @@
  - [Simple Javascript Tools to transfer Kadena coins](https://github.com/kadena-community/kadena-transfer-js) - Simple Javascript tools to transfer Kadena coins
 
  - [How to generate a KDA address](https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05) - A medium article by [Thanos](https://medium.com/@Thanos_42) on how to Generate a KDA address
-
- - [Balance Checker](https://github.com/kadena-community/kadena-balance) - Balance checker
