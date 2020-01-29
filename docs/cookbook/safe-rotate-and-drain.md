@@ -35,7 +35,7 @@ data:
 publicMeta:
   chainId: "0"
   sender: croesus
-  gasLimit: 1500
+  gasLimit: 800
   gasPrice: 0.00001
   ttl: 86400
 networkId: "testnet04"
