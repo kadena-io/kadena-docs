@@ -40,7 +40,7 @@
     
     
       
-        <title>Pact - Kadena Documentation</title>
+        <title>Safe Rotate and Drain - Kadena Documentation</title>
       
     
     
@@ -89,6 +89,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#safe-rotate-and-drain" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -111,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Pact
+                Safe Rotate and Drain
               
             </span>
           
@@ -331,22 +335,100 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#signing" class="md-nav__link">
+    Signing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transaction-template" class="md-nav__link">
+    Transaction Template
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/Pact/Pact.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/cookbook/safe-rotate-and-drain.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Pact</h1>
-                
-                <p>Pact is a human-readable smart contract language.</p>
-<p>It allows anyone to write clearly, directly and safely onto a blockchain — a true innovation for secure and simple smart contract development. Pact will enable you to create entirely new business models and on-chain services.</p>
-<p>For tutorials, please visit <a href="https://pactlang.org/" target="_blank">pactlang.org</a></p>
-<p>Check out the <a href="/cookbook">Pact Cookbook</a> to see how Pact gives you tools to do
-safe transfers that guarantee that you don't accidentally send coins into a
-black hole and much much more.</p>
+                <h1 id="safe-rotate-and-drain">Safe Rotate and Drain<a class="headerlink" href="#safe-rotate-and-drain" title="Permanent link">&para;</a></h1>
+<p>This takes an account <code>rotest</code> owned by key
+<code>2993f795d133fa5d0fd877a641cabc8b28cd36147f666988cacbaa4379d1ff93</code>, rotates it
+to key <code>dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</code>, and
+transfers the whole balance to another account <code>croesus</code>.  The <code>croesus</code>
+account pays the gas which makes it easy to drain the <code>rotest</code> account balance
+to exactly zero.  The transfer out of <code>rotest</code> happens after the key is
+rotated which means that this transaction MUST be signed by the key you are
+rotating to and is therefore "safe"...i.e. it is impoossible to accidentally
+rotate to an incorrect key and lose control of the <code>rotest</code> account.</p>
+<h2 id="signing">Signing<a class="headerlink" href="#signing" title="Permanent link">&para;</a></h2>
+<p>This transaction must be signed by both the key that owns <code>rotest</code> at the
+beginning and the key that owns <code>rotest</code> at the end.</p>
+<h2 id="transaction-template">Transaction Template<a class="headerlink" href="#transaction-template" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="nt">code</span><span class="p">:</span> <span class="p p-Indicator">|-</span>
+  <span class="no">(use coin)</span>
+  <span class="no">(let* ((acct:string &quot;rotest&quot;)</span>
+         <span class="no">(bal:decimal (coin.get-balance acct))</span>
+        <span class="no">)</span>
+    <span class="no">(coin.rotate acct (read-keyset &quot;ks&quot;))</span>
+    <span class="no">(coin.transfer acct</span>
+      <span class="no">&quot;croesus&quot;</span>
+      <span class="no">bal)</span>
+  <span class="no">)</span>
+<span class="nt">data</span><span class="p">:</span>
+  <span class="nt">ks</span><span class="p">:</span>
+    <span class="nt">keys</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</span><span class="p p-Indicator">]</span>
+    <span class="nt">pred</span><span class="p">:</span> <span class="s">&quot;keys-all&quot;</span>
+<span class="nt">publicMeta</span><span class="p">:</span>
+  <span class="nt">chainId</span><span class="p">:</span> <span class="s">&quot;0&quot;</span>
+  <span class="nt">sender</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">croesus</span>
+  <span class="nt">gasLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">800</span>
+  <span class="nt">gasPrice</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.00001</span>
+  <span class="nt">ttl</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">86400</span>
+<span class="nt">networkId</span><span class="p">:</span> <span class="s">&quot;testnet04&quot;</span>
+<span class="nt">signers</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">public</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2993f795d133fa5d0fd877a641cabc8b28cd36147f666988cacbaa4379d1ff93</span>
+    <span class="nt">caps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.GAS</span>
+        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.ROTATE</span>
+        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;rotest&quot;</span><span class="p p-Indicator">]</span>
+  <span class="p p-Indicator">-</span> <span class="nt">public</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</span>
+    <span class="nt">caps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.TRANSFER</span>
+        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;rotest&quot;</span><span class="p p-Indicator">,</span><span class="s">&quot;croesus&quot;</span><span class="p p-Indicator">,</span><span class="nv">100</span><span class="p p-Indicator">]</span>
+<span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">exec</span>
+</pre></div>
                 
                   
                 

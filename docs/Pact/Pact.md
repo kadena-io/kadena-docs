@@ -4,6 +4,6 @@ It allows anyone to write clearly, directly and safely onto a blockchain — a t
 
 For tutorials, please visit <a href="https://pactlang.org/" target="_blank">pactlang.org</a>
 
-Check out the [Pact Cookbook](/cookbook) to see how Pact gives you tools to do
+Check out the [Pact Cookbook](../../cookbook) to see how Pact gives you tools to do
 safe transfers that guarantee that you don't accidentally send coins into a
 black hole and much much more.
