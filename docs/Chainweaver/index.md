@@ -1,4 +1,3 @@
 # Test page for image
 
-![CW-Test](/assets/CW-Test.png)
-
+![CW-Test](CW-Test.png)
