@@ -1,5 +1,5 @@
 ### **Kadena Developed**
-- [Chainweb](https://github.com/kadena-io/chainweb-node/releases) - Use this if you want to run your own node
+ - <a href="https://github.com/kadena-io/chainweb-node/releases" target="_blank">Chainweb</a> - This takes you to the release page for the Chainweb-node GitHub project.  Use this if you want to run your own node.
 
 ### **Community Developed**
- - [Setup a Node](https://github.com/kadena-community/node-setup) - Instructions on how to setup a Kadena node
+ - <a href="https://github.com/kadena-community/node-setup" target="_blank">Setup a Node</a> - Instructions on how to setup a Kadena node
