@@ -1,5 +1,4 @@
 # Test page for image
 
-![CW-Test](CW-Test.png)
+![CW-Test](/assets/Chainweaver/CW-Test.png)
 
-![alt text](CW-Test.png "Title")
