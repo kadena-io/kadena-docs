@@ -1,4 +1,4 @@
 # Test page for image
 
-![CW-Test](/assets/Chainweaver/CW-Test.png)
+![CW-Test](/assets/CW-Test.png)
 
