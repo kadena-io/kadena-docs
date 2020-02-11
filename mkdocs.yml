@@ -46,11 +46,14 @@ markdown_extensions:
       permalink: true
 
 nav:
-- FAQs: 
+- FAQs:
   - './FAQs.md'
 
 - Glossary:
   - './Glossary.md'
+
+- Chainweaver:
+  - './Chainweaver-Support.md'
 
 #- Public Chain:
 #  - 'I want to run my own node': './Chainweb/chainweb-node-actions.md'

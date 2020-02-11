@@ -1,4 +1,4 @@
-# Welcome to the Kadena's Documentation Website
+# Welcome to the Kadena Documentation Site
 
 ### **What is this website?**
 
