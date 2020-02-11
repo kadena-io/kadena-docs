@@ -1,0 +1,1333 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Kadena Dcocumentation">
+      
+      
+      
+        <meta name="author" content="Kadena">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/logo.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Chainweaver Support - Kadena Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#00bcd4">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica:300,400,400i,700%7CHelvetica&display=fallback">
+        <style>body,input{font-family:"Helvetica","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Helvetica","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="cyan" data-md-color-accent="cyan">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#user-guide" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Kadena Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Kadena Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Chainweaver Support
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/kadena-io/kadena-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    kadena-io/kadena-docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../FAQs/" class="md-tabs__link">
+          FAQs
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Glossary/" class="md-tabs__link">
+          Glossary
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link md-tabs__link--active">
+          Chainweaver
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Kadena Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Kadena Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/kadena-io/kadena-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    kadena-io/kadena-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      FAQs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        FAQs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FAQs/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Glossary
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Glossary
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Chainweaver
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Chainweaver
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Chainweaver Support
+      </label>
+    
+    <a href="./" title="Chainweaver Support" class="md-nav__link md-nav__link--active">
+      Chainweaver Support
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-chainweaver-software" class="md-nav__link">
+    Installing the Chainweaver software
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-wallet-or-restore-an-existing-wallet" class="md-nav__link">
+    Create a new wallet or restore an existing wallet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface-overview" class="md-nav__link">
+    Interface overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-to-the-latest-version-of-chainweaver" class="md-nav__link">
+    Update to the latest version of Chainweaver
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networks" class="md-nav__link">
+    Networks
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#different-networks-in-chainweaver" class="md-nav__link">
+    Different networks in Chainweaver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-networks" class="md-nav__link">
+    Change networks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-custom-network" class="md-nav__link">
+    Create a custom network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keys-and-accounts" class="md-nav__link">
+    Keys and Accounts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-keys-vs-accounts" class="md-nav__link">
+    Understanding Keys vs. Accounts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-a-key" class="md-nav__link">
+    Generate a Key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-an-account" class="md-nav__link">
+    Add an Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-account" class="md-nav__link">
+    Create an account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-an-account" class="md-nav__link">
+    Remove an account
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transactions" class="md-nav__link">
+    Transactions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#receive-kadena-kda" class="md-nav__link">
+    Receive Kadena (KDA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-kadena-kda" class="md-nav__link">
+    Send Kadena (KDA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-gas-price-and-gas-limit" class="md-nav__link">
+    Adjust gas price and gas limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-your-transaction" class="md-nav__link">
+    Track your transaction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-contracts" class="md-nav__link">
+    Smart Contracts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-your-own-smart-contract" class="md-nav__link">
+    Deploy your own smart contract
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-an-existing-smart-contract" class="md-nav__link">
+    Call an existing smart contract
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interact-with-dapps" class="md-nav__link">
+    Interact with Dapps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-and-access" class="md-nav__link">
+    Security and Access
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-pair-generation" class="md-nav__link">
+    Key pair generation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-safety-tips" class="md-nav__link">
+    Basic safety tips
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#who-can-access-your-account" class="md-nav__link">
+    Who can access your account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lost-password-andor-recovery-phrase" class="md-nav__link">
+    Lost password and/or recovery phrase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-out" class="md-nav__link">
+    Log out
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codebase" class="md-nav__link">
+    Codebase
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    Contact
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authorized-communications" class="md-nav__link">
+    Authorized Communications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    Chat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-chainweaver-software" class="md-nav__link">
+    Installing the Chainweaver software
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-wallet-or-restore-an-existing-wallet" class="md-nav__link">
+    Create a new wallet or restore an existing wallet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface-overview" class="md-nav__link">
+    Interface overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-to-the-latest-version-of-chainweaver" class="md-nav__link">
+    Update to the latest version of Chainweaver
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networks" class="md-nav__link">
+    Networks
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#different-networks-in-chainweaver" class="md-nav__link">
+    Different networks in Chainweaver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-networks" class="md-nav__link">
+    Change networks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-custom-network" class="md-nav__link">
+    Create a custom network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keys-and-accounts" class="md-nav__link">
+    Keys and Accounts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-keys-vs-accounts" class="md-nav__link">
+    Understanding Keys vs. Accounts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-a-key" class="md-nav__link">
+    Generate a Key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-an-account" class="md-nav__link">
+    Add an Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-account" class="md-nav__link">
+    Create an account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-an-account" class="md-nav__link">
+    Remove an account
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transactions" class="md-nav__link">
+    Transactions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#receive-kadena-kda" class="md-nav__link">
+    Receive Kadena (KDA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-kadena-kda" class="md-nav__link">
+    Send Kadena (KDA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-gas-price-and-gas-limit" class="md-nav__link">
+    Adjust gas price and gas limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-your-transaction" class="md-nav__link">
+    Track your transaction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-contracts" class="md-nav__link">
+    Smart Contracts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-your-own-smart-contract" class="md-nav__link">
+    Deploy your own smart contract
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-an-existing-smart-contract" class="md-nav__link">
+    Call an existing smart contract
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interact-with-dapps" class="md-nav__link">
+    Interact with Dapps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-and-access" class="md-nav__link">
+    Security and Access
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-pair-generation" class="md-nav__link">
+    Key pair generation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-safety-tips" class="md-nav__link">
+    Basic safety tips
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#who-can-access-your-account" class="md-nav__link">
+    Who can access your account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lost-password-andor-recovery-phrase" class="md-nav__link">
+    Lost password and/or recovery phrase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-out" class="md-nav__link">
+    Log out
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codebase" class="md-nav__link">
+    Codebase
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    Contact
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authorized-communications" class="md-nav__link">
+    Authorized Communications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    Chat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/Chainweaver-Support.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="user-guide">User Guide<a class="headerlink" href="#user-guide" title="Permanent link">&para;</a></h1>
+<h2 id="getting-started"><strong>Getting Started</strong><a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h3 id="installing-the-chainweaver-software">Installing the Chainweaver software<a class="headerlink" href="#installing-the-chainweaver-software" title="Permanent link">&para;</a></h3>
+<p>Chainweaver is available for download in three formats to accommodate users’ preference in operating system; (1) .dmg for Mac, (2) .deb for Linux, (3) and .ova for Windows, Linux, and Mac as a virtual appliance</p>
+<p><strong>.dmg for Mac — compatible with macOS High Sierra 10.13 and above</strong></p>
+<ul>
+<li>Select the corresponding Download button at <a href="https://www.kadena.io/chainweaver">https://www.kadena.io/chainweaver</a>, and follow the on-screen instructions</li>
+</ul>
+<p><strong>.deb for Linux — compatible with Ubuntu 18.04</strong></p>
+<ul>
+<li>Select the corresponding Download button at <a href="https://www.kadena.io/chainweaver">https://www.kadena.io/chainweaver</a>. Detailed installation instructions can be found at [link].</li>
+</ul>
+<p><strong>.ova for Windows, Linux, and Mac</strong></p>
+<ul>
+<li>This is a virtual appliance used by virtualization applications such as Virtualbox</li>
+<li>Select the corresponding Download button at <a href="https://www.kadena.io/chainweaver">https://www.kadena.io/chainweaver</a>. Detailed installation instructions can be found at [link].</li>
+</ul>
+<h3 id="create-a-new-wallet-or-restore-an-existing-wallet">Create a new wallet or restore an existing wallet<a class="headerlink" href="#create-a-new-wallet-or-restore-an-existing-wallet" title="Permanent link">&para;</a></h3>
+<p><img alt="create-a-new" src="../assets/Chainweaver/create-a-new.png" /></p>
+<p><strong>Create a new wallet</strong></p>
+<p>There are three main steps to create a new wallet; (1) set password, (2) record recovery phrase, (3) verify recovery phrase</p>
+<ol>
+<li>​Set password: Create a strong, secret, and unique password. See the Basic Safety Tips section for suggestions on password generation.</li>
+<li>Record recovery phrase: Mouse over each of the 12 words to view and record your recovery phrase. See the Basic Safety Tips section for suggestions on securing your recovery phrase.</li>
+<li>Verify recovery phrase: Enter each word in the correct order to verify that you have correctly recorded your recovery phrase.</li>
+</ol>
+<p><strong>Restore existing wallet</strong></p>
+<p>There are three main steps to restore an existing wallet; (1) enter recovery phrase, (2) set new password, (3) re-generate keys</p>
+<ol>
+<li>Enter recovery phrase: Follow the guidance to enter your 12-word recovery phrase.</li>
+<li>Set new password: Input a new password for your existing wallet.</li>
+<li>Re-generate keys: From the Keys section, select the Generate Key button to restore keys. These keys are deterministically generated meaning that the same keys will always appear in the same order by using the recovery phrase as a master seed. Repeat selecting the Generate Key button until all necessary keys are restored.</li>
+</ol>
+<h3 id="interface-overview">Interface overview<a class="headerlink" href="#interface-overview" title="Permanent link">&para;</a></h3>
+<p><img alt="interface-overview" src="../assets/Chainweaver/interface-overview.png" /></p>
+<p>​Chainweaver's interface consists of three main elements; (1) Network Display, (2) Sections Menu, (3) Main Viewer</p>
+<p><strong>Network Display (top bar)</strong>
+This display bar persists across all screen views within Chainweaver so that you will always know the network with which you are interacting</p>
+<p><strong>Sections Menu (left bar)</strong>
+Use this menu to go to different Sections</p>
+<ul>
+<li>Keys: Display of all public keys generated within the wallet</li>
+<li>Accounts: Display of all added accounts and their status across chains. Deposit and withdraw KDA.</li>
+<li>Contracts: Write, deploy and interact with smart contracts</li>
+<li>Resources: Reference helpful support materials</li>
+<li>Settings: Configure wallet and network settings</li>
+<li>Logout: Log out of the desktop application</li>
+</ul>
+<p><strong>Main Viewer (center screen)</strong>
+This is where you interact with the section you have chosen from the Sections Menu.</p>
+<h3 id="update-to-the-latest-version-of-chainweaver">Update to the latest version of Chainweaver<a class="headerlink" href="#update-to-the-latest-version-of-chainweaver" title="Permanent link">&para;</a></h3>
+<p>Upgrading Chainweaver is an essential part of keeping your crypto assets safe and enjoying new features for interacting with the Kadena blockchain ecosystem. The latest version of Chainweaver will always be available for download at <a href="https://www.kadena.io/chainweaver">https://www.kadena.io/chainweaver</a>.</p>
+<p>​Note: Ensure you have a secure connection before downloading any applications. Most issues can be resolved simply by updating to the latest version of Chainweaver.</p>
+<h2 id="networks"><strong>Networks</strong><a class="headerlink" href="#networks" title="Permanent link">&para;</a></h2>
+<h3 id="different-networks-in-chainweaver">Different networks in Chainweaver<a class="headerlink" href="#different-networks-in-chainweaver" title="Permanent link">&para;</a></h3>
+<p>Chainweaver allows you to interact with different networks, including the main network (“Mainnet”) and a test network (“Testnet”)</p>
+<ul>
+<li>Mainnet is the primary live blockchain network where assets of value can be transferred and smart contract services can be called.</li>
+<li>Testnet is a network with which you can safely test various blockchain interactions without the risk of losing valuable assets.</li>
+<li>Both Mainnet and Testnet are fully operational, real blockchains. It is only Testnet, however, where you can acquire KDA coins for free from a <a href="https://faucet.testnet.chainweb.com/">coin faucet</a>. Naturally, account balances cannot move between networks.</li>
+</ul>
+<h3 id="change-networks">Change networks<a class="headerlink" href="#change-networks" title="Permanent link">&para;</a></h3>
+<p><img alt="change-networks" src="../assets/Chainweaver/change-networks.png" /></p>
+<p>You can change the network with which you are actively interacting by selecting the drop-down arrows beside the displayed network in the Network Display top bar.</p>
+<p>Simply select the desired network from the available list and confirm the selection. The keys displayed in the wallet will persist across networks, while the accounts list will refresh to display those that you have added on the chosen network.</p>
+<h3 id="create-a-custom-network">Create a custom network<a class="headerlink" href="#create-a-custom-network" title="Permanent link">&para;</a></h3>
+<p><img alt="custom-network" src="../assets/Chainweaver/custom-network.png" /></p>
+<p>You can add your own custom network by selecting the appropriate option from the Settings section.
+​
+To create a new network, you will have to define a network name then enter the addresses for the nodes to which you would like the network to connect. Node status is displayed with a traffic light style indicator.</p>
+<div class="admonition summary">
+<p class="admonition-title">Note</p>
+<p>Custom networks are defined locally and will only be visible within the application that created it. It is recommended that a network connect to at least 3 nodes.</p>
+</div>
+<h2 id="keys-and-accounts"><strong>Keys and Accounts</strong><a class="headerlink" href="#keys-and-accounts" title="Permanent link">&para;</a></h2>
+<h3 id="understanding-keys-vs-accounts">Understanding Keys vs. Accounts<a class="headerlink" href="#understanding-keys-vs-accounts" title="Permanent link">&para;</a></h3>
+<p>In brief, Keys sign transactions and Accounts may be governed by one or multiple keys.</p>
+<p>With most blockchains, accounts are modeled as simply public/private keypairs. This one-to-one model keeps things simple, but runs into problems when account control requires a many-to-many model (such as with jointly owned or majority ruled accounts).</p>
+<p>Kadena natively supports multiple keys governing the same account, and thus the distinction between Keys and Accounts becomes important.</p>
+<p>Every Account is governed by a keyset which must be defined when creating any Account. Keysets are composed of two parts; (1) a set of keys and (2) a predicate</p>
+<ul>
+<li>Set of keys: a list of public keys that are associated to the account</li>
+<li>Predicate: a governance function that determines which keys are allowed to make choices for the account when it comes to transactions (e.g. do all keys need to be present? only one? two? etc.)</li>
+</ul>
+<p>Summarily, keysets look like the following as JSON data:</p>
+<div class="codehilite"><pre><span></span><span class="err">{</span>
+<span class="err">  &quot;keys&quot;: [&quot;pubkey1&quot;, &quot;pubkey2&quot;,...,&quot;pubkeyN&quot;],</span>
+<span class="err">  &quot;pred&quot;: &quot;some governance function&quot;</span>
+<span class="err">}</span>
+</pre></div>
+
+
+<p>When signing a transaction, the list of private keys supplied as signing key pairs will be checked against the keyset and predicate to ensure that not only are all keys that need to be present accounted for but that the predicate is satisfied.</p>
+<h3 id="generate-a-key">Generate a Key<a class="headerlink" href="#generate-a-key" title="Permanent link">&para;</a></h3>
+<p>The first step towards transacting on the Kadena blockchain is to generate a key pair.</p>
+<p><img alt="generate-key" src="../assets/Chainweaver/generate-key.png" /></p>
+<p>Begin by selecting the “+ Generate Key” button, then continue to Accounts.</p>
+<h3 id="add-an-account">Add an Account<a class="headerlink" href="#add-an-account" title="Permanent link">&para;</a></h3>
+<p>Accounts are effectively equivalent to your identity on the blockchain. When you add an Account in Chainweaver, you will be able to view information about it such as its keyset info and balance on each of the known chains.</p>
+<p><img alt="add-account" src="../assets/Chainweaver/add-account.png" /></p>
+<p>Select “+ Add Account” to view existing accounts or create a new account.</p>
+<p>Optionally, you can add personal notes beside any account. This field is never seen by the blockchain, and only serves as a personal reference to organize a user’s wallet.</p>
+<h3 id="create-an-account">Create an account<a class="headerlink" href="#create-an-account" title="Permanent link">&para;</a></h3>
+<p>Begin by entering the desired account’s name within the “+ Add Account” dialog to see whether it already exists. If the account is available, you will see a “+ Create Account” button in the corresponding Chain ID row as well as an account balance of “Does not exist.”</p>
+<p><img alt="create-account" src="../assets/Chainweaver/create-account.png" /></p>
+<p>Select the “+ Create Account” button beside the desired account’s Chain ID row to open the dialog. Fill in the required fields to define the account’s keyset.</p>
+<p>Since adding any record to the blockchain necessitates a transaction, you too must submit a transaction in order to permanently claim the account’s name on the blockchain. As with all transactions, a nominal amount of gas must be paid in order to execute the transaction.</p>
+<p>If some account in your wallet has funds on the same chain as the desired new account, you may select “I am the Gas Payer” to complete the transaction flow by paying for the gas yourself.</p>
+<p>If you do not have any funds, you may select “I am not the Gas Payer” to view and copy the Tx Builder which contains all of the account info you have just configured. Share this Tx Builder data with someone else to pay the gas for the transaction to create the account for you.</p>
+<p><img alt="tx-builder" src="../assets/Chainweaver/tx-builder.png" /></p>
+<p>Remember that the Kadena public blockchain network is comprised of many chains braided together. In effect, each chain is a standalone blockchain, therefore you will have to create your desired account on each chain for which you want it to exist. Naturally, the same account name will have a different account balance on each chain, and may also have different owners or a different keyset. Always be sure to take note of the chain on which you are transacting.</p>
+<h3 id="remove-an-account">Remove an account<a class="headerlink" href="#remove-an-account" title="Permanent link">&para;</a></h3>
+<p><img alt="remove-account" src="../assets/Chainweaver/remove-account.png" /></p>
+<p>To remove an account from view, begin by selecting the Details button in the desired account row to reveal Account Details.</p>
+<p>Near the bottom of the Account Details dialog, select “Remove Account”</p>
+<p>Read the warning message and confirm your selection by selecting “Remove Account”</p>
+<h2 id="transactions"><strong>Transactions</strong><a class="headerlink" href="#transactions" title="Permanent link">&para;</a></h2>
+<p>Signing transactions in Chainweaver is different from most crypto wallets in two distinct ways; the concepts of (1) Tx Builder and (2) granting capabilities each provide the user with greater transparency and control.</p>
+<p><strong>Tx Builder</strong></p>
+<p>This is a JSON blob including the necessary information to build a transaction. For simple transfers it might include just an account name and chain ID, like this:</p>
+<div class="codehilite"><pre><span></span><span class="err">{</span>
+<span class="err">    &quot;account&quot;: &quot;alice&quot;,</span>
+<span class="err">    &quot;chain&quot;: &quot;5&quot;</span>
+<span class="err">}</span>
+</pre></div>
+
+
+<p>For account creation it might also include a keyset, like this:</p>
+<div class="codehilite"><pre><span></span><span class="err">{</span>
+<span class="err">    &quot;account&quot;: &quot;alice&quot;,</span>
+<span class="err">    &quot;chain&quot;: &quot;5&quot;,</span>
+<span class="err">    &quot;keyset&quot;: {</span>
+<span class="err">        &quot;keys&quot;: [&quot;368698bf0354b0c04884a185a7eefd20500562cad23bf9c25eee53ddc0ba7d7b&quot;],</span>
+<span class="err">        &quot;pred&quot;: &quot;keys-all&quot;</span>
+<span class="err">    }</span>
+<span class="err">}</span>
+</pre></div>
+
+
+<p>While users will never need to compose this code themselves, it is important to become familiar with reading it to understand how some blockchain operations work.</p>
+<p><strong>Granting capabilities</strong></p>
+<p>Performing transfers necessitates a call to the blockchain’s coin contract. This contract describes the rules for transferring coins and one such rule requires that the Sender account grant the capability to transfer coins in order for the transaction to be submitted. The act of granting capabilities is akin to authorizing or signing a transaction. In more advanced scenarios some contracts require multiple capabilities to be granted. This concept gives the user greater control and transparency to what they are signing.</p>
+<h3 id="receive-kadena-kda">Receive Kadena (KDA)<a class="headerlink" href="#receive-kadena-kda" title="Permanent link">&para;</a></h3>
+<p>To receive KDA, you must first share your Tx Builder with another person from whom you wish to receive a payment.</p>
+<p>To access your Tx Builder, navigate to the Accounts section and select the “Receive” button beside the desired account’s chain ID row.</p>
+<p><img alt="receive-kadena" src="../assets/Chainweaver/receive-kadena.png" /></p>
+<p>This will open the Receive dialog from which you can copy the Tx Builder and share with others.
+​
+One additional feature for experienced users is the ability to transfer KDA from compatible accounts that were not generated within Chainweaver. You can access this feature from the Receive dialog by expanding the menu-field under the sub-section “Option 2: Transfer from non-Chainweaver Account.” Fill in the required fields to Submit Transfer.</p>
+<h3 id="send-kadena-kda">Send Kadena (KDA)<a class="headerlink" href="#send-kadena-kda" title="Permanent link">&para;</a></h3>
+<p>Since the Kadena public blockchain network braids multiple chains together, you can transfer KDA in two ways; (1) transfer between the same chain and (2) transfer between different chains.</p>
+<p><strong>Transfer between the same chain</strong></p>
+<p>Navigate to the Account section and select the “Send” button beside the desired account’s chain ID row from which you would like to transfer funds.</p>
+<p><img alt="send-kadena" src="../assets/Chainweaver/send-kadena.png" /></p>
+<p>This will open the Send dialog which is divided into two parts; Configuration and Sign:</p>
+<p>Configure the transaction</p>
+<ul>
+<li>Recipient: Enter the recipient’s Tx Builder and amount to send</li>
+<li>Transaction Settings: Choose the transaction speed and expiration</li>
+</ul>
+<p>Sign the transaction</p>
+<ul>
+<li>Gas Payer: Select an account to sign and pay the transaction gas</li>
+</ul>
+<p><img alt="send-preview" src="../assets/Chainweaver/send-preview.png" /></p>
+<p>Once all required fields have been entered, select the “Preview” button. Here you will be able to review and confirm details before submitting the transaction.</p>
+<p><strong>Transfer between different chains</strong></p>
+<p>This process has one distinct difference from transfers on the same chain. This time when you sign the transaction, you must select two Gas Payers:</p>
+<ol>
+<li>Gas payer on the originating chain to initiate the transfer</li>
+<li>Gas payer on the destination chain to redeem the transfer</li>
+</ol>
+<p><img alt="cross-chain-transfer" src="../assets/Chainweaver/cross-chain-transfer.png" /></p>
+<p>It may seem unusual to have to pay for gas twice, but consider what is happening with a cross-chain transfer. In this scenario you are moving coins between two different blockchains, each with their own ledger. Therefore gas on one chain cannot pay for executing operations on a different chain.</p>
+<h3 id="adjust-gas-price-and-gas-limit">Adjust gas price and gas limit<a class="headerlink" href="#adjust-gas-price-and-gas-limit" title="Permanent link">&para;</a></h3>
+<p><img alt="adjust-gas" src="../assets/Chainweaver/adjust-gas.png" /></p>
+<p>Before you submit any transaction or deploy any smart contract, you will have the opportunity to configure a few settings. You can adjust both the Gas Price and the Gas Limit of your transaction. As either of these settings are adjusted, you can see how these changes might affect Transaction Speed and Max Transaction Fee.</p>
+<div class="admonition summary">
+<p class="admonition-title">Note</p>
+<p>Chainweaver does not charge a fee to send or receive a transaction. All transaction fees go directly to miners as compensation for providing the compute power required to execute the operation.</p>
+</div>
+<h3 id="track-your-transaction">Track your transaction<a class="headerlink" href="#track-your-transaction" title="Permanent link">&para;</a></h3>
+<p><img alt="tx-status" src="../assets/Chainweaver/tx-status.png" /></p>
+<p>Once a transaction has been submitted, Chainweaver will display the Transaction Status as it moves through progress states. The average block time in the Kadena network is 30 seconds. So depending on the Transaction Speed you assigned, it may take several blocks before your transaction is successfully mined.</p>
+<ul>
+<li>Transaction success: When the transaction has been successfully mined in a block, a Transaction Result will display.</li>
+<li>Transaction failure: If the transaction fails at any progress state then a red “X” will appear beside the failing state.</li>
+</ul>
+<h2 id="smart-contracts">Smart Contracts<a class="headerlink" href="#smart-contracts" title="Permanent link">&para;</a></h2>
+<p>The ability to write, deploy, and call smart contracts from within Chainweaver makes it one of the most comprehensive workbench tools for blockchain. Navigate to the Contracts section and utilize the integrated development environment (IDE) for developing and testing Pact smart contracts.</p>
+<p>Pact is the safe and simple smart contract language used for interacting with the Kadena blockchain. Visit <a href="https://pactlang.org/">https://pactlang.org/</a> for developer tutorials covering key concepts and real projects you can deploy yourself.</p>
+<h3 id="deploy-your-own-smart-contract">Deploy your own smart contract<a class="headerlink" href="#deploy-your-own-smart-contract" title="Permanent link">&para;</a></h3>
+<p>Once you have written the code for your new smart contract in the code editor, check the ENV tab of the tool panel on the right side for any error messages that might be displayed. Once you are satisfied with your code, you can either select “Load into REPL” or “Deploy.”</p>
+<ul>
+<li>“Load into REPL” will execute the editor text within the local REPL environment so that you can test and interact with the contract</li>
+<li>“Deploy” will begin the process of configuring the smart contract for execution on the blockchain</li>
+</ul>
+<p><img alt="deploy-config" src="../assets/Chainweaver/deploy-config.png" /></p>
+<p>Should you select “Deploy,” you will next be prompted to designate the transaction destination and settings. On the “Sign” tab you must enter any new capabilities as defined in your contract code, then select the account to authorize each capability.</p>
+<p><img alt="deploy-preview" src="../assets/Chainweaver/deploy-preview.png" /></p>
+<p>Once all required fields have been entered, select the “Preview” button. Here you will be able to review and confirm details before submitting the transaction.</p>
+<h3 id="call-an-existing-smart-contract">Call an existing smart contract<a class="headerlink" href="#call-an-existing-smart-contract" title="Permanent link">&para;</a></h3>
+<p>Once a contract has been deployed, it will show up in the “Deployed Contracts” table under the “Module Explorer” tab of the Contracts tool panel. Contracts can be filtered by chain or through search.</p>
+<p>Select “View” beside your chosen contract to reveal all of the available functions to call.</p>
+<p>Select “Call” beside your chosen function to open a three-part dialog:</p>
+<ol>
+<li>Parameters: enter the required parameters</li>
+<li>Configuration: choose the transaction settings</li>
+<li>Sign: grant the required capabilities</li>
+</ol>
+<p>Preview the transaction, then select “Create Transaction” to execute the operation.</p>
+<h3 id="interact-with-dapps">Interact with Dapps<a class="headerlink" href="#interact-with-dapps" title="Permanent link">&para;</a></h3>
+<p>As a user, interacting with dapps is simple. Chainweaver takes advantage of a novel <a href="https://github.com/kadena-io/signing-api">wallet signing API</a> which facilitates communication between dapps and wallets.</p>
+<p>First ensure your Chainweaver desktop application is open. When you’re ready to start some transaction with a dapp, initiate the request by submitting the required information (e.g. account name) to the dapp.</p>
+<p>Once a call has been made, by pressing a button on the dapp interface or through some other means, the signing API will hit Chainweaver. When Chainweaver receives an API call, a new dialog will appear within Chainweaver displaying input data from the dapp.</p>
+<p>Review the transaction details and complete the flow as you would for any other transaction; configure settings, grant capabilities, preview and create.</p>
+<h2 id="security-and-access">Security and Access<a class="headerlink" href="#security-and-access" title="Permanent link">&para;</a></h2>
+<h3 id="key-pair-generation">Key pair generation<a class="headerlink" href="#key-pair-generation" title="Permanent link">&para;</a></h3>
+<p>Kadena uses Ed25519 public/private key pair signatures. Chainweaver can be used to easily generate compatible key pairs. Alternatively, you can generate key pairs yourself by following any kind of Ed25519 key generation method such as <a href="https://github.com/kadena-community/secure-keygen">this one</a> contributed to our community GitHub.</p>
+<p>Learn more about Ed25519 <a href="https://ed25519.cr.yp.to/">here</a>.</p>
+<h3 id="basic-safety-tips">Basic safety tips<a class="headerlink" href="#basic-safety-tips" title="Permanent link">&para;</a></h3>
+<p>As with any valuable asset, it is important to establish a secure and reliable method for controlling who has access to it. While Chainweaver is designed to satisfy strict security standards, you are ultimately responsible for maintaining the security of your wallet’s access credentials—the password and recovery phrase.</p>
+<p><strong>Passwords</strong>: Consider using a password manager to generate a strong password with randomness of character types. If you decide to create a password yourself, make sure it is not the same or similar to any other password you have ever used.</p>
+<p><strong>Recovery phrases</strong>: This 12-word phrase is the master seed that generates all your wallet’s public/private key pairs. With this phrase, anyone can control your wallet, even from another device. Consider securing more than one copy to prevent a single point of failure from events like fires, loss, etc.</p>
+<p>Kadena does not control any of your personal/private data on our servers. Never share passwords or recovery phrases with anyone, including the Kadena team. We will never ask for you to provide this. If someone claims that we do, insist on not sharing.</p>
+<h3 id="who-can-access-your-account">Who can access your account<a class="headerlink" href="#who-can-access-your-account" title="Permanent link">&para;</a></h3>
+<p>Anyone with your wallet's password, private keys or recovery phrase can access your account. Passwords, private keys, and recovery phrases are in the users’ hands and are the users’ responsibility. Chainweaver is simply an interface that allows you to more easily interact with your accounts and the Kadena blockchain.</p>
+<h3 id="lost-password-andor-recovery-phrase">Lost password and/or recovery phrase<a class="headerlink" href="#lost-password-andor-recovery-phrase" title="Permanent link">&para;</a></h3>
+<p><strong>Lost password</strong></p>
+<p>If you lose your password, you can reset it by using your 12-word recovery phrase to restore the wallet with a new password.</p>
+<p><strong>Lost both password and recovery phrase</strong></p>
+<p>If you lose both your password and recovery phrase, you will permanently lose access to any accounts and their funds forever.</p>
+<p>Kadena does not manage accounts with information such as passwords, private keys, or recovery phrases.  We only have access to the information that is publicly available on the blockchain. We do not have servers and we do not hold your assets.</p>
+<h3 id="log-out">Log out<a class="headerlink" href="#log-out" title="Permanent link">&para;</a></h3>
+<p>The “Log out” button in the lower-left of the Section menu will lock your wallet. A locked wallet cannot sign transactions or receive signing API calls.</p>
+<h2 id="codebase">Codebase<a class="headerlink" href="#codebase" title="Permanent link">&para;</a></h2>
+<p>To find out about the latest improvements to Chainweaver, view all activity available at the open-source repository on GitHub <a href="https://github.com/kadena-io/chainweaver">here</a>.</p>
+<h2 id="contact">Contact<a class="headerlink" href="#contact" title="Permanent link">&para;</a></h2>
+<h3 id="authorized-communications">Authorized Communications<a class="headerlink" href="#authorized-communications" title="Permanent link">&para;</a></h3>
+<p>Kadena staff will never ask for sensitive information, including passwords, recovery phrases or private keys.</p>
+<p>Beware of fake accounts and scam attempts.</p>
+<p>Chainweaver will only communicate through verified channels.</p>
+<h3 id="chat">Chat<a class="headerlink" href="#chat" title="Permanent link">&para;</a></h3>
+<p>Join our Discord server <a href="https://discord.io/kadena">here</a> and chat live with Kadena developers and the community on the #chainweaver channel</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Glossary/" title="Glossary" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Glossary
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 - 2020 Kadena
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/kadena-io" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/kadena_io" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
