@@ -1,9 +1,8 @@
 # Project information
-site_name: 'Kadena Documentation'
-
-site_description: 'Kadena Dcocumentation'
+site_name: 'Kadena Docs'
+site_description: 'Kadena Documentation'
 site_author: 'Kadena'
-# site_url: 'pactlang.org'
+# site_url: 'https://kadena-io.github.io/kadena-docs/'
 
 # Repository
 repo_name: 'kadena-io/kadena-docs'
@@ -20,11 +19,11 @@ theme:
     primary: 'Cyan'
     accent: 'Cyan'
   feature:
-    tabs: true
+    tabs: false
   font:
     text: 'Helvetica'
     code: 'Helvetica'
-  favicon: 'assets/images/logo.png'
+  favicon: 'assets/chainweaver-support-favicon-512.png'
 
 extra:
   social:
@@ -46,14 +45,10 @@ markdown_extensions:
       permalink: true
 
 nav:
-- FAQs:
-  - './FAQs.md'
-
-- Glossary:
-  - './Glossary.md'
-
-- Chainweaver:
-  - './Chainweaver-Support.md'
+- Public Chain Docs: index.md
+- FAQ: FAQs.md
+- Glossary: Glossary.md
+- Chainweaver Support: Chainweaver-Support.md
 
 #- Public Chain:
 #  - 'I want to run my own node': './Chainweb/chainweb-node-actions.md'
