@@ -8,16 +8,16 @@ Chainweaver is available for download in three formats to accommodate users’ p
 
 **.dmg for Mac — compatible with macOS High Sierra 10.13 and above**
 
-* Select the corresponding Download button at [https://www.kadena.io/chainweaver](https://www.kadena.io/chainweaver), and follow the on-screen instructions
+* Select the corresponding Download button at <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>, and follow the on-screen instructions
 
 **.deb for Linux — compatible with Ubuntu 18.04**
 
-* Select the corresponding Download button at [https://www.kadena.io/chainweaver](https://www.kadena.io/chainweaver). Detailed installation instructions can be found at [link].
+* Select the corresponding Download button at <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.
 
 **.ova for Windows, Linux, and Mac**
 
 * This is a virtual appliance used by virtualization applications such as Virtualbox
-* Select the corresponding Download button at [https://www.kadena.io/chainweaver](https://www.kadena.io/chainweaver). Detailed installation instructions can be found at [link].
+* Select the corresponding Download button at <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.
 
 ### Create a new wallet or restore an existing wallet
 ![create-a-new](../assets/Chainweaver/create-a-new.png)
@@ -62,7 +62,7 @@ This is where you interact with the section you have chosen from the Sections Me
 
 ###Update to the latest version of Chainweaver
 
-Upgrading Chainweaver is an essential part of keeping your crypto assets safe and enjoying new features for interacting with the Kadena blockchain ecosystem. The latest version of Chainweaver will always be available for download at [https://www.kadena.io/chainweaver](https://www.kadena.io/chainweaver).
+Upgrading Chainweaver is an essential part of keeping your crypto assets safe and enjoying new features for interacting with the Kadena blockchain ecosystem. The latest version of Chainweaver will always be available for download at <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.
 
 ​Note: Ensure you have a secure connection before downloading any applications. Most issues can be resolved simply by updating to the latest version of Chainweaver.
 
@@ -74,7 +74,7 @@ Chainweaver allows you to interact with different networks, including the main n
 
 * Mainnet is the primary live blockchain network where assets of value can be transferred and smart contract services can be called.
 * Testnet is a network with which you can safely test various blockchain interactions without the risk of losing valuable assets.
-* Both Mainnet and Testnet are fully operational, real blockchains. It is only Testnet, however, where you can acquire KDA coins for free from a [coin faucet](https://faucet.testnet.chainweb.com/). Naturally, account balances cannot move between networks.
+* Both Mainnet and Testnet are fully operational, real blockchains. It is only Testnet, however, where you can acquire KDA coins for free from a <a href="https://faucet.testnet.chainweb.com/" target="_blank">coin faucet</a>. Naturally, account balances cannot move between networks.
 
 ###Change networks
 
@@ -271,7 +271,7 @@ Once a transaction has been submitted, Chainweaver will display the Transaction 
 
 The ability to write, deploy, and call smart contracts from within Chainweaver makes it one of the most comprehensive workbench tools for blockchain. Navigate to the Contracts section and utilize the integrated development environment (IDE) for developing and testing Pact smart contracts.
 
-Pact is the safe and simple smart contract language used for interacting with the Kadena blockchain. Visit [https://pactlang.org/](https://pactlang.org/) for developer tutorials covering key concepts and real projects you can deploy yourself.
+Pact is the safe and simple smart contract language used for interacting with the Kadena blockchain. Visit <a href="https://pactlang.org/" target="_blank">https://pactlang.org/</a> for developer tutorials covering key concepts and real projects you can deploy yourself.
 
 ###Deploy your own smart contract
 
@@ -304,7 +304,7 @@ Preview the transaction, then select “Create Transaction” to execute the ope
 
 ###Interact with Dapps
 
-As a user, interacting with dapps is simple. Chainweaver takes advantage of a novel [wallet signing API](https://github.com/kadena-io/signing-api) which facilitates communication between dapps and wallets.
+As a user, interacting with dapps is simple. Chainweaver takes advantage of a novel <a href="https://github.com/kadena-io/signing-api" target="_blank">wallet signing API</a> which facilitates communication between dapps and wallets.
 
 First ensure your Chainweaver desktop application is open. When you’re ready to start some transaction with a dapp, initiate the request by submitting the required information (e.g. account name) to the dapp.
 
@@ -316,9 +316,9 @@ Review the transaction details and complete the flow as you would for any other 
 
 ###Key pair generation
 
-Kadena uses Ed25519 public/private key pair signatures. Chainweaver can be used to easily generate compatible key pairs. Alternatively, you can generate key pairs yourself by following any kind of Ed25519 key generation method such as [this one](https://github.com/kadena-community/secure-keygen) contributed to our community GitHub.
+Kadena uses Ed25519 public/private key pair signatures. Chainweaver can be used to easily generate compatible key pairs. Alternatively, you can generate key pairs yourself by following any kind of Ed25519 key generation method such as <a href="https://github.com/kadena-community/secure-keygen" target="_blank">this one</a> contributed to our community GitHub.
 
-Learn more about Ed25519 [here](https://ed25519.cr.yp.to/).
+Learn more about Ed25519 <a href="https://ed25519.cr.yp.to/" target="_blank">here</a>).
 
 ###Basic safety tips
 
@@ -352,7 +352,7 @@ The “Log out” button in the lower-left of the Section menu will lock your wa
 
 ##Codebase
 
-To find out about the latest improvements to Chainweaver, view all activity available at the open-source repository on GitHub [here](https://github.com/kadena-io/chainweaver).
+To find out about the latest improvements to Chainweaver, view all activity available at the open-source repository on GitHub <a href=“https://www.kadena.io/chainweaver" target="_blank">here</a>.
 
 ##Contact
 
@@ -366,4 +366,4 @@ Chainweaver will only communicate through verified channels.
 
 ###Chat
 
-Join our Discord server [here](https://discord.io/kadena) and chat live with Kadena developers and the community on the #chainweaver channel
+Join our Discord server <a href="https://discord.io/kadena" target="_blank">here</a> and chat live with Kadena developers and the community on the #chainweaver channel
