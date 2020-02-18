@@ -6,18 +6,67 @@
 
 Chainweaver is available for download in three formats to accommodate users’ preference in operating system; (1) .dmg for Mac, (2) .deb for Linux, (3) and .ova for Windows, Linux, and Mac as a virtual appliance
 
-**.dmg for Mac — compatible with macOS High Sierra 10.13 and above**
+####**.dmg for Mac**
 
-* Select the corresponding Download button at <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>, and follow the on-screen instructions
+*Compatible with macOS High Sierra 10.13 and above*
 
-**.deb for Linux — compatible with Ubuntu 18.04**
+* Download the .dmg from <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>
+* Navigate to your downloads folder, open the .dmg, and drag the application into your Applications folder.
 
-* Select the corresponding Download button at <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.
+![installing-chainweaver](../assets/Chainweaver/installing-chainweaver.png)
 
-**.ova for Windows, Linux, and Mac**
+####**.deb for Linux**
 
-* This is a virtual appliance used by virtualization applications such as Virtualbox
-* Select the corresponding Download button at <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.
+*Compatible with Ubuntu 18.04*
+
+* Download the .deb from <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.
+* Navigate to your downloads folder and double click the .deb.
+
+![downloads folder](../assets/deb/deb_downloads.png)
+
+* Click the install button on the install window that pops up.
+
+![installer](../assets/deb/deb_install.png)
+
+* There should be a progress bar that appears and progresses to completion until you see this installed state. Be sure to check that the installed version is the one that you tried to install.
+
+![installed](../assets/deb/deb_installed.png)
+
+* You can now find chainweaver in the applications menu.
+
+![menu](../assets/deb/deb_appmenu.png)
+
+* With this icon
+
+![kadena chainweaver icon](../assets/deb/deb_chainweaver.png)
+
+!!! warning "Help"
+      See the <a href="../docs/troubleshoot.md" target="_blank">Troubleshoot Page</a> if you encountered issues installing the .deb
+
+####**.ova for Windows, Linux, and Mac**
+
+* First, make sure that you have [virtualbox](https://www.virtualbox.org/wiki/Downloads) installed as this virtualisation app is required to run the OVA.
+
+* Download the .ova from <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.
+
+* Navigate to your downloads folder and double click the .ova.
+
+![ova downloads](../assets/ova/ova_downloads.png)
+
+* You should get an import virtual appliance dialog which you can safely accept the defaults and press import.
+
+![ova import](../assets/ova/ova_import.png)
+
+* Once this is imported, you can run the virtual machine by double clicking "Kadena Chainweaver VM" in the list of VMs.
+
+![ova vm menu](../assets/ova/ova_startvm.png)
+
+* This will start the virtual machine and it will boot like a normal computer. Eventually you should see chainweaver like this.
+
+![chainweaver ova started](../assets/ova/ova_started.png)
+
+!!! warning "Help"
+      See the <a href="../docs/troubleshoot.md" target="_blank">Troubleshoot Page</a> if you encountered issues installing the .ova
 
 ### Create a new wallet or restore an existing wallet
 ![create-a-new](../assets/Chainweaver/create-a-new.png)
