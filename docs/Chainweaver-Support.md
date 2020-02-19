@@ -41,7 +41,7 @@ Chainweaver is available for download in three formats to accommodate users’ p
 ![kadena chainweaver icon](../assets/deb/deb_chainweaver.png)
 
 !!! warning "Help"
-      See the <a href="../troubleshoot" target="_blank">Troubleshoot Page</a> if you encountered issues installing the .deb
+      See the <a href="../troubleshoot#debian-installation-issues" target="_blank">Troubleshoot Page</a> if you encountered issues installing the .deb
 
 ####**.ova for Windows, Linux, and Mac**
 
@@ -66,7 +66,7 @@ Chainweaver is available for download in three formats to accommodate users’ p
 ![chainweaver ova started](../assets/ova/ova_started.png)
 
 !!! warning "Help"
-      See the <a href="../docs/troubleshoot.md" target="_blank">Troubleshoot Page</a> if you encountered issues installing the .ova
+      See the <a href="../troubleshoot#ova-installaion-issues" target="_blank">Troubleshoot Page</a> if you encountered issues installing the .ova
 
 ### Create a new wallet or restore an existing wallet
 ![create-a-new](../assets/Chainweaver/create-a-new.png)
