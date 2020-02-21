@@ -57,6 +57,8 @@ Guides
 ### **Write Smart Contracts**
 
 - <a href="https://pactlang.org/" target="_blank">Pact Developer Tutorials</a> - Learn Pact's fundamental concepts through structured lessons, then complete projects to deploy real smart contracts
+- [Safe Rotate and Drain example](/cookbook/safe-rotate-and-drain) - This example takes an account, rotates it to another key and transfers the whole balance to another account
+- [Safe Transfer example](/cookbook/safe-transfer) - This example does two transfers in a single transaction
 
 ### **View Network Activity**
 
