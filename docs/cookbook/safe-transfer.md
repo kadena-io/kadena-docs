@@ -25,9 +25,13 @@ public key for `bob` is
 
 ```yaml
 code: |-
-  (coin.transfer-create "alice" "bob" (read-keyset "ks") 200.1)
-  (coin.transfer "bob" "alice" 0.1)
+  (coin.transfer-create (read-string "from-acct") (read-string "to-acct") (read-keyset "ks") (+ (read-decimal "transfer-amt") (read-decimal "check-amt")))
+  (coin.transfer (read-string "from-acct") (read-string "to-acct") (read-decimal "check-amt"))
 data:
+  from-acct: "alice"
+  to-acct: "bob"
+  transfer-amt: 200.0
+  check-amount: 0.1
   ks:
     keys: [368820f80c324bbc7c2b0610688a7da43e39f91d118732671cd9c7500ff43cca]
     pred: "keys-all"
