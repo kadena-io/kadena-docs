@@ -49,6 +49,7 @@ nav:
 - FAQ: FAQs.md
 - Glossary: Glossary.md
 - Chainweaver Support: Chainweaver-Support.md
+- Private Chain Docs: Private-Chain-Docs.md
 
 #- Public Chain:
 #  - 'I want to run my own node': './Chainweb/chainweb-node-actions.md'
