@@ -13,12 +13,24 @@ clone the repository
 ## Contributing
 
 To make updates to this site you need to complete the following steps.
-* git add .
-* git commit -m 'short description of changes goes here'
-* git push -u origin master
+```
+git add .
+git commit -m 'short description of changes goes here'
+git push -u origin master
+```
 
-Deploy these changes to the live site (avoid until going live)
-* mkdocs gh-deploy --clean
+To preview changes, run the following command:
+```
+mkdocs serve
+```
+And navigate to <http://127.0.0.1:8000> on your browser.
+
+## Publishing
+Deploy these changes to the live site (AVOID until going live)
+
+```
+mkdocs gh-deploy --clean
+```
 
 ## Built With
 
