@@ -26,9 +26,11 @@ Resources
 
 - <a href="https://github.com/kadena-community/bigolchungus" target="_blank">BigOlChungus</a> - Open Source Linux AMD/Nvidia OpenCL miner; One instance per card (Community contribution)
 
-- <a href="https://github.com/Jacoby6000/kda-miner/releases" target="_blank">KDA-Miner</a> - Open Source Linux AMD/Nvidia OpenCL miner; 10% Fee (Community contribution)
+- <a href="https://github.com/Jacoby6000/kda-miner/releases" target="_blank">KDA-Miner</a> - Open Source Linux AMD/Nvidia OpenCL miner; (Community contribution, 10% fee)
 
-- <a href="https://github.com/NoncerPro/Kadena" target="_blank">NoncerPro-Kadena</a> - Closed Source Linux/Windows Nvidia Cuda miner; 2% fee (Community contribution)
+- <a href="https://github.com/NoncerPro/Kadena" target="_blank">NoncerPro-Kadena</a> - Closed Source Linux/Windows Nvidia Cuda miner; (Community contribution, 2% fee)
+
+- <a href="https://github.com/doktor83/SRBMiner-Multi" target="_blank">SRBMiner</a> - Closed Source Linux/Windows AMD miner (Community contribution, 0.85% fee)
 
 Guides
 
