@@ -40,7 +40,7 @@
     
     
       
-        <title>Troubleshooting - Kadena Docs</title>
+        <title>Pact Local API Queries - Kadena Docs</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#troubleshooting" tabindex="1" class="md-skip">
+      <a href="#pact-local-api-queries" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Troubleshooting
+                Pact Local API Queries
               
             </span>
           
@@ -226,8 +226,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Public Chain Docs" class="md-nav__link">
-      Public Chain Docs
+    <a href="../what-is-kadena/" title="What is Kadena?" class="md-nav__link">
+      What is Kadena?
     </a>
   </li>
 
@@ -238,8 +238,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../FAQs/" title="FAQ" class="md-nav__link">
-      FAQ
+    <a href="../what-is-kda/" title="What is KDA?" class="md-nav__link">
+      What is KDA?
     </a>
   </li>
 
@@ -250,8 +250,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Glossary/" title="Glossary" class="md-nav__link">
-      Glossary
+    <a href="../FAQs/" title="Kadena FAQ" class="md-nav__link">
+      Kadena FAQ
     </a>
   </li>
 
@@ -262,8 +262,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Chainweaver-Support/" title="Chainweaver Support" class="md-nav__link">
-      Chainweaver Support
+    <a href="../Public-Chain-Docs/" title="Public Chain Interaction" class="md-nav__link">
+      Public Chain Interaction
     </a>
   </li>
 
@@ -274,8 +274,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Private-Chain-Docs/" title="Private Chain Docs" class="md-nav__link">
-      Private Chain Docs
+    <a href="../Private-Chain-Docs/" title="Private Chain Deployment" class="md-nav__link">
+      Private Chain Deployment
     </a>
   </li>
 
@@ -301,63 +301,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#debian-installation-issues" class="md-nav__link">
-    Debian Installation Issues
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#uninstall-chainweaver" class="md-nav__link">
-    Uninstall Chainweaver
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ova-installaion-issues" class="md-nav__link">
-    OVA Installaion Issues
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#starting-the-virtual-machine" class="md-nav__link">
-    Starting the Virtual Machine
+  <a href="#creating-a-local-api-request" class="md-nav__link">
+    Creating A Local API Request
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#stopping-the-virtual-machine" class="md-nav__link">
-    Stopping the Virtual Machine
+      
+        <li class="md-nav__item">
+  <a href="#sending-the-command-to-chainweb" class="md-nav__link">
+    Sending the Command to Chainweb
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#upgrading-the-virtual-machine" class="md-nav__link">
-    Upgrading the Virtual Machine
+      
+        <li class="md-nav__item">
+  <a href="#automating-pact-local-calls" class="md-nav__link">
+    Automating Pact Local calls
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vt-x-amd-v-error-on-import-startup" class="md-nav__link">
-    VT-x / AMD-v Error on Import / Startup
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -377,38 +344,80 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/troubleshoot.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/pact-local-queries.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
-<h2 id="debian-installation-issues">Debian Installation Issues<a class="headerlink" href="#debian-installation-issues" title="Permanent link">&para;</a></h2>
-<p>If you think that the install didn't update your chainweaver, jump into a terminal and enter</p>
-<p><code>dpkg -s kadena-chainweaver</code></p>
-<p>If this doesn't return the chainweaver version that you expect, then the automatic install window didn't work. Type</p>
-<p><code>sudo dpkg -i ~/Downloads/kadena-chainweaver_1.0.0_amd64.deb</code></p>
-<p>to try to install from the terminal. If something is going wrong, this will give a much better error.</p>
-<h3 id="uninstall-chainweaver">Uninstall Chainweaver<a class="headerlink" href="#uninstall-chainweaver" title="Permanent link">&para;</a></h3>
-<p>To remove chainweaver (this won't delete your wallet, just chainweaver itself) to try to reinstall, type <code>sudo dpkg -r kadena-chainweaver</code> in a terminal.</p>
-<h2 id="ova-installaion-issues">OVA Installaion Issues<a class="headerlink" href="#ova-installaion-issues" title="Permanent link">&para;</a></h2>
-<h3 id="starting-the-virtual-machine">Starting the Virtual Machine<a class="headerlink" href="#starting-the-virtual-machine" title="Permanent link">&para;</a></h3>
-<p>You don't need to import the ova each time to run chainweaver. To start chainweaver again, open Virtual Box from the start menu. The Virtual Box Manager should open up and you can double click "Chainweaver VM".</p>
-<p><img alt="ova vm menu" src="../assets/ova/ova_startvm.png" /></p>
-<h3 id="stopping-the-virtual-machine">Stopping the Virtual Machine<a class="headerlink" href="#stopping-the-virtual-machine" title="Permanent link">&para;</a></h3>
-<p>To stop the virtualmachine, it is best to shut it down like a regular computer. Press "Applications" in the lower left corner.</p>
-<p><img alt="applications menu" src="../assets/ova/ova_menu.png" /></p>
-<p>And press "Log Off" then hit "Shutdown in the Dialog that appears.</p>
-<p><img alt="shutdown menu" src="../assets/ova/ova_shutdown.png" /></p>
-<p>It is safe to close the "Virtual Box Manager" window at this time.</p>
-<h3 id="upgrading-the-virtual-machine">Upgrading the Virtual Machine<a class="headerlink" href="#upgrading-the-virtual-machine" title="Permanent link">&para;</a></h3>
-<p>When a new chainweaver is released, you don't need to download a new OVA every time. Instead, close the chainweaver application inside the VM and notice these two icons on the desktop. Click the "Upgrade Chainweaver" icon and an update script will start. You can then click the other desktop icon to restart chainweaver.</p>
-<p><img alt="desktop icons" src="../assets/ova/ova_desktop.png" /></p>
-<h3 id="vt-x-amd-v-error-on-import-startup">VT-x / AMD-v Error on Import / Startup<a class="headerlink" href="#vt-x-amd-v-error-on-import-startup" title="Permanent link">&para;</a></h3>
-<p>Virtualbox requires certain hardware acceleration to be able to operate. Almost all modern computers have this feature (VT-x for Intel and AMD-v for AMD CPUs) but some computers ship with it off by default. If you see an error like this when importing or starting the VM, it is turned off for your computer.</p>
-<p><img alt="virtualisation cpu support error" src="../assets/ova/ova_vtx_error.jpg" /></p>
-<p>You'll need to turn this on in your system firmware menu. Known systems where this is necessary are:</p>
+                <h1 id="pact-local-api-queries">Pact Local API Queries<a class="headerlink" href="#pact-local-api-queries" title="Permanent link">&para;</a></h1>
+<p>Chainweb supports the use of the Pact smart contract language, including the <code>local</code> API endpoints defined in <a href="https://pact-language.readthedocs.io/en/stable/pact-reference.html#rest-api">the documentation</a>. Using the <code>local</code> API endpoints on any Chainweb node, you can dry-run Pact smart contracts using actual data in the coin contract tables. This is perfect for checking the viability of your smart contracts, as well as to check account data without necessarily having to spend tokens!</p>
+<h2 id="setup"><strong>Setup</strong><a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<p>Follow the instructions at <a href="https://pactlang.org/">pactlang.org</a> to get started with Pact learning the basics. For a more straightforward and technical introduction, just <a href="https://pact-language.readthedocs.io">readthedocs</a>.</p>
+<p>In particular, for any script going on Chainweb, you'll need to understand the <a href="https://pact-language.readthedocs.io/en/stable/pact-reference.html#api-request-formatter">API request format</a>.</p>
+<h2 id="creating-a-local-api-request"><strong>Creating A Local API Request</strong><a class="headerlink" href="#creating-a-local-api-request" title="Permanent link">&para;</a></h2>
+<p>A <code>local</code> query does not need to make use of any metadata, env data, or signers, so a minimalist API request format is relatively simple:</p>
+<div class="codehilite"><pre><span></span><span class="nt">(code|codeFile)</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;code goes here&gt;</span>
+<span class="nt">keyPairs</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+</pre></div>
+
+
+<p>For example, if one wanted to check their balance, the following request format would be sufficient:</p>
+<div class="codehilite"><pre><span></span><span class="nt">code</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">(coin.get-balance &quot;&lt;account name&gt;&quot;)</span>
+<span class="nt">keyPairs</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+</pre></div>
+
+
+<p>Once one has such a yaml, issue <code>pact -l -a &lt;my-script-name&gt;.yaml</code>. The following output should look something like this:</p>
+<div class="codehilite"><pre><span></span><span class="err">{&quot;hash&quot;:&quot;&lt;some hash&gt;&quot;,&quot;sigs&quot;:[],&quot;cmd&quot;:&quot;{\&quot;networkId\&quot;:null,\&quot;payload\&quot;:{\&quot;exec\&quot;:{\&quot;data\&quot;:null,\&quot;code\&quot;:\&quot;(coin.get-balance \\\&quot;&lt;account-name&gt;\\\&quot;)\&quot;}},\&quot;signers\&quot;:[],\&quot;meta\&quot;:{\&quot;creationTime\&quot;:0,\&quot;ttl\&quot;:0,\&quot;gasLimit\&quot;:0,\&quot;chainId\&quot;:\&quot;\&quot;,\&quot;gasPrice\&quot;:0,\&quot;sender\&quot;:\&quot;\&quot;},\&quot;nonce\&quot;:\&quot;2019-11-03 01:58:38.266437 UTC\&quot;}&quot;}</span>
+</pre></div>
+
+
+<p>You can see that most entries are null, and the metadata has been stubbed out for you. If you wish to enter explicit entries for any of these fields, you are welcome, but they will not be used. It is, however, a great way to practice.</p>
+<h2 id="sending-the-command-to-chainweb"><strong>Sending the Command to Chainweb</strong><a class="headerlink" href="#sending-the-command-to-chainweb" title="Permanent link">&para;</a></h2>
+<p>Once one has a command at the ready, they may send it as JSON using their favorite program to the <code>local</code> pact endpoint of any chainweb node on a chain where the account exists. Using the <code>us-e2</code> bootstrap node as an example, sending to the local endpoint looks something like the following:</p>
+<div class="codehilite"><pre><span></span><span class="err">curl -X POST \</span>
+<span class="err">  https://us-e2.chainweb.com/chainweb/0.0/mainnet01/chain/0/pact/api/v1/local \</span>
+<span class="err">  -H &#39;Content-Type: application/json&#39; \</span>
+<span class="err">  -d &#39;{&quot;hash&quot;:&quot;SLxYfnaUCH4XjzdK7e4i0Keo3UMjX8axXFp54jT9xS4&quot;,&quot;sigs&quot;:[{&quot;sig&quot;:&quot;b1ce5740c230779ae28d28e6f838fe79dfde00f8443f77a1082d302fe55906d56165ce096234ce870dff03e62ee741460230892b0aadf6ae5e29ae0d2984b80f&quot;}],&quot;cmd&quot;:&quot;{\&quot;networkId\&quot;:\&quot;mainnet01\&quot;,\&quot;payload\&quot;:{\&quot;exec\&quot;:{\&quot;data\&quot;:null,\&quot;code\&quot;:\&quot;(coin.details \\\&quot;ff5f5b2ca782a7586292507bddebdf89a3df1e7438071ee98fd3c09abdb53ea4\\\&quot;)\&quot;}},\&quot;signers\&quot;:[{\&quot;pubKey\&quot;:\&quot;0f5fbfa90eadd843f18c6ecefc7691926073767f5abf33ef9dbf997fe544c775\&quot;}],\&quot;meta\&quot;:{\&quot;creationTime\&quot;:0,\&quot;ttl\&quot;:100000,\&quot;gasLimit\&quot;:1000,\&quot;chainId\&quot;:\&quot;3\&quot;,\&quot;gasPrice\&quot;:1.0e-2,\&quot;sender\&quot;:\&quot;emily\&quot;},\&quot;nonce\&quot;:\&quot;2019-11-02 01:15:52.46679 UTC\&quot;}&quot;}&#39;</span>
+</pre></div>
+
+
+<p>If this call is successful, then a result is returned immediately with the requested data:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;gas&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+   <span class="nt">&quot;result&quot;</span><span class="p">:{</span>
+      <span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
+         <span class="nt">&quot;guard&quot;</span><span class="p">:{</span>
+            <span class="nt">&quot;pred&quot;</span><span class="p">:</span><span class="s2">&quot;keys-all&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;keys&quot;</span><span class="p">:[</span>
+               <span class="s2">&quot;ff5f5b2ca782a7586292507bddebdf89a3df1e7438071ee98fd3c09abdb53ea&quot;</span>
+            <span class="p">]</span>
+         <span class="p">},</span>
+         <span class="nt">&quot;balance&quot;</span><span class="p">:</span> <span class="err">&lt;some</span> <span class="err">decimal</span> <span class="err">number</span> <span class="err">here&gt;</span><span class="p">,</span>
+         <span class="nt">&quot;account&quot;</span><span class="p">:</span><span class="s2">&quot;ff5f5b2ca782a7586292507bddebdf89a3df1e7438071ee98fd3c09abdb53ea4&quot;</span>
+      <span class="p">}</span>
+   <span class="p">},</span>
+   <span class="nt">&quot;reqKey&quot;</span><span class="p">:</span><span class="s2">&quot;SLxYfnaUCH4XjzdK7e4i0Keo3UMjX8axXFp54jT9xS4&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;logs&quot;</span><span class="p">:</span><span class="s2">&quot;wsATyGqckuIvlm89hhd2j4t6RMkCrcwJe_oeCYr7Th8&quot;</span><span class="p">,</span>
+   <span class="err">...</span>
+<span class="p">}</span>   
+</pre></div>
+
+
+<p>And voilá! You have your balance.</p>
+<h2 id="automating-pact-local-calls"><strong>Automating Pact Local calls</strong><a class="headerlink" href="#automating-pact-local-calls" title="Permanent link">&para;</a></h2>
+<p>The community has provided some wonderful scripts to automate this process, and more are always welcome. Especially if they are robust. Here are a few:</p>
 <ul>
-<li>Lenovo: <a href="https://support.lenovo.com/au/en/solutions/ht500006">https://support.lenovo.com/au/en/solutions/ht500006</a></li>
+<li>
+<p><a href="https://github.com/jwiegley">@jwiegley</a>'s script can be seen <a href="https://discordapp.com/channels/502858632178958377/638740469127446538/639926087090044960">here</a></p>
+</li>
+<li>
+<p><a href="https://github.com/emilypi">@emilypi</a>'s <a href="https://gist.github.com/emilypi/2afe3a1e60fe182a925caee916db46ba"><code>pact-local</code></a> bash script</p>
+</li>
+<li>
+<p><a href="https:/github.com/LindaOrtega">@LindaOrtega</a>'s bash script <a href="https://discordapp.com/channels/502858632178958377/638740469127446538/639869533489725449">here</a>.</p>
+</li>
 </ul>
+<p>More are welcome. Make sure to ping us when you come up with something so we can add it to the Pact script hall of fame!</p>
                 
                   
                 
