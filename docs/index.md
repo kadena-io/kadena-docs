@@ -1,20 +1,20 @@
 # **Welcome to Kadena Docs**
 
 Content is divided into the following pages:
-### [**What is Kadena?**](../what-is-kadena)
+### [**What is Kadena?**](what-is-kadena)
 A brief introduction to the Kadena platform, including general resources for Chainweb, Pact, and Kuro.
 
-### [**What is KDA?**](../what-is-kda)
+### [**What is KDA?**](what-is-kda)
 Information regarding Kadena’s native cryptocurrency, KDA.
 
-### [**Kadena FAQ**](../FAQs)
+### [**Kadena FAQ**](FAQs)
 Answers to common questions about Kadena.
 
-### [**Public Chain Interaction**](../public-chain-docs)
+### [**Public Chain Interaction**](public-chain-docs)
 A comprehensive list of resources and guides relevant to interacting with
 Kadena’s public blockchain.
 
-### [**Private Chain Deployment**](../private-chain-docs)
+### [**Private Chain Deployment**](private-chain-docs)
 Documentation and trial resources for evaluation and deployment of Kadena’s private blockchain.
 
 ___
