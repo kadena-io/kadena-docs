@@ -1,4 +1,4 @@
-# Kadena MkDocs
+# Kadena Docs
 
 This project contains all of the documentation used to support the Kadena Docs resource site.
 
