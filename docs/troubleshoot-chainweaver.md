@@ -1,4 +1,4 @@
-# Troubleshooting
+# Troubleshooting Chainweaver
 
 ## Debian Installation Issues
 
@@ -16,7 +16,7 @@ to try to install from the terminal. If something is going wrong, this will give
 
 To remove chainweaver (this won't delete your wallet, just chainweaver itself) to try to reinstall, type `sudo dpkg -r kadena-chainweaver` in a terminal.
 
-## OVA Installaion Issues
+## OVA Installation Issues
 
 ### Starting the Virtual Machine
 

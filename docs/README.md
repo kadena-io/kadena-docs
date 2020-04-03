@@ -1,6 +1,6 @@
-# Pact Developer Tutorials
+# Kadena MkDocs
 
-This project contains all of the documentation used to support the Pact Developer Tutorials.
+This project contains all of the documentation used to support the Kadena Docs resource site.
 
 ## Getting Started
 

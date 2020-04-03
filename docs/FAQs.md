@@ -1,116 +1,65 @@
-### **Accounts, Keys, and Addresses**
+# Kadena FAQ
 
-**Can I import and see the balance of an non-Chainweaver account that I may have created through mining?**
-We will be providing more support for this user flow in the future. For now, once you have gone to the wallet section of Chainweaver and created an account, you can hit ”Receive” at the right side of the screen to bring up the Receive screen and choose “Option 2: Transfer from non-Chainweaver Account.” Then, input details of your non-Chainweaver account and receive the money from that account into the Chainweaver account. Please note that this transaction will charge a small amount of gas.
+#### What consensus mechanism does Kadena use?
 
-**What is the difference between an anonymous vs. vanity account?**
-When you create an anonymous account, it creates an account locally that has the same name as the Public Key.  At this point, the account is not yet created on the blockchain. The account will be created on the blockchain once you use it to mine or coins are transferred from another account using transfer-create.
+Proof of Work
 
-To ensure that you have control of your account, the workflow of creating a vanity account sends a transaction to the blockchain to create the account. All transactions cost gas, so you need to pay gas for the transaction.  In order to create a vanity account, you need an account on the blockchain that has coins so that you can use it to pay for gas for the vanity account creation.
+#### What hashing algorithm does Kadena use?
 
-We are planning to make further improvements to explain this difference  and also make it clear which accounts are and are not yet on the blockchain.
+Blake2s_256
 
-**If I create an account in Chainweaver, can I then use it for mining?**
-Yes, once you create an account in Chainweaver, you can copy the public key by clicking the ellipses on the right side of the account row in the Wallet screen and use it to mine. However, mining (as you win blocks) will create your account on all chains. Chainweaver currently will not allow you to create the same account on multiple chains. With this user flow, you could have coins on all chains but would not be able to see them in Chainweaver. We are working on improvements so that you will be able to create the same account on all chains.
+#### What is the target block time for Kadena?
 
-**Will there be a way to consolidate funds on different chains?**
-For now, we are focused on creating the core building blocks of single-chain and cross-chain transfers. We expect tools that care of these things for you to evolve over time.
+30 seconds
 
-**What is a Kadena address?**
-Kadena address is a concatenation of the account name, chain id, possibly the public key if the account name is different, and a checksum (in order to protect against loss of funds from typos).
+#### What are the block rewards?
 
+Block rewards are readjusted against a set schedule every six months, with roughly half of the remaining minable coins issued as block rewards every 20 years. See the complete miner block reward schedule <a href="https://github.com/kadena-io/chainweb-node/blob/master/rewards/miner_rewards.csv" target="_blank">here</a>.
 
-### **Nodes**
+#### What is KDA?
 
-**What are the bootstrap nodes?**
+See the [What is KDA](../what-is-kda) page for information regarding Kadena’s native cryptocurrency, KDA.
 
-Here are the Mainnet bootstrap nodes:
+#### Does Kadena have a block explorer?
 
- - us-e1.chainweb.com
- - us-e2.chainweb.com
- - us-e3.chainweb.com
- - us-w1.chainweb.com
- - us-w2.chainweb.com
- - us-w3.chainweb.com
- - jp1.chainweb.com
- - jp2.chainweb.com
- - jp3.chainweb.com
- - fr1.chainweb.com
- - fr2.chainweb.com
- - fr3.chainweb.com
+View the block explorer <a href="https://explorer.chainweb.com/mainnet" target="_blank">here</a> which visualizes the mining, propagation and braiding of blocks across multiple Kadena chains in real time
 
+#### Where can I find Kadena’s whitepapers?
 
-Here are the Testnet bootstrap nodes:
+Kadena has published whitepapers for the public protocol Chainweb, the private blockchain Kuro, and the smart contract language Pact which can be found <a href="https://www.kadena.io/whitepapers" target="_blank">here</a>
 
- - us1.testnet.chainweb.com
- - us2.testnet.chainweb.com
- - eu1.testnet.chainweb.com
- - eu2.testnet.chainweb.com
- - ap1.testnet.chainweb.com
- - ap2.testnet.chainweb.com
+#### Is Kadena open source?
 
-All bootstrap nodes are running on port 443.
+Yes, the open-source repository for the Kadena public blockchain is <a href="https://github.com/kadena-io/chainweb-node" target="_blank">here</a>
 
+#### Why does Kadena’s public blockchain use proof of work?
 
+Kadena uses proof of work for a few key reasons:
 
+1. Evidence: PoW is the only “battle-tested” consensus protocol primitive.
+2. Economic incentive alignment: PoW creates an economic incentive for the majority of the hashpower to validate and honestly support the entire network. It is an open research question if a non-PoW approach can reasonably achieve the same.
+3. Regulation: In the eyes of certain financial regulators, proof of work miners are not considered money transmitters, making a probabilistic PoW mining system safer from a US regulatory perspective than a system with more “finality” like PoS.
 
-**Is my node caught up?**
-Compare your node’s cut or block height with one in the network.  To get a node’s cut height, run the following command: 
+#### How does Kadena scale?
 
-```curl -s https://us-e1.chainweb.com/chainweb/0.0/mainnet01/cut```
+Kadena’s public blockchain scales by providing a mechanism to asynchronously produce many blocks on different peer chains all at the same height, with each block requiring a fraction of the hash power of the total network. This configuration drastically increases the number of transactions per second over the total network.
 
-replacing “us-e1.chainweb.com” with the address of whatever node you want to check.
+#### How does Kadena deal with congestion?
 
-You can also go to the [block explorer](https://explorer.chainweb.com/) and see the current block height there.  Also, the [third-party Kadena Peers page](https://kadena.banteg.xyz/peers) provides an easy way to see the recent block height for many of the nodes in the network.
+Transaction costs will rise as the number of transactions rise on one chain. You can set up an account on a less congested chain, where transaction costs are cheaper, and move your tokens through a simple burn-receipt using on-chain SPV. Miners have economic incentive to cooperate with reconfiguring the network to a larger size when the entire network starts to become congested.
 
-**What is cut height?**
-Cut height is the sum of the most recent block height across all chains.
+#### What does it mean to “braid multiple chains”?
 
-**Do I need a cert for better reward / node stability?**
-No, chainweb-node produces its own self-signed certificate if not given one. Many nodes run this way without issue.
+Braiding chains together was first proposed for security purposes. In effect, chains are “braided” as each chain’s newly mined block incorporates the Merkle roots of its peer chains. By having multiple mined blocks at the same height each referencing each other’s past, the protocol decreases the duration of time where an attacker could get “lucky” against an honest network. Think of an attacker needing to flip 6 coins and get all heads (mine 6 blocks) vs. needing to flip 12 coins and get all heads (mine 6 blocks from two related chains). The latter is harder. This same intuition applies to Kadena’s multi-chain configuration.
 
-History: This rumour arose in the opening days of the network, when a bug still existed in the P2P logic. Having a pre-made cert improved node health then, but this is no longer an issue.
+#### How are tokens moved between different Kadena chains?
 
-**How often should I restart my node?**
-Never. If you're having resource issues, check the other questions here.
+Tokens are moved across chains using a Simple Payment Verification (SPV) smart contract.
 
-History: Misconfigured nodes often have performance problems, which temporarily disappear after restarting.
+#### How do I run a node?
 
+Official information for running a node is maintained at <a href="https://github.com/kadena-io/chainweb-node" target="_blank">this GitHub repository</a>, and supplementary community resources collected within this site’s [Public chain interaction](../Public-Chain-Docs) page.
 
-### **Platforms / Operating Systems**
+#### How do I become a miner?
 
-**What operating systems does Chainweaver support?**
-Currently, Chainweaver is only available for Mac. We are also working on a Linux application as a very high priority.  As we develop our roadmap, we will be looking at iOS and Android apps as well.
-
-**Does Chainweaver support a hardware wallet?**
-Hardware wallet support is on our roadmap, further down the line.
-
-### **Smart Contracts**
-
-**Is the Smart Contracts screen the same as pact.kadena.io?**
-Yes, the contracts screen has the same functionality as pact.kadena.io, with some minor changes for the Mac application.
-
-
-### **Security & Access**
-
-**Where are my private keys stored for Chainweaver accounts?**
-The private keys are stored in encrypted form in ~/Library/Application Support/io.kadena.chainweaver. The password is what decrypts the encrypted file on your disk.
-
-**How does Recovery work in Chaiweaver?**
-The 12-word recovery phrase is the only thing required to recover all your keys since the phrase is a deterministic generation of keys. Currently, there is no way to recover the vanity accounts or “Notes”; this is something that we are working on. We believe that recovery is a break-glass and often painful process. Still,we are working to improve this.
-
-
-### **Transactions**
-
-**How do I check my balance?**
-Go to [balance checker](https://balance.chainweb.com/) and enter your account name.
-
-**When I try to transfer coins to another account it says "you don’t have enough gas". What am I doing wrong?**
-You probably don’t have enough coins on the chain you are trying to send from.  Coin transfers can only come from one chain at a time.  This is possible if you increased the gas price from the default price, or you have a REALLY small balance. 
-
-Use the [balance checker](https://balance.chainweb.com/) to check your balance on all chains
-
-The other possibility for this validation failure is that you didn't sign the transaction appropriately (i.e. the account specified in the "sender" field does not correspond with the account that signed the transaction and is being charged for gas).
-
-**What does the “Receive” button do in Chaiweaver?**
-The “Receive” button at the right side of the screen in main accounts section of the wallet screen shows you a Kadena address that you can then copy and send to the sender. The sender can then use it to send coins to your account. Currently, the button also allows you to receive money into a Chainweaver account from a non-Chainweaver account. 
+Official information for mining KDA is maintained at <a href="https://github.com/kadena-io/chainweb-miner" target="_blank">this GitHub repository</a>, and supplementary community resources collected within this site’s [Public chain interaction](../Public-Chain-Docs) page.

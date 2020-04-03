@@ -45,20 +45,8 @@ markdown_extensions:
       permalink: true
 
 nav:
-- Public Chain Docs: index.md
-- FAQ: FAQs.md
-- Glossary: Glossary.md
-- Chainweaver Support: Chainweaver-Support.md
-- Private Chain Docs: Private-Chain-Docs.md
-
-#- Public Chain:
-#  - 'I want to run my own node': './Chainweb/chainweb-node-actions.md'
-#  - 'I want to mine': './Chainweb/chainweb-miner-actions.md'
-#  - 'I want to create keys / transfer coins': './Chainweb/Keys-and-Wallets.md'
-#  - 'Other': './Chainweb/Other.md'
-
-# - Pact:
-#   - 'Pact': https://pactlang.org/
-
-# - Chainweaver:
-#   - 'Support Page': https://www.kadena.io/chainweaver
+- What is Kadena?: what-is-kadena.md
+- What is KDA?: what-is-kda.md
+- Kadena FAQ: FAQs.md
+- Public Chain Interaction: Public-Chain-Docs.md
+- Private Chain Deployment: Private-Chain-Docs.md
