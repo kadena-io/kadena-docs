@@ -35,18 +35,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../assets/chainweaver-support-favicon-512.png">
+      <link rel="shortcut icon" href="../assets/chainweaver-support-favicon-512.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
-        <title>Safe Rotate and Drain - Kadena Docs</title>
+        <title>Private Chain Deployment - Kadena Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -55,7 +55,7 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
@@ -64,7 +64,7 @@
         <style>body,input{font-family:"Helvetica","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Helvetica","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#safe-rotate-and-drain" tabindex="1" class="md-skip">
+      <a href="#run-a-cluster" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -98,7 +98,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Kadena Docs" class="md-header-nav__button md-logo">
+        <a href=".." title="Kadena Docs" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Safe Rotate and Drain
+                Private Chain Deployment
               
             </span>
           
@@ -190,7 +190,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="Kadena Docs" class="md-nav__button md-logo">
+    <a href=".." title="Kadena Docs" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -226,7 +226,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../what-is-kadena/" title="What is Kadena?" class="md-nav__link">
+    <a href="../what-is-kadena/" title="What is Kadena?" class="md-nav__link">
       What is Kadena?
     </a>
   </li>
@@ -238,7 +238,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../what-is-kda/" title="What is KDA?" class="md-nav__link">
+    <a href="../what-is-kda/" title="What is KDA?" class="md-nav__link">
       What is KDA?
     </a>
   </li>
@@ -250,7 +250,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../FAQs/" title="Kadena FAQ" class="md-nav__link">
+    <a href="../FAQs/" title="Kadena FAQ" class="md-nav__link">
       Kadena FAQ
     </a>
   </li>
@@ -262,7 +262,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Public-Chain-Docs/" title="Public Chain Interaction" class="md-nav__link">
+    <a href="../Public-Chain-Docs/" title="Public Chain Interaction" class="md-nav__link">
       Public Chain Interaction
     </a>
   </li>
@@ -272,11 +272,52 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../Private-Chain-Docs/" title="Private Chain Deployment" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Private Chain Deployment
+      </label>
+    
+    <a href="./" title="Private Chain Deployment" class="md-nav__link md-nav__link--active">
       Private Chain Deployment
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#run-a-cluster" class="md-nav__link">
+    Run a Cluster
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-documentation" class="md-nav__link">
+    General Documentation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -294,22 +335,20 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#signing" class="md-nav__link">
-    Signing
+  <a href="#run-a-cluster" class="md-nav__link">
+    Run a Cluster
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#transaction-template" class="md-nav__link">
-    Transaction Template
+  <a href="#general-documentation" class="md-nav__link">
+    General Documentation
   </a>
   
 </li>
@@ -330,57 +369,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/cookbook/safe-rotate-and-drain.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/Private-Chain-Docs.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="safe-rotate-and-drain">Safe Rotate and Drain<a class="headerlink" href="#safe-rotate-and-drain" title="Permanent link">&para;</a></h1>
-<p>This takes an account <code>rotest</code> owned by key
-<code>2993f795d133fa5d0fd877a641cabc8b28cd36147f666988cacbaa4379d1ff93</code>, rotates it
-to key <code>dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</code>, and
-transfers the whole balance to another account <code>croesus</code>.  The <code>croesus</code>
-account pays the gas which makes it easy to drain the <code>rotest</code> account balance
-to exactly zero.  The transfer out of <code>rotest</code> happens after the key is
-rotated which means that this transaction MUST be signed by the key you are
-rotating to and is therefore "safe"...i.e. it is impoossible to accidentally
-rotate to an incorrect key and lose control of the <code>rotest</code> account.</p>
-<h2 id="signing">Signing<a class="headerlink" href="#signing" title="Permanent link">&para;</a></h2>
-<p>This transaction must be signed by both the key that owns <code>rotest</code> at the
-beginning and the key that owns <code>rotest</code> at the end.</p>
-<h2 id="transaction-template">Transaction Template<a class="headerlink" href="#transaction-template" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="nt">code</span><span class="p">:</span> <span class="p p-Indicator">|-</span>
-  <span class="no">(use coin)</span>
-  <span class="no">(let* ((acct:string &quot;rotest&quot;)</span>
-         <span class="no">(bal:decimal (coin.get-balance acct))</span>
-        <span class="no">)</span>
-    <span class="no">(coin.rotate acct (read-keyset &quot;ks&quot;))</span>
-    <span class="no">(coin.transfer acct</span>
-      <span class="no">&quot;croesus&quot;</span>
-      <span class="no">bal)</span>
-  <span class="no">)</span>
-<span class="nt">data</span><span class="p">:</span>
-  <span class="nt">ks</span><span class="p">:</span>
-    <span class="nt">keys</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</span><span class="p p-Indicator">]</span>
-    <span class="nt">pred</span><span class="p">:</span> <span class="s">&quot;keys-all&quot;</span>
-<span class="nt">publicMeta</span><span class="p">:</span>
-  <span class="nt">chainId</span><span class="p">:</span> <span class="s">&quot;0&quot;</span>
-  <span class="nt">sender</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">croesus</span>
-  <span class="nt">gasLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">800</span>
-  <span class="nt">gasPrice</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.00001</span>
-  <span class="nt">ttl</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">86400</span>
-<span class="nt">networkId</span><span class="p">:</span> <span class="s">&quot;testnet04&quot;</span>
-<span class="nt">signers</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">public</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2993f795d133fa5d0fd877a641cabc8b28cd36147f666988cacbaa4379d1ff93</span>
-    <span class="nt">caps</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.GAS</span>
-        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.ROTATE</span>
-        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;rotest&quot;</span><span class="p p-Indicator">]</span>
-  <span class="p p-Indicator">-</span> <span class="nt">public</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</span>
-    <span class="nt">caps</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.TRANSFER</span>
-        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;rotest&quot;</span><span class="p p-Indicator">,</span><span class="s">&quot;croesus&quot;</span><span class="p p-Indicator">,</span><span class="nv">100</span><span class="p p-Indicator">]</span>
-<span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">exec</span>
-</pre></div>
+                  <h1>Private Chain Deployment</h1>
+                
+                <h2 id="run-a-cluster"><strong>Run a Cluster</strong><a class="headerlink" href="#run-a-cluster" title="Permanent link">&para;</a></h2>
+<p><strong>AWS</strong></p>
+<ul>
+<li><a href="https://aws.amazon.com/marketplace/pp/Kadena-LLC-Kadena-Blockchain-for-Enterprise-Commun/B07MKMKP4F" target="_blank">Kuro on AWS</a>: This takes you to the official listing of Kadena's Private Blockchain on AWS. This is the community edition version of the software, which limits the cluster size to a maximum of 4 nodes.</li>
+<li><a href="https://kadena-io.github.io/scalableBFT.github.io/#ansible-and-aws" target="_blank">AWS Setup Instructions</a>: Our documentation for using Ansible to setup the Kuro cluster on AWS.</li>
+</ul>
+<p><strong>Azure</strong></p>
+<ul>
+<li><a href="https://azuremarketplace.microsoft.com/en-ca/marketplace/apps/kadenallc.scalablebft?tab=Overview" target="_blank">Kuro on Azure</a>: This takes you to the official listing of Kadena's Private Blockchain on Azure. This is the community edition version of the software, which limits the cluster size to a maximum of 4 nodes.</li>
+<li><a href="https://kadena-io.github.io/scalableBFT.github.io/azure/#ansible-and-azure" target="_blank">Azure Setup Instructions</a>: Our documentation for using Ansible to setup the Kuro cluster on AWS.</li>
+</ul>
+<p>For a version without any of restrictions, please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#107;&#97;&#100;&#101;&#110;&#97;&#46;&#105;&#111;">&#105;&#110;&#102;&#111;&#64;&#107;&#97;&#100;&#101;&#110;&#97;&#46;&#105;&#111;</a>.</p>
+<h2 id="general-documentation"><strong>General Documentation</strong><a class="headerlink" href="#general-documentation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://kadena-io.github.io/scalableBFT.github.io/#kuro-documentation" target="_blank">Kuro README</a>: Provides detailed information on cluster configuration, supported interactions, and general considerations.</li>
+<li><a href="https://d31d887a-c1e0-47c2-aa51-c69f9f998b07.filesusr.com/ugd/86a16f_aeb9004965c34efd9c48993c4e63a9bb.pdf" target="_blank">Kadena Private Blockchain Whitepaper</a></li>
+</ul>
                 
                   
                 
@@ -399,6 +409,27 @@ beginning and the key that owns <code>rotest</code> at the end.</p>
         
 <footer class="md-footer">
   
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Public-Chain-Docs/" title="Public Chain Interaction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Public Chain Interaction
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
@@ -415,7 +446,7 @@ beginning and the key that owns <code>rotest</code> at the end.</p>
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/kadena-io" class="md-footer-social__link fa fa-github"></a>
     
@@ -429,9 +460,9 @@ beginning and the key that owns <code>rotest</code> at the end.</p>
       
     </div>
     
-      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>
