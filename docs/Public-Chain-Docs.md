@@ -55,8 +55,8 @@
 
 **Resources**
 
-- <a href="https://github.com/kadena-io/chainweb-node" target="_blank">Chainweb-node</a>: The complete open-source repository for Chainweb
-- <a href="https://github.com/kadena-io/chainweb-node/releases" target="_blank">Chainweb binaroes</a>: The latest binary release to run your own node
+- <a href="https://github.com/kadena-io/chainweb-node" target="_blank">chainweb-node</a>: The complete open-source repository for Chainweb
+- <a href="https://github.com/kadena-io/chainweb-node/releases" target="_blank">Chainweb binaries</a>: The latest binary release to run your own node
 - <a href="https://github.com/kadena-io/chainweb-node" target="_blank">Bootstrap nodes</a>: A list of bootstrap nodes for Mainnet and Testnet
 - <a href="https://github.com/kadena-io/chainweb-node" target="_blank">Hardware specs required to run a node</a>: Kadena official README
 - [Troubleshooting](../troubleshoot-chainweb): Common issues related to running a node
@@ -74,6 +74,12 @@
 **Resources**
 
 - [REST API Examples with curl](../rest-api-examples): View commands for querying a node to get database information such as block header and cut height
+
+## **Index and Analyze the Blockchain**
+
+**Resources**
+
+- <a href="https://github.com/kadena-io/chainweb-data" target="_blank">chainweb-data</a>: Chainweb data indexer for storing blockchain data in a Postgresql database
 
 ## **Start Mining**
 
