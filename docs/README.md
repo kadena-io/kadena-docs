@@ -32,6 +32,13 @@ Deploy these changes to the live site (AVOID until going live)
 mkdocs gh-deploy --clean
 ```
 
+## Using Docker
+
+You can also serve, build, and deploy with the mkdocs-material docker
+container as described here:
+
+<https://hub.docker.com/r/squidfunk/mkdocs-material/>
+
 ## Built With
 
 * [MkDocs](https://www.mkdocs.org/)
