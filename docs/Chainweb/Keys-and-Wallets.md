@@ -4,7 +4,11 @@
 
   - <a href=" http://txtool.chainweb.com/" target="_blank">Transaction Tester Tool</a> - A simple way to write Pact code and test it out
 
-- <a href=" https://balance.chainweb.com" target="_blank">Official Balance Checker</a> - Allows you to quickly check your balance by inputting a chain address and an account name
+  - <a href=" https://balance.chainweb.com" target="_blank">Official Balance Checker</a> - Allows you to quickly check your balance by inputting a chain address and an account name
+
+### **Officially Recommended**
+
+  - <a href="https://medium.com/@ZelOfficial/zelcore-adds-kadena-assets-store-kda-across-multiple-chains-3b8039f2777c" target="_blank">ZelCore</a> (wallet): Officially supported third-party multi-asset wallet
 
 ### **Community Developed**
 
@@ -12,6 +16,6 @@
 
   - <a href="https://github.com/kadena-community/secure-keygen" target="_blank">Linux Key Generator</a> - Tools for doing high security key generation
 
-   - <a href="https://github.com/kadena-community/kadena-transfer-js" target="_blank">Simple Javascript Tools to transfer Kadena coins</a> - Simple Javascript tools to transfer Kadena coins
+  - <a href="https://github.com/kadena-community/kadena-transfer-js" target="_blank">Simple Javascript Tools to transfer Kadena coins</a> - Simple Javascript tools to transfer Kadena coins
 
-   - <a href="https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05" target="_blank">How to generate a KDA address</a> - A medium article by <a href="https://medium.com/@Thanos_42" target="_blank">Thanos</a> on how to Generate a KDA address
+  - <a href="https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05" target="_blank">How to generate a KDA address</a> - A medium article by <a href="https://medium.com/@Thanos_42" target="_blank">Thanos</a> on how to Generate a KDA address
