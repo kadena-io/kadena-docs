@@ -1,5 +1,7 @@
 #Chainweaver User Guide
 
+*Instructions for Chainweaver 1.0 (update for Chainweaver 2.0 coming soon)*
+
 ##**Getting Started**
 
 ###Installing the Chainweaver software
