@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/chainweaver-support-favicon-512.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,7 +55,7 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#chainweaver-user-guide" tabindex="0" class="md-skip">
+      <a href="#chainweaver-user-guide" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -98,7 +98,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Kadena Docs" aria-label="Kadena Docs" class="md-header-nav__button md-logo">
+        <a href=".." title="Kadena Docs" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -129,7 +129,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -403,8 +403,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#keys-and-accounts" class="md-nav__link">
-    Keys and Accounts
+  <a href="#keys-accounts-and-ownership" class="md-nav__link">
+    Keys, Accounts, and Ownership
   </a>
   
     <nav class="md-nav">
@@ -426,7 +426,7 @@
         
           <li class="md-nav__item">
   <a href="#add-an-account" class="md-nav__link">
-    Add an Account
+    Add an account
   </a>
   
 </li>
@@ -441,6 +441,13 @@
           <li class="md-nav__item">
   <a href="#remove-an-account" class="md-nav__link">
     Remove an account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-ownership" class="md-nav__link">
+    Account ownership
   </a>
   
 </li>
@@ -562,6 +569,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#change-password" class="md-nav__link">
+    Change password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-wallet" class="md-nav__link">
+    Export wallet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-and-export-transaction-log" class="md-nav__link">
+    View and export transaction log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#log-out" class="md-nav__link">
     Log out
   </a>
@@ -632,63 +660,39 @@
 <p>Chainweaver is available for download in three formats to accommodate users’ preference in operating system; (1) .dmg for Mac, (2) .deb for Linux, (3) and .ova for Windows, Linux, and Mac as a virtual appliance</p>
 <h4 id="dmg-for-mac"><strong>.dmg for Mac</strong><a class="headerlink" href="#dmg-for-mac" title="Permanent link">&para;</a></h4>
 <p><em>Compatible with macOS High Sierra 10.13 and above</em></p>
-<ul>
-<li>Download the .dmg from <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a></li>
-<li>Navigate to your downloads folder, open the .dmg, and drag the application into your Applications folder.</li>
-</ul>
+<p>Download the .dmg from <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a></p>
+<p>Navigate to your downloads folder, open the .dmg, and drag the application into your Applications folder.</p>
 <p><img alt="installing-chainweaver" src="../assets/Chainweaver/installing-chainweaver.png" /></p>
 <h4 id="deb-for-linux"><strong>.deb for Linux</strong><a class="headerlink" href="#deb-for-linux" title="Permanent link">&para;</a></h4>
 <p><em>Compatible with Ubuntu 18.04</em></p>
-<ul>
-<li>Download the .deb from <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.</li>
-<li>Navigate to your downloads folder and double click the .deb.</li>
-</ul>
+<p>Download the .deb from <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.</p>
+<p>Navigate to your downloads folder and double click the .deb.</p>
 <p><img alt="downloads folder" src="../assets/deb/deb_downloads.png" /></p>
-<ul>
-<li>Click the install button on the install window that pops up.</li>
-</ul>
+<p>Click the install button on the install window that pops up.</p>
 <p><img alt="installer" src="../assets/deb/deb_install.png" /></p>
-<ul>
-<li>There should be a progress bar that appears and progresses to completion until you see this installed state. Be sure to check that the installed version is the one that you tried to install.</li>
-</ul>
+<p>There should be a progress bar that appears and progresses to completion until you see this installed state. Be sure to check that the installed version is the one that you tried to install.</p>
 <p><img alt="installed" src="../assets/deb/deb_installed.png" /></p>
-<ul>
-<li>You can now find chainweaver in the applications menu.</li>
-</ul>
+<p>You can now find Chainweaver in the applications menu.</p>
 <p><img alt="menu" src="../assets/deb/deb_appmenu.png" /></p>
-<ul>
-<li>With this icon</li>
-</ul>
+<p>With this icon</p>
 <p><img alt="kadena chainweaver icon" src="../assets/deb/deb_chainweaver.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Help</p>
 <p>See the <a href="../troubleshoot-chainweaver#debian-installation-issues">Chainweaver Troubleshoot</a> page if you encountered issues installing the .deb</p>
 </div>
 <h4 id="ova-for-windows-linux-and-mac"><strong>.ova for Windows, Linux, and Mac</strong><a class="headerlink" href="#ova-for-windows-linux-and-mac" title="Permanent link">&para;</a></h4>
-<ul>
-<li>
 <p>First, make sure that you have <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> installed as this virtualisation app is required to run the OVA.</p>
-</li>
-<li>
 <p>Download the .ova from <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.</p>
-</li>
-<li>
 <p>Navigate to your downloads folder and double click the .ova.</p>
-</li>
-</ul>
 <p><img alt="ova downloads" src="../assets/ova/ova_downloads.png" /></p>
-<ul>
-<li>You should get an import virtual appliance dialog which you can safely accept the defaults and press import.</li>
-</ul>
+<p>You should get an import virtual appliance dialog which you can safely accept the defaults and press import.</p>
 <p><img alt="ova import" src="../assets/ova/ova_import.png" /></p>
-<ul>
-<li>Once this is imported, you can run the virtual machine by double clicking "Kadena Chainweaver VM" in the list of VMs.</li>
-</ul>
+<p>Once this is imported, you can run the virtual machine by double clicking "Kadena Chainweaver VM" in the list of VMs.</p>
 <p><img alt="ova vm menu" src="../assets/ova/ova_startvm.png" /></p>
-<ul>
-<li>This will start the virtual machine and it will boot like a normal computer. Eventually you should see chainweaver like this.</li>
-</ul>
+<p>This will start the virtual machine and it will boot like a normal computer. Eventually you should see Chainweaver like this.</p>
 <p><img alt="chainweaver ova started" src="../assets/ova/ova_started.png" /></p>
+<p>Upgrade to the latest version of Chainweaver by double-clicking the “Upgrade Kadena Chainweaver” icon from the desktop</p>
+<p><img alt="ova upgrade" src="../assets/ova/ova-upgrade.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Help</p>
 <p>See the <a href="../troubleshoot-chainweaver#ova-installation-issues">Chainweaver Troubleshoot</a> page if you encountered issues installing the .ova</p>
@@ -696,19 +700,29 @@
 <h3 id="create-a-new-wallet-or-restore-an-existing-wallet">Create a new wallet or restore an existing wallet<a class="headerlink" href="#create-a-new-wallet-or-restore-an-existing-wallet" title="Permanent link">&para;</a></h3>
 <p><img alt="create-a-new" src="../assets/Chainweaver/create-a-new.png" /></p>
 <p><strong>Create a new wallet</strong></p>
-<p>There are three main steps to create a new wallet; (1) set password, (2) record recovery phrase, (3) verify recovery phrase</p>
+<p>Three main steps; (1) set password, (2) record recovery phrase, (3) verify recovery phrase</p>
 <ol>
 <li>​Set password: Create a strong, secret, and unique password. See the Basic Safety Tips section for suggestions on password generation.</li>
 <li>Record recovery phrase: Mouse over each of the 12 words to view and record your recovery phrase. See the Basic Safety Tips section for suggestions on securing your recovery phrase.</li>
 <li>Verify recovery phrase: Enter each word in the correct order to verify that you have correctly recorded your recovery phrase.</li>
 </ol>
-<p><strong>Restore existing wallet</strong></p>
-<p>There are three main steps to restore an existing wallet; (1) enter recovery phrase, (2) set new password, (3) re-generate keys</p>
+<p><strong>Restore existing wallet from recovery phrase</strong></p>
+<p>Three main steps; (1) enter recovery phrase, (2) set new password, (3) re-generate keys</p>
 <ol>
 <li>Enter recovery phrase: Follow the guidance to enter your 12-word recovery phrase.</li>
 <li>Set new password: Input a new password for your existing wallet.</li>
 <li>Re-generate keys: From the Keys section, select the Generate Key button to restore keys. These keys are deterministically generated meaning that the same keys will always appear in the same order by using the recovery phrase as a master seed. Repeat selecting the Generate Key button until all necessary keys are restored.</li>
 </ol>
+<p><strong>Restore existing wallet from wallet export</strong></p>
+<p>Two main steps; (1) select file, (2) enter password</p>
+<ol>
+<li>Select a properly formatted file to import</li>
+<li>Enter the password for the chosen wallet file</li>
+</ol>
+<div class="admonition summary">
+<p class="admonition-title">Note</p>
+<p>Importing a wallet file will replace the data within the current wallet.</p>
+</div>
 <h3 id="interface-overview">Interface overview<a class="headerlink" href="#interface-overview" title="Permanent link">&para;</a></h3>
 <p><img alt="interface-overview" src="../assets/Chainweaver/interface-overview.png" /></p>
 <p>​Chainweaver's interface consists of three main elements; (1) Network Display, (2) Sections Menu, (3) Main Viewer</p>
@@ -717,8 +731,8 @@ This display bar persists across all screen views within Chainweaver so that you
 <p><strong>Sections Menu (left bar)</strong>
 Use this menu to go to different Sections</p>
 <ul>
-<li>Keys: Display of all public keys generated within the wallet</li>
 <li>Accounts: Display of all added accounts and their status across chains. Deposit and withdraw KDA.</li>
+<li>Keys: Display of all public keys generated within the wallet</li>
 <li>Contracts: Write, deploy and interact with smart contracts</li>
 <li>Resources: Reference helpful support materials</li>
 <li>Settings: Configure wallet and network settings</li>
@@ -728,7 +742,10 @@ Use this menu to go to different Sections</p>
 This is where you interact with the section you have chosen from the Sections Menu.</p>
 <h3 id="update-to-the-latest-version-of-chainweaver">Update to the latest version of Chainweaver<a class="headerlink" href="#update-to-the-latest-version-of-chainweaver" title="Permanent link">&para;</a></h3>
 <p>Upgrading Chainweaver is an essential part of keeping your crypto assets safe and enjoying new features for interacting with the Kadena blockchain ecosystem. The latest version of Chainweaver will always be available for download at <a href=“https://www.kadena.io/chainweaver" target="_blank">https://www.kadena.io/chainweaver</a>.</p>
-<p>​Note: Ensure you have a secure connection before downloading any applications. Most issues can be resolved simply by updating to the latest version of Chainweaver.</p>
+<div class="admonition summary">
+<p class="admonition-title">Note</p>
+<p>Ensure you have a secure connection before downloading any applications. Most issues can be resolved simply by updating to the latest version of Chainweaver.</p>
+</div>
 <h2 id="networks"><strong>Networks</strong><a class="headerlink" href="#networks" title="Permanent link">&para;</a></h2>
 <h3 id="different-networks-in-chainweaver">Different networks in Chainweaver<a class="headerlink" href="#different-networks-in-chainweaver" title="Permanent link">&para;</a></h3>
 <p>Chainweaver allows you to interact with different networks, including the main network (“Mainnet”) and a test network (“Testnet”)</p>
@@ -743,14 +760,13 @@ This is where you interact with the section you have chosen from the Sections Me
 <p>Simply select the desired network from the available list and confirm the selection. The keys displayed in the wallet will persist across networks, while the accounts list will refresh to display those that you have added on the chosen network.</p>
 <h3 id="create-a-custom-network">Create a custom network<a class="headerlink" href="#create-a-custom-network" title="Permanent link">&para;</a></h3>
 <p><img alt="custom-network" src="../assets/Chainweaver/custom-network.png" /></p>
-<p>You can add your own custom network by selecting the appropriate option from the Settings section.
-​
-To create a new network, you will have to define a network name then enter the addresses for the nodes to which you would like the network to connect. Node status is displayed with a traffic light style indicator.</p>
+<p>You can add your own custom network by selecting the appropriate option from the Settings section.</p>
+<p>To create a new network, you will have to define a network name then enter the addresses for the nodes to which you would like the network to connect. Node status is displayed with a traffic light style indicator.</p>
 <div class="admonition summary">
 <p class="admonition-title">Note</p>
 <p>Custom networks are defined locally and will only be visible within the application that created it. It is recommended that a network connect to at least 3 nodes.</p>
 </div>
-<h2 id="keys-and-accounts"><strong>Keys and Accounts</strong><a class="headerlink" href="#keys-and-accounts" title="Permanent link">&para;</a></h2>
+<h2 id="keys-accounts-and-ownership"><strong>Keys, Accounts, and Ownership</strong><a class="headerlink" href="#keys-accounts-and-ownership" title="Permanent link">&para;</a></h2>
 <h3 id="understanding-keys-vs-accounts">Understanding Keys vs. Accounts<a class="headerlink" href="#understanding-keys-vs-accounts" title="Permanent link">&para;</a></h3>
 <p>In brief, Keys sign transactions and Accounts may be governed by one or multiple keys.</p>
 <p>With most blockchains, accounts are modeled as simply public/private keypairs. This one-to-one model keeps things simple, but runs into problems when account control requires a many-to-many model (such as with jointly owned or majority ruled accounts).</p>
@@ -761,50 +777,75 @@ To create a new network, you will have to define a network name then enter the a
 <li>Predicate: a governance function that determines which keys are allowed to make choices for the account when it comes to transactions (e.g. do all keys need to be present? only one? two? etc.)</li>
 </ul>
 <p>Summarily, keysets look like the following as JSON data:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">{</span>
+<div class="codehilite"><pre><span></span><span class="err">{</span>
 <span class="err">  &quot;keys&quot;: [&quot;pubkey1&quot;, &quot;pubkey2&quot;,...,&quot;pubkeyN&quot;],</span>
 <span class="err">  &quot;pred&quot;: &quot;some governance function&quot;</span>
 <span class="err">}</span>
-</code></pre></div>
+</pre></div>
 
 
-<p>When signing a transaction, the list of private keys supplied as signing key pairs will be checked against the keyset and predicate to ensure that not only are all keys that need to be present accounted for but that the predicate is satisfied.</p>
+<p>When signing a transaction, the list of private keys supplied as signing key pairs will be checked against the keyset and predicate to ensure that not only are all keys that need to be present accounted for but also that the predicate is satisfied.</p>
 <h3 id="generate-a-key">Generate a Key<a class="headerlink" href="#generate-a-key" title="Permanent link">&para;</a></h3>
-<p>The first step towards transacting on the Kadena blockchain is to generate a key pair.</p>
+<p>The first step towards transacting on the Kadena blockchain is to generate a key pair. Chainweaver automatically generates your first key.</p>
 <p><img alt="generate-key" src="../assets/Chainweaver/generate-key.png" /></p>
-<p>Begin by selecting the “+ Generate Key” button, then continue to Accounts.</p>
-<h3 id="add-an-account">Add an Account<a class="headerlink" href="#add-an-account" title="Permanent link">&para;</a></h3>
+<p>Select the “Generate Key” button to add additional keys to your wallet, then continue to Accounts.</p>
+<h3 id="add-an-account">Add an account<a class="headerlink" href="#add-an-account" title="Permanent link">&para;</a></h3>
 <p>Accounts are effectively equivalent to your identity on the blockchain. When you add an Account in Chainweaver, you will be able to view information about it such as its keyset info and balance on each of the known chains.</p>
 <p><img alt="add-account" src="../assets/Chainweaver/add-account.png" /></p>
 <p>Select “+ Add Account” to view existing accounts or create a new account.</p>
 <p>Optionally, you can add personal notes beside any account. This field is never seen by the blockchain, and only serves as a personal reference to organize a user’s wallet.</p>
 <h3 id="create-an-account">Create an account<a class="headerlink" href="#create-an-account" title="Permanent link">&para;</a></h3>
-<p>Begin by entering the desired account’s name within the “+ Add Account” dialog to see whether it already exists. If the account is available, you will see a “+ Create Account” button in the corresponding Chain ID row as well as an account balance of “Does not exist.”</p>
-<p><img alt="create-account" src="../assets/Chainweaver/create-account.png" /></p>
-<p>Select the “+ Create Account” button beside the desired account’s Chain ID row to open the dialog. Fill in the required fields to define the account’s keyset.</p>
-<p>Since adding any record to the blockchain necessitates a transaction, you too must submit a transaction in order to permanently claim the account’s name on the blockchain. As with all transactions, a nominal amount of gas must be paid in order to execute the transaction.</p>
-<p>If some account in your wallet has funds on the same chain as the desired new account, you may select “I am the Gas Payer” to complete the transaction flow by paying for the gas yourself.</p>
-<p>If you do not have any funds, you may select “I am not the Gas Payer” to view and copy the Tx Builder which contains all of the account info you have just configured. Share this Tx Builder data with someone else to pay the gas for the transaction to create the account for you.</p>
-<p><img alt="tx-builder" src="../assets/Chainweaver/tx-builder.png" /></p>
+<p>To create, and effectively own, an account name on Kadena, there must be a record of it on the blockchain. The recommended method for creating an account is to simply transfer some funds to it. In doing so, you transfer to and create the account in a single transaction.</p>
+<p>Before transferring to any account, first check to see whether the account name already exists. Do this by selecting the “Add Account” button and entering the desired account’s name. If the account does not exist, then you will see “Does not exist” as the balance for the corresponding Chain ID row.</p>
+<p><img alt="create-account" src="../assets/Chainweaver/account-exist.png" /></p>
+<p>There are two ways to perform the “transfer &amp; create” operation.</p>
+<p><strong>Method 1: Tx Builder</strong></p>
+<ul>
+<li>Select “Receive” beside the desired account’s Chain ID row to open the dialog</li>
+<li>Follow the on-screen instructions to define the keyset</li>
+<li>Copy the generated Tx Builder and paste it into the To field in Chainweaver's transfer tool or send it to someone else so they can use it to complete the transfer</li>
+</ul>
+<p><strong>Method 2: Manual entry</strong></p>
+<ul>
+<li>Open the Transfer section and fill-in the fields</li>
+<li>Expand the Owner Keyset sub-section to define how keys will govern this new account</li>
+<li>Select “Sign &amp; Transfer” to complete the transaction</li>
+</ul>
+<p><img alt="create-account" src="../assets/Chainweaver/account-create.png" /></p>
+<div class="admonition summary">
+<p class="admonition-title">Note</p>
+<p>For convenience, Chainweaver will automatically define the keyset for accounts that have the same name as the single public key which controls it.</p>
+</div>
 <p>Remember that the Kadena public blockchain network is comprised of many chains braided together. In effect, each chain is a standalone blockchain, therefore you will have to create your desired account on each chain for which you want it to exist. Naturally, the same account name will have a different account balance on each chain, and may also have different owners or a different keyset. Always be sure to take note of the chain on which you are transacting.</p>
 <h3 id="remove-an-account">Remove an account<a class="headerlink" href="#remove-an-account" title="Permanent link">&para;</a></h3>
-<p><img alt="remove-account" src="../assets/Chainweaver/remove-account.png" /></p>
-<p>To remove an account from view, begin by selecting the Details button in the desired account row to reveal Account Details.</p>
-<p>Near the bottom of the Account Details dialog, select “Remove Account”</p>
+<p>To remove an account from view, select the Details button beside the desired account</p>
+<p>Select “Remove Account”</p>
 <p>Read the warning message and confirm your selection by selecting “Remove Account”</p>
+<p><img alt="remove-account" src="../assets/Chainweaver/remove-account.png" /></p>
+<h3 id="account-ownership">Account ownership<a class="headerlink" href="#account-ownership" title="Permanent link">&para;</a></h3>
+<p>Kadena natively supports multiple keys governing the same account, allowing for dynamic account controls such as jointly owned accounts or the ability to rotate which keys may govern an account.</p>
+<p>As a result of this novel capability, it is important for users to clearly understand which accounts they own and which they may not own. For convenience, Chainweaver displays whether you are the owner of any account that you are watching.</p>
+<ul>
+<li>If Chainweaver generated all of the keys in an account, it will indicate “yes” for Owner</li>
+<li>If Chainweaver generated some but not all keys in an account, it will indicate “joint” for Owner</li>
+<li>If Chainweaver generated none of the keys in an account, it will indicate “no” for Owner</li>
+</ul>
+<p><img alt="ownership-examples" src="../assets/Chainweaver/ownership-examples.png" /></p>
 <h2 id="transactions"><strong>Transactions</strong><a class="headerlink" href="#transactions" title="Permanent link">&para;</a></h2>
-<p>Signing transactions in Chainweaver is different from most crypto wallets in two distinct ways; the concepts of (1) Tx Builder and (2) granting capabilities each provide the user with greater transparency and control.</p>
+<p>Among other powerful user controls, two concepts are introduced through Chainweaver which provide the user with greater transparency and control; (1) granting capabilities and (2) Tx Builder.</p>
+<p><strong>Granting capabilities</strong></p>
+<p>Performing transfers necessitates a call to the blockchain’s coin contract. This contract describes the rules for transferring coins and one such rule requires that the Sender account grant the capability to transfer coins in order for the transaction to be submitted. The act of granting capabilities is akin to authorizing or signing a transaction. In more advanced scenarios some contracts require multiple capabilities to be granted. This concept gives the user greater control and transparency to what they are signing.</p>
 <p><strong>Tx Builder</strong></p>
 <p>This is a JSON blob including the necessary information to build a transaction. For simple transfers it might include just an account name and chain ID, like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">{</span>
+<div class="codehilite"><pre><span></span><span class="err">{</span>
 <span class="err">    &quot;account&quot;: &quot;alice&quot;,</span>
 <span class="err">    &quot;chain&quot;: &quot;5&quot;</span>
 <span class="err">}</span>
-</code></pre></div>
+</pre></div>
 
 
 <p>For account creation it might also include a keyset, like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">{</span>
+<div class="codehilite"><pre><span></span><span class="err">{</span>
 <span class="err">    &quot;account&quot;: &quot;alice&quot;,</span>
 <span class="err">    &quot;chain&quot;: &quot;5&quot;,</span>
 <span class="err">    &quot;keyset&quot;: {</span>
@@ -812,44 +853,49 @@ To create a new network, you will have to define a network name then enter the a
 <span class="err">        &quot;pred&quot;: &quot;keys-all&quot;</span>
 <span class="err">    }</span>
 <span class="err">}</span>
-</code></pre></div>
+</pre></div>
 
 
 <p>While users will never need to compose this code themselves, it is important to become familiar with reading it to understand how some blockchain operations work.</p>
-<p><strong>Granting capabilities</strong></p>
-<p>Performing transfers necessitates a call to the blockchain’s coin contract. This contract describes the rules for transferring coins and one such rule requires that the Sender account grant the capability to transfer coins in order for the transaction to be submitted. The act of granting capabilities is akin to authorizing or signing a transaction. In more advanced scenarios some contracts require multiple capabilities to be granted. This concept gives the user greater control and transparency to what they are signing.</p>
+<div class="admonition summary">
+<p class="admonition-title">Note</p>
+<p>These two concepts are not necessary to understand or use in order to perform KDA transfers.</p>
+</div>
 <h3 id="receive-kadena-kda">Receive Kadena (KDA)<a class="headerlink" href="#receive-kadena-kda" title="Permanent link">&para;</a></h3>
-<p>To receive KDA, you must first share your Tx Builder with another person from whom you wish to receive a payment.</p>
-<p>To access your Tx Builder, navigate to the Accounts section and select the “Receive” button beside the desired account’s chain ID row.</p>
-<p><img alt="receive-kadena" src="../assets/Chainweaver/receive-kadena.png" /></p>
-<p>This will open the Receive dialog from which you can copy the Tx Builder and share with others.
-​
-One additional feature for experienced users is the ability to transfer KDA from compatible accounts that were not generated within Chainweaver. You can access this feature from the Receive dialog by expanding the menu-field under the sub-section “Option 2: Transfer from non-Chainweaver Account.” Fill in the required fields to Submit Transfer.</p>
+<p>There are two recommended approaches for receiving KDA</p>
+<p><strong>Method 1: Tx Builder</strong> — best for receiving KDA from a sender who is also using Chainweaver</p>
+<ul>
+<li>Select “Receive” beside the desired account’s Chain ID row to open the dialog</li>
+<li>Copy the Tx Builder and share with the sender to complete the transfer</li>
+</ul>
+<p><strong>Method 2: Account Name + Chain ID</strong> — best for receiving KDA from a sender who is not using Chainweaver</p>
+<ul>
+<li>Share both your Account name and chain ID with the sender to complete the transfer</li>
+</ul>
+<div class="admonition summary">
+<p class="admonition-title">Note</p>
+<p>If the account to which you are receiving KDA does not yet exist, then the sender will define the keyset which governs the new account. Once KDA has been transferred, ensure that account ownership was set-up to your liking</p>
+</div>
 <h3 id="send-kadena-kda">Send Kadena (KDA)<a class="headerlink" href="#send-kadena-kda" title="Permanent link">&para;</a></h3>
-<p>Since the Kadena public blockchain network braids multiple chains together, you can transfer KDA in two ways; (1) transfer between the same chain and (2) transfer between different chains.</p>
+<p>Since the Kadena public blockchain network braids multiple chains together, you can transfer KDA within a single chain or across two different chains.</p>
 <p><strong>Transfer between the same chain</strong></p>
-<p>Navigate to the Account section and select the “Send” button beside the desired account’s chain ID row from which you would like to transfer funds.</p>
-<p><img alt="send-kadena" src="../assets/Chainweaver/send-kadena.png" /></p>
-<p>This will open the Send dialog which is divided into two parts; Configuration and Sign:</p>
-<p>Configure the transaction</p>
-<ul>
-<li>Recipient: Enter the recipient’s Tx Builder and amount to send</li>
-<li>Transaction Settings: Choose the transaction speed and expiration</li>
-</ul>
-<p>Sign the transaction</p>
-<ul>
-<li>Gas Payer: Select an account to sign and pay the transaction gas</li>
-</ul>
-<p><img alt="send-preview" src="../assets/Chainweaver/send-preview.png" /></p>
-<p>Once all required fields have been entered, select the “Preview” button. Here you will be able to review and confirm details before submitting the transaction.</p>
+<p>Navigate to the Account section and select “Transfer Coins” to reveal the transfer tool.</p>
+<p>Fill in the required fields then select the "Sign &amp; Transfer" button.</p>
+<p>This will open the Sign Transfer dialog which allows you to configure transaction settings.</p>
+<p><img alt="transaction-settings" src="../assets/Chainweaver/transaction-settings.png" /></p>
+<p>Once satisfied, select Next to view the Signatures tab. If any external signatures are required, you will be prompted to enter them here.</p>
+<p>Preview the transaction to ensure the Summary Data and Transaction Result output displays the desired outcome. If everything looks correct, select Send Transfer to submit the transaction to the blockchain.</p>
+<p><img alt="transaction-preview" src="../assets/Chainweaver/transaction-preview.png" /></p>
 <p><strong>Transfer between different chains</strong></p>
-<p>This process has one distinct difference from transfers on the same chain. This time when you sign the transaction, you must select two Gas Payers:</p>
+<p>This process has one distinct difference from transfers on the same chain. This time when you configure the transaction, you must select two Gas Payers:</p>
 <ol>
 <li>Gas payer on the originating chain to initiate the transfer</li>
 <li>Gas payer on the destination chain to redeem the transfer</li>
 </ol>
 <p><img alt="cross-chain-transfer" src="../assets/Chainweaver/cross-chain-transfer.png" /></p>
 <p>It may seem unusual to have to pay for gas twice, but consider what is happening with a cross-chain transfer. In this scenario you are moving coins between two different blockchains, each with their own ledger. Therefore gas on one chain cannot pay for executing operations on a different chain.</p>
+<p><strong>Transfer from non-Chainweaver accounts</strong></p>
+<p>In addition to signing transactions from accounts which are owned within the wallet, Chainweaver also provides an interface to sign transactions from accounts which are not owned within the wallet. Chainweaver does this by auto-detecting whether the sending account is owned by the wallet. If the sending account is not owned by the wallet, Chainweaver will present a field for the user to enter the required private key(s). This special feature makes it easier for users to transfer KDA into Chainweaver from external wallets and exchanges.</p>
 <h3 id="adjust-gas-price-and-gas-limit">Adjust gas price and gas limit<a class="headerlink" href="#adjust-gas-price-and-gas-limit" title="Permanent link">&para;</a></h3>
 <p><img alt="adjust-gas" src="../assets/Chainweaver/adjust-gas.png" /></p>
 <p>Before you submit any transaction or deploy any smart contract, you will have the opportunity to configure a few settings. You can adjust both the Gas Price and the Gas Limit of your transaction. As either of these settings are adjusted, you can see how these changes might affect Transaction Speed and Max Transaction Fee.</p>
@@ -858,12 +904,13 @@ One additional feature for experienced users is the ability to transfer KDA from
 <p>Chainweaver does not charge a fee to send or receive a transaction. All transaction fees go directly to miners as compensation for providing the compute power required to execute the operation.</p>
 </div>
 <h3 id="track-your-transaction">Track your transaction<a class="headerlink" href="#track-your-transaction" title="Permanent link">&para;</a></h3>
-<p><img alt="tx-status" src="../assets/Chainweaver/tx-status.png" /></p>
-<p>Once a transaction has been submitted, Chainweaver will display the Transaction Status as it moves through progress states. The average block time in the Kadena network is 30 seconds. So depending on the Transaction Speed you assigned, it may take several blocks before your transaction is successfully mined.</p>
-<ul>
-<li>Transaction success: When the transaction has been successfully mined in a block, a Transaction Result will display.</li>
-<li>Transaction failure: If the transaction fails at any progress state then a red “X” will appear beside the failing state.</li>
-</ul>
+<p>Once a transaction has been submitted, Chainweaver will display the Transfer Status as it moves through progress states. The average block time in the Kadena network is 30 seconds. So depending on the Transaction Speed you assigned, it may take several blocks before your transaction is successfully mined.</p>
+<p><strong>Transaction success</strong>: When the transaction has been successfully mined in a block, a Transaction Result will display.</p>
+<p><img alt="transaction-success" src="../assets/Chainweaver/transaction-success.png" /></p>
+<p><strong>Transaction failure</strong>: If the transaction fails at any progress state then a red “X” will appear beside the failing state.</p>
+<p><img alt="transaction-fail" src="../assets/Chainweaver/transaction-fail.png" /></p>
+<p>If you have a request key from a previously submitted transaction, you can also display its result by selecting the “Check Tx Status” button.</p>
+<p><img alt="request-key" src="../assets/Chainweaver/request-key.png" /></p>
 <h2 id="smart-contracts">Smart Contracts<a class="headerlink" href="#smart-contracts" title="Permanent link">&para;</a></h2>
 <p>The ability to write, deploy, and call smart contracts from within Chainweaver makes it one of the most comprehensive workbench tools for blockchain. Navigate to the Contracts section and utilize the integrated development environment (IDE) for developing and testing Pact smart contracts.</p>
 <p>Pact is the safe and simple smart contract language used for interacting with the Kadena blockchain. Visit <a href="https://pactlang.org/" target="_blank">https://pactlang.org/</a> for developer tutorials covering key concepts and real projects you can deploy yourself.</p>
@@ -909,6 +956,25 @@ One additional feature for experienced users is the ability to transfer KDA from
 <p><strong>Lost both password and recovery phrase</strong></p>
 <p>If you lose both your password and recovery phrase, you will permanently lose access to any accounts and their funds forever.</p>
 <p>Kadena does not manage accounts with information such as passwords, private keys, or recovery phrases.  We only have access to the information that is publicly available on the blockchain. We do not have servers and we do not hold your assets.</p>
+<h3 id="change-password">Change password<a class="headerlink" href="#change-password" title="Permanent link">&para;</a></h3>
+<p>Change your password by navigating to the Settings section and selecting the appropriate button.</p>
+<h3 id="export-wallet">Export wallet<a class="headerlink" href="#export-wallet" title="Permanent link">&para;</a></h3>
+<p>Export your wallet by navigating to the Settings section and selecting the appropriate button.</p>
+<p>Exporting wallet data will generate an encrypted file containing sensitive and non-sensitive information available within the wallet. The file will be protected by the wallet password that was in use at time of export. Store this file in a secure location and do not alter its contents.</p>
+<p>The wallet data to be exported within this file includes:</p>
+<ul>
+<li>Generated public/private key pairs</li>
+<li>Added accounts</li>
+<li>Account notes</li>
+<li>Network configuration</li>
+<li>Transaction configuration</li>
+</ul>
+<div class="admonition summary">
+<p class="admonition-title">Note</p>
+<p>This password-protected wallet file can be imported to Chainweaver as a recovery method to restore the state of the wallet at the time the file was created.</p>
+</div>
+<h3 id="view-and-export-transaction-log">View and export transaction log<a class="headerlink" href="#view-and-export-transaction-log" title="Permanent link">&para;</a></h3>
+<p>View and export your wallet’s transaction log by navigating to the Settings section and selecting the appropriate button.</p>
 <h3 id="log-out">Log out<a class="headerlink" href="#log-out" title="Permanent link">&para;</a></h3>
 <p>The “Log out” button in the lower-left of the Section menu will lock your wallet. A locked wallet cannot sign transactions or receive signing API calls.</p>
 <h2 id="codebase">Codebase<a class="headerlink" href="#codebase" title="Permanent link">&para;</a></h2>
@@ -947,18 +1013,18 @@ One additional feature for experienced users is the ability to transfer KDA from
           </div>
         
         powered by
-        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        <a href="https://www.mkdocs.org">MkDocs</a>
         and
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
       </div>
       
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
-      <a href="https://github.com/kadena-io" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://github.com/kadena-io" class="md-footer-social__link fa fa-github"></a>
     
-      <a href="https://twitter.com/kadena_io" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
+      <a href="https://twitter.com/kadena_io" class="md-footer-social__link fa fa-twitter"></a>
     
   </div>
 
@@ -968,7 +1034,7 @@ One additional feature for experienced users is the ability to transfer KDA from
       
     </div>
     
-      <script src="../assets/javascripts/application.df00da5d.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       

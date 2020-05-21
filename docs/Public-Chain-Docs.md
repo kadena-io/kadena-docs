@@ -50,6 +50,7 @@
 
 - <a href="http://testnet.chainweb.com/" target="_blank">Testnet Portal</a>: Create an account, get free coins, and play games
 - <a href="http://testnet.chainweb.com/" target="_blank">Testnet Coin Faucet</a>: Get free coins to practice executing transfers and smart contracts
+- <a href="http://hybrid.chainweb.com/" target="_blank">Hybrid Blockchain Demo</a>: Interoperate between public and private blockchain networks through stablecoin smart contracts.
 - <a href="https://kadena-io.github.io/signing-api/" target="_blank">Wallet Signing API</a>: Documentation of the signing API which facilitates communication between dApps and wallets
 
 ## **Run a Node**
