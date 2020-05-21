@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/chainweaver-support-favicon-512.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,7 +55,7 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#pact-local-api-queries" tabindex="0" class="md-skip">
+      <a href="#pact-local-api-queries" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -98,7 +98,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Kadena Docs" aria-label="Kadena Docs" class="md-header-nav__button md-logo">
+        <a href=".." title="Kadena Docs" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -129,7 +129,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -354,34 +354,34 @@
 <p>In particular, for any script going on Chainweb, you'll need to understand the <a href="https://pact-language.readthedocs.io/en/stable/pact-reference.html#api-request-formatter">API request format</a>.</p>
 <h2 id="creating-a-local-api-request"><strong>Creating A Local API Request</strong><a class="headerlink" href="#creating-a-local-api-request" title="Permanent link">&para;</a></h2>
 <p>A <code>local</code> query does not need to make use of any metadata, env data, or signers, so a minimalist API request format is relatively simple:</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">(code|codeFile)</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;code goes here&gt;</span>
+<div class="codehilite"><pre><span></span><span class="nt">(code|codeFile)</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;code goes here&gt;</span>
 <span class="nt">keyPairs</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
-</code></pre></div>
+</pre></div>
 
 
 <p>For example, if one wanted to check their balance, the following request format would be sufficient:</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">code</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">(coin.get-balance &quot;&lt;account name&gt;&quot;)</span>
+<div class="codehilite"><pre><span></span><span class="nt">code</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">(coin.get-balance &quot;&lt;account name&gt;&quot;)</span>
 <span class="nt">keyPairs</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
-</code></pre></div>
+</pre></div>
 
 
 <p>Once one has such a yaml, issue <code>pact -l -a &lt;my-script-name&gt;.yaml</code>. The following output should look something like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">{&quot;hash&quot;:&quot;&lt;some hash&gt;&quot;,&quot;sigs&quot;:[],&quot;cmd&quot;:&quot;{\&quot;networkId\&quot;:null,\&quot;payload\&quot;:{\&quot;exec\&quot;:{\&quot;data\&quot;:null,\&quot;code\&quot;:\&quot;(coin.get-balance \\\&quot;&lt;account-name&gt;\\\&quot;)\&quot;}},\&quot;signers\&quot;:[],\&quot;meta\&quot;:{\&quot;creationTime\&quot;:0,\&quot;ttl\&quot;:0,\&quot;gasLimit\&quot;:0,\&quot;chainId\&quot;:\&quot;\&quot;,\&quot;gasPrice\&quot;:0,\&quot;sender\&quot;:\&quot;\&quot;},\&quot;nonce\&quot;:\&quot;2019-11-03 01:58:38.266437 UTC\&quot;}&quot;}</span>
-</code></pre></div>
+<div class="codehilite"><pre><span></span><span class="err">{&quot;hash&quot;:&quot;&lt;some hash&gt;&quot;,&quot;sigs&quot;:[],&quot;cmd&quot;:&quot;{\&quot;networkId\&quot;:null,\&quot;payload\&quot;:{\&quot;exec\&quot;:{\&quot;data\&quot;:null,\&quot;code\&quot;:\&quot;(coin.get-balance \\\&quot;&lt;account-name&gt;\\\&quot;)\&quot;}},\&quot;signers\&quot;:[],\&quot;meta\&quot;:{\&quot;creationTime\&quot;:0,\&quot;ttl\&quot;:0,\&quot;gasLimit\&quot;:0,\&quot;chainId\&quot;:\&quot;\&quot;,\&quot;gasPrice\&quot;:0,\&quot;sender\&quot;:\&quot;\&quot;},\&quot;nonce\&quot;:\&quot;2019-11-03 01:58:38.266437 UTC\&quot;}&quot;}</span>
+</pre></div>
 
 
 <p>You can see that most entries are null, and the metadata has been stubbed out for you. If you wish to enter explicit entries for any of these fields, you are welcome, but they will not be used. It is, however, a great way to practice.</p>
 <h2 id="sending-the-command-to-chainweb"><strong>Sending the Command to Chainweb</strong><a class="headerlink" href="#sending-the-command-to-chainweb" title="Permanent link">&para;</a></h2>
 <p>Once one has a command at the ready, they may send it as JSON using their favorite program to the <code>local</code> pact endpoint of any chainweb node on a chain where the account exists. Using the <code>us-e2</code> bootstrap node as an example, sending to the local endpoint looks something like the following:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">curl -X POST \</span>
+<div class="codehilite"><pre><span></span><span class="err">curl -X POST \</span>
 <span class="err">  https://us-e2.chainweb.com/chainweb/0.0/mainnet01/chain/0/pact/api/v1/local \</span>
 <span class="err">  -H &#39;Content-Type: application/json&#39; \</span>
 <span class="err">  -d &#39;{&quot;hash&quot;:&quot;SLxYfnaUCH4XjzdK7e4i0Keo3UMjX8axXFp54jT9xS4&quot;,&quot;sigs&quot;:[{&quot;sig&quot;:&quot;b1ce5740c230779ae28d28e6f838fe79dfde00f8443f77a1082d302fe55906d56165ce096234ce870dff03e62ee741460230892b0aadf6ae5e29ae0d2984b80f&quot;}],&quot;cmd&quot;:&quot;{\&quot;networkId\&quot;:\&quot;mainnet01\&quot;,\&quot;payload\&quot;:{\&quot;exec\&quot;:{\&quot;data\&quot;:null,\&quot;code\&quot;:\&quot;(coin.details \\\&quot;ff5f5b2ca782a7586292507bddebdf89a3df1e7438071ee98fd3c09abdb53ea4\\\&quot;)\&quot;}},\&quot;signers\&quot;:[{\&quot;pubKey\&quot;:\&quot;0f5fbfa90eadd843f18c6ecefc7691926073767f5abf33ef9dbf997fe544c775\&quot;}],\&quot;meta\&quot;:{\&quot;creationTime\&quot;:0,\&quot;ttl\&quot;:100000,\&quot;gasLimit\&quot;:1000,\&quot;chainId\&quot;:\&quot;3\&quot;,\&quot;gasPrice\&quot;:1.0e-2,\&quot;sender\&quot;:\&quot;emily\&quot;},\&quot;nonce\&quot;:\&quot;2019-11-02 01:15:52.46679 UTC\&quot;}&quot;}&#39;</span>
-</code></pre></div>
+</pre></div>
 
 
 <p>If this call is successful, then a result is returned immediately with the requested data:</p>
-<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
    <span class="nt">&quot;gas&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
    <span class="nt">&quot;result&quot;</span><span class="p">:{</span>
       <span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
@@ -400,7 +400,7 @@
    <span class="nt">&quot;logs&quot;</span><span class="p">:</span><span class="s2">&quot;wsATyGqckuIvlm89hhd2j4t6RMkCrcwJe_oeCYr7Th8&quot;</span><span class="p">,</span>
    <span class="err">...</span>
 <span class="p">}</span>   
-</code></pre></div>
+</pre></div>
 
 
 <p>And voilá! You have your balance.</p>
@@ -445,18 +445,18 @@
           </div>
         
         powered by
-        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        <a href="https://www.mkdocs.org">MkDocs</a>
         and
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
       </div>
       
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
-      <a href="https://github.com/kadena-io" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://github.com/kadena-io" class="md-footer-social__link fa fa-github"></a>
     
-      <a href="https://twitter.com/kadena_io" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
+      <a href="https://twitter.com/kadena_io" class="md-footer-social__link fa fa-twitter"></a>
     
   </div>
 
@@ -466,7 +466,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.df00da5d.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
