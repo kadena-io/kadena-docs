@@ -26,10 +26,10 @@ See <a href="https://medium.com/kadena-io/the-kadena-token-economic-model-8090d7
 
 #### How to Buy Kadena (KDA)
 
-In order to interact with the Kadena network, you will need to own KDA. Unless you are mining, the only way to acquire KDA is from someone that already owns it.
+In order to interact with the Kadena network, you will need to own KDA. KDA is listed on [Bittrex Global](https://global.bittrex.com). KDA is also listed by some other exchanges which are not officially supported by Kadena. More exchange listings will become available soon.
 
-Message regarding exchange listing from Kadena CEO, Will Martino:
+Another option to aquire KDA is via mining. There are several mining pools that support KDA.
 
-> “While exchange listing was always a high priority and something we’ve been working on for a couple months, launching the platform came first. Now that we’ve delivered the platform, getting listed on a major exchange takes its place at the top of our goals. As such, we’re working to see if we can get listed on a larger exchange and also talking to smaller exchanges to explore all of our options. Needless to say, diligence has increased in the current regulatory landscape and that impacts the listing process.
+A message regarding exchange listing from Kadena CEO, Will Martino:
 
-> Listing on a premier exchange is a months-long process and it is not something that we have full control over. Moreover, the process is very sensitive and thus we’re unable to share updates and statuses with the transparency we’d prefer. When we reach an agreement and after a contract gets signed, it can take 4-6 weeks for integration. However, we look forward to making an announcement as soon as there is more news.”
+> Listing on a premier exchange is a months-long process and it is not something that we have full control over. Moreover, the process is very sensitive and thus we’re unable to share updates and statuses with the transparency we’d prefer. When we reach an agreement and after a contract gets signed, it can take 4-6 weeks for integration.”
