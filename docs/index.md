@@ -10,7 +10,7 @@ Information regarding Kadena’s native cryptocurrency, KDA.
 ### [**Kadena FAQ**](FAQs)
 Answers to common questions about Kadena.
 
-### [**Public Chain Interaction**](Public-Chain-Docs)
+### [**How To Use KDA**](Public-Chain-Docs)
 A comprehensive list of resources and guides relevant to interacting with
 Kadena’s public blockchain.
 
