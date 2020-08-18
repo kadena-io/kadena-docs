@@ -1,11 +1,11 @@
-# Public Chain Interaction
+# How To Use KDA
 
 ## **Get a Wallet, Create Keys, & Transfer KDA**
 
 **Resources**
 
-- <a href="https://www.kadena.io/chainweaver" target="_blank">Chainweaver</a> (wallet): Official cryptocurrency and smart contract wallet for the Kadena Public Blockchain
-- <a href="https://medium.com/@ZelOfficial/zelcore-adds-kadena-assets-store-kda-across-multiple-chains-3b8039f2777c" target="_blank">ZelCore</a> (wallet): Officially supported third-party multi-asset wallet
+- <a href="https://medium.com/@ZelOfficial/zelcore-adds-kadena-assets-store-kda-across-multiple-chains-3b8039f2777c" target="_blank">ZelCore</a> (end-user wallet): Officially supported third-party multi-asset wallet. Well suited for most common use cases
+- <a href="https://www.kadena.io/chainweaver" target="_blank">Chainweaver</a> (wallet and pact development environment): Official cryptocurrency and smart contract wallet for the Kadena Public Blockchain. Well suited for advanced use cases and smart contract development
 - <a href="https://github.com/kadena-community/bag-of-holding" target="_blank">Bag of Holding</a> (wallet): Terminal Wallet (Community contribution)
 - <a href="https://github.com/kadena-community/secure-keygen" target="_blank">Secure Key Generation</a>: Package for generating ED25519 key pairs with user supplied entropy (Community contribution)
 - <a href="https://kadena-community.github.io/kadena-transfer-js/" target="_blank">Simple Key Generation</a>: Generate a key pair with one click (Community contribution)
