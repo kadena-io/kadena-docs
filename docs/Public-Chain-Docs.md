@@ -1,11 +1,11 @@
 # Public Chain Interaction
 
-## **Get a Wallet, Create Keys, & Transfer KDA**
+## **Manage & Transfer KDA**
 
 **Resources**
 
-- <a href="https://www.kadena.io/chainweaver" target="_blank">Chainweaver</a> (wallet): Official cryptocurrency and smart contract wallet for the Kadena Public Blockchain
-- <a href="https://medium.com/@ZelOfficial/zelcore-adds-kadena-assets-store-kda-across-multiple-chains-3b8039f2777c" target="_blank">ZelCore</a> (wallet): Officially supported third-party multi-asset wallet
+- <a href="https://www.kadena.io/chainweaver" target="_blank">Chainweaver</a> (wallet): Developer-friendly wallet and smart contract development environment
+- <a href="https://medium.com/@ZelOfficial/zelcore-adds-kadena-assets-store-kda-across-multiple-chains-3b8039f2777c" target="_blank">ZelCore</a> (wallet): User-friendly wallet for storing and trading KDA (3rd party)
 - <a href="https://github.com/kadena-community/bag-of-holding" target="_blank">Bag of Holding</a> (wallet): Terminal Wallet (Community contribution)
 - <a href="https://github.com/kadena-community/secure-keygen" target="_blank">Secure Key Generation</a>: Package for generating ED25519 key pairs with user supplied entropy (Community contribution)
 - <a href="https://kadena-community.github.io/kadena-transfer-js/" target="_blank">Simple Key Generation</a>: Generate a key pair with one click (Community contribution)
@@ -16,16 +16,19 @@
 
 **Guides**
 
+- [3 Key Concepts](../key-concepts): A few things to know in order to more safely manage your KDA
+- [Exchange Summary](../exchange-summary): A summary of notable features that are supported by exchanges that trade KDA
 - [Chainweaver User Guide](../Chainweaver-Support): Official support resource for using Chainweaver
-- "<a href="https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05" target="_blank">How to generate a KDA address</a>": Article by <a href="https://medium.com/@Thanos_42" target="_blank">Thanos</a> (Community contribution)
 - <a href="https://medium.com/kadena-io/beginners-guide-to-kadena-accounts-keysets-fb7f32104291" target="_blank">Beginner's Guide to Accounts & Keysets</a>: Brief description of keys, keysets, accounts and how they work in Kadena
 - <a href="https://medium.com/kadena-io/kadena-public-blockchain-getting-started-with-transfers-153bf87d6824" target="_blank">Getting Started with Transfers</a>: Brief description of transfer types and tools
+- "<a href="https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05" target="_blank">How to generate a KDA address</a>": Article by <a href="https://medium.com/@Thanos_42" target="_blank">Thanos</a> (Community contribution)
 
 ## **View Network Activity**
 
 **Resources**
 
 - <a href="https://explorer.chainweb.com/mainnet" target="_blank">Block Explorer</a>: Analytics tool which visualizes the mining, propagation and braiding of blocks across multiple Kadena chains in real time
+- <a href="http://kdastats.sick.network/" target="_blank">Kadena Statistics</a>: Dashboard view of network activity and KDA metrics (Community contribution)
 - <a href="https://kadena.banteg.xyz/peers" target="_blank">Active Node List</a>: List of known node addresses (Community contribution)
 
 ## **Write Smart Contracts**
@@ -33,6 +36,8 @@
 **Resources**
 
 - <a href="https://github.com/kadena-io/pact#installing-pact" target="_blank">Installing Pact</a>: Official Kadena README
+- <a href="https://github.com/kadena-io/developer-scripts" target="_blank">Code Samples</a>: Production code samples of complete use cases and useful scripts written in Pact
+- <a href="https://github.com/kadena-io/create-pact-app" target="_blank">create-pact-app</a>: Save setup time and quickly deploy apps using a simple template with built-in components
 - <a href="https://pact-language.readthedocs.io/en/stable/" target="_blank">Pact Read the Docs</a>: Complete language reference for the Pact smart contract language
 - <a href="https://pact.kadena.io/" target="_blank">Pact Web REPL</a>: Web-based environment for writing, testing, and deploying Pact smart contracts to testnet
 
@@ -77,7 +82,7 @@
 
 - [REST API Examples with curl](../rest-api-examples): View commands for querying a node to get database information such as block header and cut height
 
-## **Index and Analyze the Blockchain**
+## **Index & Analyze the Blockchain**
 
 **Resources**
 
@@ -87,6 +92,7 @@
 
 **Resources**
 
+- <a href="https://discord.io/kadena" target="_blank">Discord chat</a>: Connect with a mining pool or get advice on your own configuration
 - <a href="https://github.com/kadena-io/chainweb-miner" target="_blank">Chainweb-miner</a>: Kadena official README for mining to the Kadena Public Blockchain
 - <a href="https://github.com/kadena-community/bigolchungus" target="_blank">BigOlChungus</a> (Kadena miner): Open Source Linux AMD/Nvidia OpenCL miner; one instance per card (Community contribution)
 - <a href="https://github.com/Jacoby6000/kda-miner/releases" target="_blank">KDA-Miner</a> (Kadena miner): Open Source Linux AMD/Nvidia OpenCL miner, 10% fee (Community contribution)
@@ -96,8 +102,8 @@
 
 **Guides**
 
-- <a href="https://github.com/kadena-io/chainweb-miner" target="_blank">How to mine with a CPU</a>:
-- <a href="https://github.com/kadena-io/chainweb-miner" target="_blank">How to mine with a GPU</a>:
+- <a href="https://github.com/kadena-io/chainweb-miner" target="_blank">How to mine with a CPU</a>
+- <a href="https://github.com/kadena-io/chainweb-miner" target="_blank">How to mine with a GPU</a>
 - "<a href="https://medium.com/kadenacoin/how-to-mine-kadena-kda-c5fe1746c83d" target="_blank">How to solo mine Kadena</a>": Article on how to solo mine Kadena, by <a href="https://medium.com/@Thanos_42" target="_blank">Thanos</a> (Community contribution)
 - <a href="https://blog.f2pool.com/en/mining-tutorial-en/kda_en" target="_blank">F2Pool Mining Guide</a>: Instruction on mining with f2pool (Community contribution)
 - <a href="https://medium.com/how-to-mine-on-icemining-pool/how-to-mine-kda-61e57545eced" target="_blank">Icemining Mining Guide</a>: Instruction on mining with icemining (Community contribution)
