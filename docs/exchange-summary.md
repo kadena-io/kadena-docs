@@ -7,7 +7,15 @@ The main purpose of a cryptocurrency exchange is to allow users to buy and sell 
 Here is a summary of notable features regarding the exchanges that support KDA, for informational purposes only—
 
 <br />
-*Updated September 2020*
+*Updated May 2021*
+
+<br />
+**<a href="http://kucoin.com/" target="_blank">KuCoin</a>**
+
+- Official KDA exchange
+- Accessible to non-US residents
+- KYC not required
+- Supports transfers to (and from!) Chain ID 1 only
 
 <br />
 **<a href="https://global.bittrex.com/" target="_blank">Bittrex Global</a>**
