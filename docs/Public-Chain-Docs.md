@@ -16,9 +16,9 @@
 
 **Guides**
 
-- [3 Key Concepts](../key-concepts): A few things to know in order to more safely manage your KDA
-- [Exchange Summary](../exchange-summary): A summary of notable features that are supported by exchanges that trade KDA
-- [Chainweaver User Guide](../Chainweaver-Support): Official support resource for using Chainweaver
+- [3 Key Concepts](key-concepts): A few things to know in order to more safely manage your KDA
+- [Exchange Summary](exchange-summary): A summary of notable features that are supported by exchanges that trade KDA
+- [Chainweaver User Guide](Chainweaver-Support): Official support resource for using Chainweaver
 - <a href="https://medium.com/kadena-io/beginners-guide-to-kadena-accounts-keysets-fb7f32104291" target="_blank">Beginner's Guide to Accounts & Keysets</a>: Brief description of keys, keysets, accounts and how they work in Kadena
 - <a href="https://medium.com/kadena-io/kadena-public-blockchain-getting-started-with-transfers-153bf87d6824" target="_blank">Getting Started with Transfers</a>: Brief description of transfer types and tools
 - "<a href="https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05" target="_blank">How to generate a KDA address</a>": Article by <a href="https://medium.com/@Thanos_42" target="_blank">Thanos</a> (Community contribution)
@@ -44,7 +44,7 @@
 **Guides**
 
 - <a href="https://pactlang.org/" target="_blank">Pact Developer Tutorials</a>: Learn Pact's fundamental concepts through structured lessons and sample projects
-- [Pact Local Queries](../pact-local-queries): Describes how to use `local` API endpoints to dry-run smart contracts using Mainnet data (Community contribution)
+- [Pact Local Queries](pact-local-queries): Describes how to use `local` API endpoints to dry-run smart contracts using Mainnet data (Community contribution)
 - <a href="https://kadena-io.github.io/kadena-docs/cookbook/safe-rotate-and-drain" target="_blank">Safe Rotate and Drain</a> (example): Describes how to rotate an account’s key then transfer the account’s balance to another account (Community contribution)
 - <a href="https://kadena-io.github.io/kadena-docs/cookbook/safe-transfer" target="_blank">Safe Transfer</a> (example): Describes how to perform a safe transfer by requiring the recipient to also sign and return some KDA all within a single transaction (Community contribution)
 - <a href="https://gist.github.com/LindaOrtega/1c219f887d9782c6745dbd827bdbfb4d" target="_blank">Deploy a module to Testnet using Command Line</a> (example): (Community contribution)
@@ -66,7 +66,7 @@
 - <a href="https://github.com/kadena-io/chainweb-node/releases" target="_blank">Chainweb binaries</a>: The latest binary release to run your own node
 - <a href="https://github.com/kadena-io/chainweb-node" target="_blank">Bootstrap nodes</a>: A list of bootstrap nodes for Mainnet and Testnet
 - <a href="https://github.com/kadena-io/chainweb-node" target="_blank">Hardware specs required to run a node</a>: Kadena official README
-- [Troubleshooting](../troubleshoot-chainweb): Common issues related to running a node
+- [Troubleshooting](troubleshoot-chainweb): Common issues related to running a node
 
 **Guides**
 
@@ -80,7 +80,7 @@
 
 **Resources**
 
-- [REST API Examples with curl](../rest-api-examples): View commands for querying a node to get database information such as block header and cut height
+- [REST API Examples with curl](rest-api-examples): View commands for querying a node to get database information such as block header and cut height
 
 ## **Index & Analyze the Blockchain**
 
@@ -98,7 +98,7 @@
 - <a href="https://github.com/Jacoby6000/kda-miner/releases" target="_blank">KDA-Miner</a> (Kadena miner): Open Source Linux AMD/Nvidia OpenCL miner, 10% fee (Community contribution)
 - <a href="https://github.com/NoncerPro/Kadena" target="_blank">NoncerPro-Kadena</a> (Kadena miner): Closed Source Linux/Windows Nvidia Cuda miner, 2% fee (Community contribution)
 - <a href="https://github.com/doktor83/SRBMiner-Multi" target="_blank">SRBMiner</a> (Kadena miner): Closed Source Linux/Windows AMD miner, 0.85% fee (Community contribution)
-- [Troubleshooting](../troubleshoot-chainweb): Common issues related to mining KDA
+- [Troubleshooting](troubleshoot-chainweb): Common issues related to mining KDA
 
 **Guides**
 
