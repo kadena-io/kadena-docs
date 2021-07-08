@@ -39,6 +39,12 @@ container as described here:
 
 <https://hub.docker.com/r/squidfunk/mkdocs-material/>
 
+The following single command should deploy an updated site:
+
+```
+docker run --rm -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy 
+```
+
 ## Built With
 
 * [MkDocs](https://www.mkdocs.org/)
