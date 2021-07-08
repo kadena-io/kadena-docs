@@ -27,9 +27,9 @@ theme:
 
 extra:
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github
       link: 'https://github.com/kadena-io'
-    - type: 'twitter'
+    - icon: fontawesome/brands/twitter
       link: 'https://twitter.com/kadena_io'
 
 ## google_analytics:

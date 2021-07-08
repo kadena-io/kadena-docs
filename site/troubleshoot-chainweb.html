@@ -18,7 +18,7 @@
     
     
       
-        <title>Kadena Docs</title>
+        <title>Troubleshooting Chainweb - Kadena Docs</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-kadena-docs" class="md-skip">
+        <a href="#troubleshooting-chainweb" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              **Welcome to Kadena Docs**
+              Troubleshooting Chainweb
             
           </span>
         </div>
@@ -298,37 +298,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-kadena" class="md-nav__link">
-    What is Kadena?
+  <a href="#running-a-node" class="md-nav__link">
+    Running a Node
   </a>
+  
+    <nav class="md-nav" aria-label="Running a Node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peer-sync-errors" class="md-nav__link">
+    Peer Sync Errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regenerate-deleted-configs" class="md-nav__link">
+    Regenerate deleted configs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-is-kda" class="md-nav__link">
-    What is KDA?
+  <a href="#mining-kda" class="md-nav__link">
+    Mining KDA
+  </a>
+  
+    <nav class="md-nav" aria-label="Mining KDA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discover-peers-to-mine" class="md-nav__link">
+    Discover peers to mine
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#kadena-faq" class="md-nav__link">
-    Kadena FAQ
+        
+          <li class="md-nav__item">
+  <a href="#see-if-a-node-is-minable" class="md-nav__link">
+    See if a node is minable
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#public-chain-resources" class="md-nav__link">
-    Public Chain Resources
+        
+          <li class="md-nav__item">
+  <a href="#balance-isnt-showing-up-after-mining-a-block" class="md-nav__link">
+    Balance isn't showing up after mining a block
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#private-chain-resources" class="md-nav__link">
-    Private Chain Resources
+        
+          <li class="md-nav__item">
+  <a href="#404-errors" class="md-nav__link">
+    404 Errors
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -344,31 +377,71 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/troubleshoot-chainweb.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="welcome-to-kadena-docs"><strong>Welcome to Kadena Docs</strong><a class="headerlink" href="#welcome-to-kadena-docs" title="Permanent link">&para;</a></h1>
-<p>Content is divided into the following pages:</p>
-<h3 id="what-is-kadena"><a href="what-is-kadena"><strong>What is Kadena?</strong></a><a class="headerlink" href="#what-is-kadena" title="Permanent link">&para;</a></h3>
-<p>A brief introduction to the Kadena platform, including general resources for Chainweb, Pact, and Kuro.</p>
-<h3 id="what-is-kda"><a href="what-is-kda"><strong>What is KDA?</strong></a><a class="headerlink" href="#what-is-kda" title="Permanent link">&para;</a></h3>
-<p>Information regarding Kadena’s native cryptocurrency, KDA.</p>
-<h3 id="kadena-faq"><a href="FAQs"><strong>Kadena FAQ</strong></a><a class="headerlink" href="#kadena-faq" title="Permanent link">&para;</a></h3>
-<p>Answers to common questions about Kadena.</p>
-<h3 id="public-chain-resources"><a href="Public-Chain-Docs"><strong>Public Chain Resources</strong></a><a class="headerlink" href="#public-chain-resources" title="Permanent link">&para;</a></h3>
-<p>A comprehensive list of resources and guides relevant to interacting with
-Kadena’s public blockchain.</p>
-<h3 id="private-chain-resources"><a href="Private-Chain-Docs"><strong>Private Chain Resources</strong></a><a class="headerlink" href="#private-chain-resources" title="Permanent link">&para;</a></h3>
-<p>Documentation and trial resources for evaluation and deployment of Kadena’s private blockchain.</p>
-<hr />
-<p>The purpose of this site is to provide a single source for essential Kadena information. This documentation is open source and hosted on GitHub which means that anyone can contribute. The goal is to provide information that is relevant, concise, unbiased and current.</p>
-<div class="admonition warning">
-<p class="admonition-title">Can't find what you're looking for?</p>
-<p>Reach out to the Kadena team on <a href="https://discord.io/kadena" target="_blank">Discord</a> and get support from within any of the dedicated channels</p>
-</div>
-<p><strong>DISCLAIMER</strong>: This site is an open source knowledge base featuring content contributions from both Kadena and its community. Nothing contained in this Github repository should be considered financial or investment advice - it is for informational purposes only.</p>
+                <h1 id="troubleshooting-chainweb">Troubleshooting Chainweb<a class="headerlink" href="#troubleshooting-chainweb" title="Permanent link">&para;</a></h1>
+<h2 id="running-a-node"><strong>Running a Node</strong><a class="headerlink" href="#running-a-node" title="Permanent link">&para;</a></h2>
+<h3 id="peer-sync-errors">Peer Sync Errors<a class="headerlink" href="#peer-sync-errors" title="Permanent link">&para;</a></h3>
+<p>If you're running a node and getting something like this the following, then it means that peer synchronization has failed:</p>
+<div class="codehilite"><pre><span></span><code>  <span class="p">(</span><span class="kt">InternalException</span> <span class="p">(</span><span class="kt">HostCannotConnect</span> <span class="s">&quot;76.170.96.97&quot;</span> <span class="p">[</span><span class="kt">Network</span><span class="o">.</span><span class="kt">Socket</span><span class="o">.</span><span class="n">connect</span><span class="kt">:</span> <span class="o">&lt;</span><span class="n">socket</span><span class="kt">:</span> <span class="mi">142</span><span class="o">&gt;:</span> <span class="n">does</span> <span class="n">not</span> <span class="n">exist</span> <span class="p">(</span><span class="kt">Connection</span> <span class="n">refused</span><span class="p">)])))</span>
+<span class="mi">2019</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">01</span><span class="kt">T05:</span><span class="mi">10</span><span class="kt">:</span><span class="mf">29.869</span><span class="kt">Z</span> <span class="p">[</span><span class="kt">Warn</span><span class="p">]</span> <span class="p">[</span><span class="n">chainwebVersion</span><span class="ow">=</span><span class="n">mainnet01</span><span class="o">|</span><span class="n">peerId</span><span class="ow">=</span><span class="kt">E</span><span class="c1">--IPo|port=4430|host=&lt;some host&gt;|component=cut|sub-component=sync|sync=payload] failed to sync peers from &lt;some node&gt;:7463#Asb8rw: ConnectionError (HttpExceptionRequest Request {</span>
+  <span class="n">host</span>                 <span class="ow">=</span> <span class="s">&quot;&lt;some host&gt;&quot;</span>
+  <span class="n">port</span>                 <span class="ow">=</span> <span class="mi">7463</span>
+  <span class="n">secure</span>               <span class="ow">=</span> <span class="kt">True</span>
+  <span class="n">requestHeaders</span>       <span class="ow">=</span> <span class="p">[(</span><span class="s">&quot;Accept&quot;</span><span class="p">,</span><span class="s">&quot;application/json;charset=utf-8,application/json&quot;</span><span class="p">)]</span>
+  <span class="n">path</span>                 <span class="ow">=</span> <span class="s">&quot;/chainweb/0.0/mainnet01/cut/peer&quot;</span>
+  <span class="n">queryString</span>          <span class="ow">=</span> <span class="s">&quot;&quot;</span>
+  <span class="n">method</span>               <span class="ow">=</span> <span class="s">&quot;GET&quot;</span>
+  <span class="n">proxy</span>                <span class="ow">=</span> <span class="kt">Nothing</span>
+  <span class="n">rawBody</span>              <span class="ow">=</span> <span class="kt">False</span>
+  <span class="n">redirectCount</span>        <span class="ow">=</span> <span class="mi">10</span>
+  <span class="n">responseTimeout</span>      <span class="ow">=</span> <span class="kt">ResponseTimeoutMicro</span> <span class="mi">10000000</span>
+  <span class="n">requestVersion</span>       <span class="ow">=</span> <span class="kt">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>This can happen for a variety of reasons.</p>
+<p><strong>Out of date binaries</strong></p>
+<p>One of the most prevalent is that a node is attempting to enter the network with out of date binaries or dependencies. For example, if a node is attempting to synchronize with an improper version of <code>librocksdb</code>, then peer synchronization will fail. The solution is to make that all are up to date with the most recent official release of <code>chainweb-node</code>.</p>
+<p><strong>Timeout exceptions</strong></p>
+<p>If the synchronizing node fails to provide timely feedback, nodes will receive a timeout exception. In general this is fine, and only considered a warning. No cause for alarm, and nodes can sync to alternative nodes in the meantime. These exceptions are usually post-fixed by a <code>ConnectionTimeout</code> statement.</p>
+<p><strong>Something went wrong</strong></p>
+<p>"Something went wrong" exceptions are thrown when an internal server error occurs due to misconfiguration. Just in case, however, consider asking in the Discord to check with us and make sure your node is configured correctly and on a happy path.</p>
+<h3 id="regenerate-deleted-configs">Regenerate deleted configs<a class="headerlink" href="#regenerate-deleted-configs" title="Permanent link">&para;</a></h3>
+<p>Issue <code>./chainweb-node --print-config</code> to create a fresh config yaml.</p>
+<h2 id="mining-kda"><strong>Mining KDA</strong><a class="headerlink" href="#mining-kda" title="Permanent link">&para;</a></h2>
+<h3 id="discover-peers-to-mine">Discover peers to mine<a class="headerlink" href="#discover-peers-to-mine" title="Permanent link">&para;</a></h3>
+<p>Every chainweb node maintains a list of peers. If you want a list of peers to mine, curl the <code>/cut/peer</code> endpoint on any node to discover its list of peers. A good start would be any bootstrap node:</p>
+<div class="codehilite"><pre><span></span><code>→ curl -sk <span class="s2">&quot;https://us-e2.chainweb.com/chainweb/0.0/mainnet01/cut/peer&quot;</span> <span class="p">|</span> python -m json.tool <span class="p">|</span> grep hostname
+                <span class="s2">&quot;hostname&quot;</span>: <span class="s2">&quot;foo.com&quot;</span>
+                <span class="s2">&quot;hostname&quot;</span>: <span class="s2">&quot;blah.org&quot;</span>
+                ...
+</code></pre></div>
+
+<h3 id="see-if-a-node-is-minable">See if a node is minable<a class="headerlink" href="#see-if-a-node-is-minable" title="Permanent link">&para;</a></h3>
+<p>Keep up to date with the list of minable nodes, or to test or yourself, point your miner at any of the available nodes and see if it starts mining. This is easiest if you set the default log level to <code>debug</code>. For example:</p>
+<div class="codehilite"><pre><span></span><code>./chainweb-miner cpu --cores <span class="m">2</span> --node us-w2.chainweb.com:443 --miner-account &lt;some account&gt; --miner-key &lt;some key&gt;  --log-level debug
+</code></pre></div>
+
+<h3 id="balance-isnt-showing-up-after-mining-a-block">Balance isn't showing up after mining a block<a class="headerlink" href="#balance-isnt-showing-up-after-mining-a-block" title="Permanent link">&para;</a></h3>
+<p>Proof-of-Work algorithms rely on the fact that only one winning chain is chosen after a certain length of time. In the meantime, there can be many competing chains which can become several (up to 10's of) blocks long on which you'll see your miner potentially winning blocks. When a winner is chosen and the forks resolve, only those blocks mined by miners on the winning chain will be perceived by the network to be correct, and they will be awarded a block reward. As a result, you can do mining for a while and win a ton of blocks, but if you're mining on a fork you may subsequently not see a change in balance if the fork does not win the race. The solution to this is to help contribute to a healthy distribution of hash power across the network by running your own node and making sure not to centralize your mining attempts on particularly powerful nodes.</p>
+<h3 id="404-errors">404 Errors<a class="headerlink" href="#404-errors" title="Permanent link">&para;</a></h3>
+<p>Miners will receive 404 errors when miners fail to connect to a node. This can happen for a variety of reasons:</p>
+<p><strong>Network misconfiguration</strong></p>
+<p>If you do not have incoming and outgoing SSL traffic enabled on your router, miners will 404. Please make sure that you have the correct router configuration. NATs tend to be a problem if you are running on AWS. Make sure this is <em>off</em>.</p>
+<p><strong>The node is down</strong></p>
+<p>If you receive a 404, the node may be down. Diagnose this by either pinging a node with <code>ping -c 3 &lt;node ip&gt;</code> and seeing if it pings back or sending a cURL request to a node's health check endpoint:</p>
+<div class="codehilite"><pre><span></span><code>curl -k https://&lt;node-ip&gt;:443/health-check
+</code></pre></div>
+
+<p>A healthy node should return the following:</p>
+<div class="codehilite"><pre><span></span><code>Health check OK.
+</code></pre></div>
+
+<p>If a node is down, simply switch your miner to a new node which is up. In general, bootstrap nodes should always be up for mining, but it is usually fastest to mine to a peer due to lower congestion rates.</p>
                 
               
               

@@ -18,7 +18,7 @@
     
     
       
-        <title>Test page for image - Kadena Docs</title>
+        <title>Safe Rotate and Drain - Kadena Docs</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test-page-for-image" class="md-skip">
+        <a href="#safe-rotate-and-drain" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Test page for image
+              Safe Rotate and Drain
             
           </span>
         </div>
@@ -291,6 +291,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#signing" class="md-nav__link">
+    Signing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transaction-template" class="md-nav__link">
+    Transaction Template
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -301,13 +323,59 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/Chainweaver/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/cookbook/safe-rotate-and-drain.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="test-page-for-image">Test page for image<a class="headerlink" href="#test-page-for-image" title="Permanent link">&para;</a></h1>
-<p><img alt="CW-Test" src="CW-Test.png" /></p>
+                <h1 id="safe-rotate-and-drain">Safe Rotate and Drain<a class="headerlink" href="#safe-rotate-and-drain" title="Permanent link">&para;</a></h1>
+<p>This takes an account <code>rotest</code> owned by key
+<code>2993f795d133fa5d0fd877a641cabc8b28cd36147f666988cacbaa4379d1ff93</code>, rotates it
+to key <code>dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</code>, and
+transfers the whole balance to another account <code>croesus</code>.  The <code>croesus</code>
+account pays the gas which makes it easy to drain the <code>rotest</code> account balance
+to exactly zero.  The transfer out of <code>rotest</code> happens after the key is
+rotated which means that this transaction MUST be signed by the key you are
+rotating to and is therefore "safe"...i.e. it is impoossible to accidentally
+rotate to an incorrect key and lose control of the <code>rotest</code> account.</p>
+<h2 id="signing">Signing<a class="headerlink" href="#signing" title="Permanent link">&para;</a></h2>
+<p>This transaction must be signed by both the key that owns <code>rotest</code> at the
+beginning and the key that owns <code>rotest</code> at the end.</p>
+<h2 id="transaction-template">Transaction Template<a class="headerlink" href="#transaction-template" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nt">code</span><span class="p">:</span> <span class="p p-Indicator">|-</span>
+  <span class="no">(use coin)</span>
+  <span class="no">(let* ((acct:string &quot;rotest&quot;)</span>
+         <span class="no">(bal:decimal (coin.get-balance acct))</span>
+        <span class="no">)</span>
+    <span class="no">(coin.rotate acct (read-keyset &quot;ks&quot;))</span>
+    <span class="no">(coin.transfer acct</span>
+      <span class="no">&quot;croesus&quot;</span>
+      <span class="no">bal)</span>
+  <span class="no">)</span>
+<span class="nt">data</span><span class="p">:</span>
+  <span class="nt">ks</span><span class="p">:</span>
+    <span class="nt">keys</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</span><span class="p p-Indicator">]</span>
+    <span class="nt">pred</span><span class="p">:</span> <span class="s">&quot;keys-all&quot;</span>
+<span class="nt">publicMeta</span><span class="p">:</span>
+  <span class="nt">chainId</span><span class="p">:</span> <span class="s">&quot;0&quot;</span>
+  <span class="nt">sender</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">croesus</span>
+  <span class="nt">gasLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">800</span>
+  <span class="nt">gasPrice</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.00001</span>
+  <span class="nt">ttl</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">86400</span>
+<span class="nt">networkId</span><span class="p">:</span> <span class="s">&quot;testnet04&quot;</span>
+<span class="nt">signers</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">public</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2993f795d133fa5d0fd877a641cabc8b28cd36147f666988cacbaa4379d1ff93</span>
+    <span class="nt">caps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.GAS</span>
+        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.ROTATE</span>
+        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;rotest&quot;</span><span class="p p-Indicator">]</span>
+  <span class="p p-Indicator">-</span> <span class="nt">public</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dea647009295dc015ba6e6359b85bafe09d2ce935a03c3bf83f775442d539025</span>
+    <span class="nt">caps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coin.TRANSFER</span>
+        <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;rotest&quot;</span><span class="p p-Indicator">,</span><span class="s">&quot;croesus&quot;</span><span class="p p-Indicator">,</span><span class="nv">100</span><span class="p p-Indicator">]</span>
+<span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">exec</span>
+</code></pre></div>
                 
               
               

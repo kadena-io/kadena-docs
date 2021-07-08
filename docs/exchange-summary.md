@@ -13,9 +13,12 @@ Here is a summary of notable features regarding the exchanges that support KDA, 
 **<a href="http://kucoin.com/" target="_blank">KuCoin</a>**
 
 - Official KDA exchange
-- Accessible to non-US residents
+- Accessible globally
 - KYC not required
 - Supports transfers to (and from!) Chain ID 1 only
+- Best practices:
+    - When depositing KDA, first cross chain transfer any coins to your Chain 1 address before transferring to your Kucoin address
+    - When withdrawing KDA, Kucoin will transfer your KDA to your Chain 1 address 
 
 <br />
 **<a href="https://global.bittrex.com/" target="_blank">Bittrex Global</a>**
