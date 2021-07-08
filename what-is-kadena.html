@@ -1,0 +1,636 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Kadena Documentation">
+      
+      
+      
+        <meta name="author" content="Kadena">
+      
+      
+      <link rel="icon" href="assets/chainweaver-support-favicon-512.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>What is Kadena? - Kadena Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#00bdd6">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica:300,400,400i,700%7CHelvetica&display=fallback">
+        <style>:root{--md-text-font-family:"Helvetica";--md-code-font-family:"Helvetica"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="cyan">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-kadena" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Kadena Docs" class="md-header__button md-logo" aria-label="Kadena Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kadena Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              What is Kadena?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/kadena-io/kadena-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kadena-io/kadena-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Kadena Docs" class="md-nav__button md-logo" aria-label="Kadena Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Kadena Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/kadena-io/kadena-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kadena-io/kadena-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          What is Kadena?
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="what-is-kadena.html" class="md-nav__link md-nav__link--active">
+        What is Kadena?
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-kadena-matters" class="md-nav__link">
+    Why Kadena Matters
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Kadena Matters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-scalability" class="md-nav__link">
+    1. Scalability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-security" class="md-nav__link">
+    2. Security
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ease-of-use" class="md-nav__link">
+    3. Ease-of-use
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-of-the-kadena-platform" class="md-nav__link">
+    Components of the Kadena Platform
+  </a>
+  
+    <nav class="md-nav" aria-label="Components of the Kadena Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-chainweb-kadenas-public-blockchain-protocol" class="md-nav__link">
+    1. Chainweb, Kadena’s public blockchain protocol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-kuro-kadenas-private-blockchain" class="md-nav__link">
+    2. Kuro, Kadena’s private blockchain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pact-kadenas-smart-contract-language" class="md-nav__link">
+    3. Pact, Kadena’s smart contract language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid-blockchain" class="md-nav__link">
+    Hybrid Blockchain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="what-is-kda.html" class="md-nav__link">
+        What is KDA?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FAQs.html" class="md-nav__link">
+        Kadena FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Public-Chain-Docs.html" class="md-nav__link">
+        Public Chain Resources
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Private-Chain-Docs.html" class="md-nav__link">
+        Private Chain Resources
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-kadena-matters" class="md-nav__link">
+    Why Kadena Matters
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Kadena Matters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-scalability" class="md-nav__link">
+    1. Scalability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-security" class="md-nav__link">
+    2. Security
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ease-of-use" class="md-nav__link">
+    3. Ease-of-use
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-of-the-kadena-platform" class="md-nav__link">
+    Components of the Kadena Platform
+  </a>
+  
+    <nav class="md-nav" aria-label="Components of the Kadena Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-chainweb-kadenas-public-blockchain-protocol" class="md-nav__link">
+    1. Chainweb, Kadena’s public blockchain protocol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-kuro-kadenas-private-blockchain" class="md-nav__link">
+    2. Kuro, Kadena’s private blockchain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pact-kadenas-smart-contract-language" class="md-nav__link">
+    3. Pact, Kadena’s smart contract language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid-blockchain" class="md-nav__link">
+    Hybrid Blockchain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/what-is-kadena.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="what-is-kadena">What is Kadena?<a class="headerlink" href="#what-is-kadena" title="Permanent link">&para;</a></h1>
+<h2 id="why-kadena-matters">Why Kadena Matters<a class="headerlink" href="#why-kadena-matters" title="Permanent link">&para;</a></h2>
+<p>The purpose of Kadena is to be a single source for the resources needed to build blockchain applications. In doing so, Kadena solves many of the problems that have impeded widespread blockchain adoption to date including scalability, security, and ease-of-use.</p>
+<h4 id="1-scalability">1. Scalability<a class="headerlink" href="#1-scalability" title="Permanent link">&para;</a></h4>
+<p>The public blockchain is a Proof of Work protocol that has solved layer-1 scalability. This is achieved by braiding together several Bitcoin-like chains. As transaction volume increases, the network can expand to larger configurations (eg. from 10 chains to 20 chains) and deliver higher throughput capacity.</p>
+<h4 id="2-security">2. Security<a class="headerlink" href="#2-security" title="Permanent link">&para;</a></h4>
+<p>The smart contract language, Pact, is Turing Incomplete and offers Formal Verification. Turing Incompleteness reduces the language’s attack surface without compromising domain-specific functionality. Formal Verification allows smart contract authors to mathematically prove that their code does not contain bugs.</p>
+<h4 id="3-ease-of-use">3. Ease-of-use<a class="headerlink" href="#3-ease-of-use" title="Permanent link">&para;</a></h4>
+<p>Kadena was developed in part to be integrated into traditional business workflows and understood by non-technical users. Accordingly, Pact code is executed directly on the ledger and is stored in a human-readable format. Pact code has error messages and Pact contracts are upgradable allowing developers to fix errors or adapt logic as business needs evolve.</p>
+<p>Kadena is among the first blockchain projects to deliver such a comprehensive feature-set.</p>
+<p>Further, users are able to enjoy these features across Kadena’s hybrid blockchain platform, a public-private interoperable network. This hybrid solution allows users to take advantage of the  benefits from both public and private blockchains without compromise, thus enabling use cases that were previously not possible.</p>
+<h2 id="components-of-the-kadena-platform">Components of the Kadena Platform<a class="headerlink" href="#components-of-the-kadena-platform" title="Permanent link">&para;</a></h2>
+<p>Kadena is a hybrid blockchain platform consisting of a public chain protocol called Chainweb and a private chain protocol called Kuro. The public and private networks are interoperable through the smart contract language Pact.</p>
+<h3 id="1-chainweb-kadenas-public-blockchain-protocol"><strong>1. Chainweb, Kadena’s public blockchain protocol</strong><a class="headerlink" href="#1-chainweb-kadenas-public-blockchain-protocol" title="Permanent link">&para;</a></h3>
+<p>HEADLINE: Chainweb is a braided, parallelized proof-of-work consensus mechanism that improves throughput and scalability while maintaining the security and integrity found in Bitcoin.</p>
+<iframe width="720" height="405" src="https://www.youtube.com/embed/hYvXxFbsN6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><strong>Informational Resources</strong></p>
+<ul>
+<li>Article: <a href="https://medium.com/kadena-io/all-about-chainweb-101-and-faqs-6bd88c325b45" target="_blank">Kadena’s Public Blockchain 101</a></li>
+<li>Whitepaper: <a href="https://d31d887a-c1e0-47c2-aa51-c69f9f998b07.filesusr.com/ugd/86a16f_029c9991469e4565a7c334dd716345f4.pdf" target=""_blank">Chainweb</a></li>
+</ul>
+<p><em>Resources for interacting with Kadena’s public blockchain are available at the <a href="../Public-Chain-Docs">Public chain interaction</a> page.</em></p>
+<h3 id="2-kuro-kadenas-private-blockchain"><strong>2. Kuro, Kadena’s private blockchain</strong><a class="headerlink" href="#2-kuro-kadenas-private-blockchain" title="Permanent link">&para;</a></h3>
+<p>HEADLINE: Kuro has been proven to support up to 8,000 transactions per second across 500 nodes, and is available for evaluation on <a href="https://aws.amazon.com/marketplace/pp/Kadena-LLC-Kadena-Blockchain-for-Enterprise-Commun/B07MKMKP4F" target="_blank">AWS</a> and <a href="https://azuremarketplace.microsoft.com/en-ca/marketplace/apps/kadenallc.scalablebft?tab=Overview" target="_blank">Azure</a>.</p>
+<p><strong>Informational Resources</strong></p>
+<ul>
+<li>Article: <a href="https://medium.com/kadena-io/scalablebft-kadenas-private-blockchain-101-c99895c0fd50" target="_blank">Kadena’s Private Blockchain 101</a></li>
+<li>Whitepaper: <a href="https://d31d887a-c1e0-47c2-aa51-c69f9f998b07.filesusr.com/ugd/86a16f_aeb9004965c34efd9c48993c4e63a9bb.pdf" target="_blank">Private Blockchain</a></li>
+</ul>
+<p><em>Resources for deploying Kuro are available at the <a href="../Private-Chain-Docs">Private chain deployment</a> page.</em></p>
+<h3 id="3-pact-kadenas-smart-contract-language"><strong>3. Pact, Kadena’s smart contract language</strong><a class="headerlink" href="#3-pact-kadenas-smart-contract-language" title="Permanent link">&para;</a></h3>
+<p>HEADLINE: Pact is a human readable and Turing Incomplete smart contract language purpose-built for blockchains with powerful security features including full Formal Verification of user code, error messages, contract upgradability, support for interoperability, and strong permission and access control.</p>
+<p><strong>Informational Resources</strong></p>
+<ul>
+<li>Article: <a href="https://medium.com/kadena-io/safer-smarter-contracts-with-pact-e86b9ccaca9f" target="_blank">Safer, Smarter Contracts with Pact</a></li>
+<li>Whitepaper: <a href="https://d31d887a-c1e0-47c2-aa51-c69f9f998b07.filesusr.com/ugd/86a16f_442a542b64554cb2a4c1ae7f528ce4c3.pdf" target="_blank">Pact Smart Contract Language</a></li>
+<li>Documentation: <a href="https://github.com/kadena-io/pact" target="_blank">Pact GitHub</a></li>
+<li>Documentation: <a href="https://pact-language.readthedocs.io/en/latest/pact-reference.html" target="_blank">Pact Language Reference</a></li>
+</ul>
+<p><em>Resources for using Pact are available at the <a href="../Public-Chain-Docs">Public chain interaction</a> page.</em></p>
+<h3 id="hybrid-blockchain"><strong> Hybrid Blockchain</strong><a class="headerlink" href="#hybrid-blockchain" title="Permanent link">&para;</a></h3>
+<p>HEADLINE: Kadena’s hybrid blockchain allows users to interact between public and private networks, gaining the decentralization of public and the security controls of private, to make a more secure digital marketplace.</p>
+<p><strong>Informational Resources</strong></p>
+<ul>
+<li>Article: <a href="https://medium.com/kadena-io/hybrid-blockchain-101-714827d0e77b" target="_blank">Hybrid Blockchain 101</a></li>
+<li>Article: <a href="https://medium.com/kadena-io/blockchain-future-smart-contract-sharing-economy-134a318fef55" target="_blank">Smart Contract Sharing Economy</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        
+        <a href="what-is-kda.html" class="md-footer__link md-footer__link--next" aria-label="Next: What is KDA?" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              What is KDA?
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 - 2020 Kadena
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/kadena-io" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/kadena_io" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>

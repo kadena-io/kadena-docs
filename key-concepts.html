@@ -1,0 +1,482 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Kadena Documentation">
+      
+      
+      
+        <meta name="author" content="Kadena">
+      
+      
+      <link rel="icon" href="assets/chainweaver-support-favicon-512.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>Key concepts - Kadena Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#00bdd6">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica:300,400,400i,700%7CHelvetica&display=fallback">
+        <style>:root{--md-text-font-family:"Helvetica";--md-code-font-family:"Helvetica"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="cyan">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-key-concepts-to-more-safely-manage-kda" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Kadena Docs" class="md-header__button md-logo" aria-label="Kadena Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kadena Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Key concepts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/kadena-io/kadena-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kadena-io/kadena-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Kadena Docs" class="md-nav__button md-logo" aria-label="Kadena Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Kadena Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/kadena-io/kadena-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kadena-io/kadena-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="what-is-kadena.html" class="md-nav__link">
+        What is Kadena?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="what-is-kda.html" class="md-nav__link">
+        What is KDA?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FAQs.html" class="md-nav__link">
+        Kadena FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Public-Chain-Docs.html" class="md-nav__link">
+        Public Chain Resources
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Private-Chain-Docs.html" class="md-nav__link">
+        Private Chain Resources
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-account-name-keys-can-be-different" class="md-nav__link">
+    1. Account name &amp; keys can be different
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-kadena-is-a-multi-chain-network" class="md-nav__link">
+    2. Kadena is a multi-chain network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-transfers-can-be-done-on-the-same-chain-or-across-two-different-kadena-chains" class="md-nav__link">
+    3. Transfers can be done on the same chain or across two different Kadena chains
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/kadena-io/kadena-docs/edit/master/docs/key-concepts.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="3-key-concepts-to-more-safely-manage-kda">3 key concepts to more safely manage KDA<a class="headerlink" href="#3-key-concepts-to-more-safely-manage-kda" title="Permanent link">&para;</a></h1>
+<h2 id="1-account-name-keys-can-be-different"><strong>1. Account name &amp; keys can be different</strong><a class="headerlink" href="#1-account-name-keys-can-be-different" title="Permanent link">&para;</a></h2>
+<p>With most blockchains, accounts are modeled as simply public/private keypairs (ie. your account name is the same as your public key). This “one-to-one” model keeps things simple, but runs into problems when you want to use multiple keys for a single account, such as with jointly-owned or majority-ruled accounts.</p>
+<p>Kadena natively supports multiple keys governing the same account name, and thus the distinction between “keys” and “account name” becomes important.</p>
+<p>In simple terms, “account name” refers to your unique name on the blockchain, and “keys” refers to the public/private keypairs that grant access to your account. In other words, it is the keys that determine ownership of an account.</p>
+<p>Some Kadena account examples:</p>
+<p><strong>Unnamed account</strong> — account name is the same as a single public key</p>
+<table>
+<thead>
+<tr>
+<th><strong>Account Name</strong></th>
+<th><strong>Public Key ("Keyset")</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- 961fd95b190aeb38850754fee81b42486d 140e44ee78f8f2d9e25ab69c3053b6</td>
+<td>- 961fd95b190aeb38850754fee81b42486d 140e44ee78f8f2d9e25ab69c3053b6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Named account</strong> — account name is some memorable user-defined string</p>
+<table>
+<thead>
+<tr>
+<th><strong>Account Name</strong></th>
+<th><strong>Public Key ("Keyset")</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- alice &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td>- 961fd95b190aeb38850754fee81b42486d 140e44ee78f8f2d9e25ab69c3053b6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Multi-signature account</strong> — a single account is governed by multiple keys</p>
+<table>
+<thead>
+<tr>
+<th><strong>Account Name</strong></th>
+<th><strong>Public Keys ("Keyset")</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- BoardOfDirectors &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td>- 961fd95b190aeb38850754fee81b42486d 140e44ee78f8f2d9e25ab69c3053b6 <br /> - c1cb44cf2327213b29729d1e5f4b70d812 0bc3ab1cbddc60633909324464e6ef <br /> - 7731d6a6a772dcbf2cd0c8ca5649f902af fd6ed29622738810aa38ef8b307ca7</td>
+</tr>
+</tbody>
+</table>
+<p>All Kadena accounts are comprised of 3 parts:</p>
+<ol>
+<li>Account name</li>
+<li>Keys</li>
+<li>Predicate</li>
+</ol>
+<p><br />
+“Predicate” is something that determines how many signatures are required to transfer coins from the account. The three built-in predicate options are <code>keys-all</code>, <code>keys-any</code>, and <code>keys-2</code>. Most KDA holders will never see, or even know about, their account’s predicate because they will have a traditional single-key account wherein <code>keys-all</code> and <code>keys-any</code> do the same thing. However, the predicate becomes more important with multi-signature accounts. For example, the <code>keys-2</code> predicate requires that at least 2 keys in the account must sign in order to authorize a transaction.</p>
+<p>If you would like to learn more about keys and accounts in Kadena, <a href="https://medium.com/kadena-io/beginners-guide-to-kadena-accounts-keysets-fb7f32104291" target="_blank">check out this article</a>.</p>
+<h2 id="2-kadena-is-a-multi-chain-network"><strong>2. Kadena is a multi-chain network</strong><a class="headerlink" href="#2-kadena-is-a-multi-chain-network" title="Permanent link">&para;</a></h2>
+<p>Kadena’s major breakthrough is that it has solved scalability in Proof of Work blockchains. To achieve this, Kadena has braided together multiple Bitcoin-like chains. This means that Kadena is not just a single blockchain, but rather it is comprised of several interconnected blockchains. Therefore, we say Kadena is a multi-chain network. To visualize how this works, <a href="https://www.youtube.com/watch?v=hYvXxFbsN6I" target="_blank">check out this 3-minute video</a>.</p>
+<p>For users, this means that any account you create will only exist on that chain. If you would like to own a particular account name across all chains then you must be the first person to create that account on each chain.</p>
+<p>Important: The account name alone does not determine ownership. The keyset associated with an account determines ownership. You could own account <code>alice</code> on chain ID 0, and someone else could own account <code>alice</code> on chain ID 5.</p>
+<p>The key takeaway is that you should pay attention to the chain on which you are transacting.</p>
+<h2 id="3-transfers-can-be-done-on-the-same-chain-or-across-two-different-kadena-chains"><strong>3. Transfers can be done on the same chain or across two different Kadena chains</strong><a class="headerlink" href="#3-transfers-can-be-done-on-the-same-chain-or-across-two-different-kadena-chains" title="Permanent link">&para;</a></h2>
+<p>As the title suggests, there are 2 main ways to move KDA; on the same chain or across chains.</p>
+<p>The key takeaway here is related to gas—the small fee that users pay in order to have their transactions included in a block.</p>
+<ul>
+<li>With same-chain transfers the sender must pay some gas</li>
+<li>With cross-chain transfers, the sender and the recipient must pay some gas</li>
+</ul>
+<p><br />
+Cross-chain transfers interact with two different blockchains, so sending KDA from one chain to another requires two separate transactions, one on each chain.</p>
+<p>The good news is that cross-chain transfers sent to a recipient with no funds are not necessarily lost forever, they are just incomplete transfers. Anyone with funds on the destination chain can help to pay the required gas, allowing the transfer to finish as intended. Further, Kadena has set-up gas stations which will cover the cost of gas on the destination chain. One such gas station can be accessed at <a href="https://transfer.chainweb.com/" target="_blank">this page</a> which provides an interface for finishing cross-chain transfers.</p>
+<p>If you would like to learn more about transfers in Kadena, <a href="https://medium.com/kadena-io/kadena-public-blockchain-getting-started-with-transfers-153bf87d6824" target="_blank">check out this article</a>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 - 2020 Kadena
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/kadena-io" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/kadena_io" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>
