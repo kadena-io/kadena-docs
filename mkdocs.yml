@@ -2,7 +2,7 @@
 site_name: 'Kadena Docs'
 site_description: 'Kadena Documentation'
 site_author: 'Kadena'
-# site_url: 'https://kadena-io.github.io/kadena-docs/'
+site_url: ''
 
 # Repository
 repo_name: 'kadena-io/kadena-docs'
