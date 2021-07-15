@@ -14,7 +14,7 @@ Download the .dmg from <a href=“https://www.kadena.io/chainweaver" target="_bl
 
 Navigate to your downloads folder, open the .dmg, and drag the application into your Applications folder.
 
-![installing-chainweaver](../assets/Chainweaver/installing-chainweaver.png)
+![installing-chainweaver](assets/Chainweaver/installing-chainweaver.png)
 
 ####**.deb for Linux**
 
@@ -24,26 +24,26 @@ Download the .deb from <a href=“https://www.kadena.io/chainweaver" target="_bl
 
 Navigate to your downloads folder and double click the .deb.
 
-![downloads folder](../assets/deb/deb_downloads.png)
+![downloads folder](assets/deb/deb_downloads.png)
 
 Click the install button on the install window that pops up.
 
-![installer](../assets/deb/deb_install.png)
+![installer](assets/deb/deb_install.png)
 
 There should be a progress bar that appears and progresses to completion until you see this installed state. Be sure to check that the installed version is the one that you tried to install.
 
-![installed](../assets/deb/deb_installed.png)
+![installed](assets/deb/deb_installed.png)
 
 You can now find Chainweaver in the applications menu.
 
-![menu](../assets/deb/deb_appmenu.png)
+![menu](assets/deb/deb_appmenu.png)
 
 With this icon
 
-![kadena chainweaver icon](../assets/deb/deb_chainweaver.png)
+![kadena chainweaver icon](assets/deb/deb_chainweaver.png)
 
 !!! warning "Help"
-      See the [Chainweaver Troubleshoot](../troubleshoot-chainweaver#debian-installation-issues) page if you encountered issues installing the .deb
+      See the [Chainweaver Troubleshoot](troubleshoot-chainweaver.html#debian-installation-issues) page if you encountered issues installing the .deb
 
 ####**.ova for Windows, Linux, and Mac**
 
@@ -53,29 +53,29 @@ Download the .ova from <a href=“https://www.kadena.io/chainweaver" target="_bl
 
 Navigate to your downloads folder and double click the .ova.
 
-![ova downloads](../assets/ova/ova_downloads.png)
+![ova downloads](assets/ova/ova_downloads.png)
 
 You should get an import virtual appliance dialog which you can safely accept the defaults and press import.
 
-![ova import](../assets/ova/ova_import.png)
+![ova import](assets/ova/ova_import.png)
 
 Once this is imported, you can run the virtual machine by double clicking "Kadena Chainweaver VM" in the list of VMs.
 
-![ova vm menu](../assets/ova/ova_startvm.png)
+![ova vm menu](assets/ova/ova_startvm.png)
 
 This will start the virtual machine and it will boot like a normal computer. Eventually you should see Chainweaver like this.
 
-![chainweaver ova started](../assets/ova/ova_started.png)
+![chainweaver ova started](assets/ova/ova_started.png)
 
 Upgrade to the latest version of Chainweaver by double-clicking the “Upgrade Kadena Chainweaver” icon from the desktop
 
-![ova upgrade](../assets/ova/ova-upgrade.png)
+![ova upgrade](assets/ova/ova-upgrade.png)
 
 !!! warning "Help"
-      See the [Chainweaver Troubleshoot](../troubleshoot-chainweaver#ova-installation-issues) page if you encountered issues installing the .ova
+      See the [Chainweaver Troubleshoot](troubleshoot-chainweaver.html#ova-installation-issues) page if you encountered issues installing the .ova
 
 ### Create a new wallet or restore an existing wallet
-![create-a-new](../assets/Chainweaver/create-a-new.png)
+![create-a-new](assets/Chainweaver/create-a-new.png)
 
 **Create a new wallet**
 
@@ -105,7 +105,7 @@ Two main steps; (1) select file, (2) enter password
 
 ###Interface overview
 
-![interface-overview](../assets/Chainweaver/interface-overview.png)
+![interface-overview](assets/Chainweaver/interface-overview.png)
 
 ​Chainweaver's interface consists of three main elements; (1) Network Display, (2) Sections Menu, (3) Main Viewer
 
@@ -144,7 +144,7 @@ Chainweaver allows you to interact with different networks, including the main n
 
 ###Change networks
 
-![change-networks](../assets/Chainweaver/change-networks.png)
+![change-networks](assets/Chainweaver/change-networks.png)
 
 You can change the network with which you are actively interacting by selecting the drop-down arrows beside the displayed network in the Network Display top bar.
 
@@ -152,7 +152,7 @@ Simply select the desired network from the available list and confirm the select
 
 ###Create a custom network
 
-![custom-network](../assets/Chainweaver/custom-network.png)
+![custom-network](assets/Chainweaver/custom-network.png)
 
 You can add your own custom network by selecting the appropriate option from the Settings section.
 
@@ -191,7 +191,7 @@ When signing a transaction, the list of private keys supplied as signing key pai
 
 The first step towards transacting on the Kadena blockchain is to generate a key pair. Chainweaver automatically generates your first key.
 
-![generate-key](../assets/Chainweaver/generate-key.png)
+![generate-key](assets/Chainweaver/generate-key.png)
 
 Select the “Generate Key” button to add additional keys to your wallet, then continue to Accounts.
 
@@ -199,7 +199,7 @@ Select the “Generate Key” button to add additional keys to your wallet, then
 
 Accounts are effectively equivalent to your identity on the blockchain. When you add an Account in Chainweaver, you will be able to view information about it such as its keyset info and balance on each of the known chains.
 
-![add-account](../assets/Chainweaver/add-account.png)
+![add-account](assets/Chainweaver/add-account.png)
 
 Select “+ Add Account” to view existing accounts or create a new account.
 
@@ -211,7 +211,7 @@ To create, and effectively own, an account name on Kadena, there must be a recor
 
 Before transferring to any account, first check to see whether the account name already exists. Do this by selecting the “Add Account” button and entering the desired account’s name. If the account does not exist, then you will see “Does not exist” as the balance for the corresponding Chain ID row.
 
-![create-account](../assets/Chainweaver/account-exist.png)
+![create-account](assets/Chainweaver/account-exist.png)
 
 There are two ways to perform the “transfer & create” operation.
 
@@ -227,7 +227,7 @@ There are two ways to perform the “transfer & create” operation.
 * Expand the Owner Keyset sub-section to define how keys will govern this new account
 * Select “Sign & Transfer” to complete the transaction
 
-![create-account](../assets/Chainweaver/account-create.png)
+![create-account](assets/Chainweaver/account-create.png)
 
 !!! Summary "Note"
       For convenience, Chainweaver will automatically define the keyset for accounts that have the same name as the single public key which controls it.
@@ -242,7 +242,7 @@ Select “Remove Account”
 
 Read the warning message and confirm your selection by selecting “Remove Account”
 
-![remove-account](../assets/Chainweaver/remove-account.png)
+![remove-account](assets/Chainweaver/remove-account.png)
 
 ###Account ownership
 
@@ -254,7 +254,7 @@ As a result of this novel capability, it is important for users to clearly under
 * If Chainweaver generated some but not all keys in an account, it will indicate “joint” for Owner
 * If Chainweaver generated none of the keys in an account, it will indicate “no” for Owner
 
-![ownership-examples](../assets/Chainweaver/ownership-examples.png)
+![ownership-examples](assets/Chainweaver/ownership-examples.png)
 
 ##**Transactions**
 
@@ -321,13 +321,13 @@ Fill in the required fields then select the "Sign & Transfer" button.
 
 This will open the Sign Transfer dialog which allows you to configure transaction settings.
 
-![transaction-settings](../assets/Chainweaver/transaction-settings.png)
+![transaction-settings](assets/Chainweaver/transaction-settings.png)
 
 Once satisfied, select Next to view the Signatures tab. If any external signatures are required, you will be prompted to enter them here.
 
 Preview the transaction to ensure the Summary Data and Transaction Result output displays the desired outcome. If everything looks correct, select Send Transfer to submit the transaction to the blockchain.
 
-![transaction-preview](../assets/Chainweaver/transaction-preview.png)
+![transaction-preview](assets/Chainweaver/transaction-preview.png)
 
 **Transfer between different chains**
 
@@ -336,7 +336,7 @@ This process has one distinct difference from transfers on the same chain. This 
 1. Gas payer on the originating chain to initiate the transfer
 2. Gas payer on the destination chain to redeem the transfer
 
-![cross-chain-transfer](../assets/Chainweaver/cross-chain-transfer.png)
+![cross-chain-transfer](assets/Chainweaver/cross-chain-transfer.png)
 
 It may seem unusual to have to pay for gas twice, but consider what is happening with a cross-chain transfer. In this scenario you are moving coins between two different blockchains, each with their own ledger. Therefore gas on one chain cannot pay for executing operations on a different chain.
 
@@ -346,7 +346,7 @@ In addition to signing transactions from accounts which are owned within the wal
 
 ###Adjust gas price and gas limit
 
-![adjust-gas](../assets/Chainweaver/adjust-gas.png)
+![adjust-gas](assets/Chainweaver/adjust-gas.png)
 
 Before you submit any transaction or deploy any smart contract, you will have the opportunity to configure a few settings. You can adjust both the Gas Price and the Gas Limit of your transaction. As either of these settings are adjusted, you can see how these changes might affect Transaction Speed and Max Transaction Fee.
 
@@ -359,15 +359,15 @@ Once a transaction has been submitted, Chainweaver will display the Transfer Sta
 
 **Transaction success**: When the transaction has been successfully mined in a block, a Transaction Result will display.
 
-![transaction-success](../assets/Chainweaver/transaction-success.png)
+![transaction-success](assets/Chainweaver/transaction-success.png)
 
 **Transaction failure**: If the transaction fails at any progress state then a red “X” will appear beside the failing state.
 
-![transaction-fail](../assets/Chainweaver/transaction-fail.png)
+![transaction-fail](assets/Chainweaver/transaction-fail.png)
 
 If you have a request key from a previously submitted transaction, you can also display its result by selecting the “Check Tx Status” button.
 
-![request-key](../assets/Chainweaver/request-key.png)
+![request-key](assets/Chainweaver/request-key.png)
 
 ##Smart Contracts
 
@@ -382,11 +382,11 @@ Once you have written the code for your new smart contract in the code editor, c
 * “Load into REPL” will execute the editor text within the local REPL environment so that you can test and interact with the contract
 * “Deploy” will begin the process of configuring the smart contract for execution on the blockchain
 
-![deploy-config](../assets/Chainweaver/deploy-config.png)
+![deploy-config](assets/Chainweaver/deploy-config.png)
 
 Should you select “Deploy,” you will next be prompted to designate the transaction destination and settings. On the “Sign” tab you must enter any new capabilities as defined in your contract code, then select the account to authorize each capability.
 
-![deploy-preview](../assets/Chainweaver/deploy-preview.png)
+![deploy-preview](assets/Chainweaver/deploy-preview.png)
 
 Once all required fields have been entered, select the “Preview” button. Here you will be able to review and confirm details before submitting the transaction.
 

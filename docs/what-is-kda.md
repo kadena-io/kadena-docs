@@ -19,14 +19,14 @@ The total supply is fixed at 1 billion tokens to be mined over 120 years
 
 See <a href="https://medium.com/kadena-io/the-kadena-token-economic-model-8090d7545eef" target="_blank">Token Economic Model</a> for more detailed information
 
-![coins-in-circulation](../assets/coins-in-circulation.png)
+![coins-in-circulation](assets/coins-in-circulation.png)
 
 <br />
 #### How is the total token supply allocated?
 
 See <a href="https://medium.com/kadena-io/the-kadena-token-economic-model-8090d7545eef" target="_blank">Token Economic Model</a> for more detailed information
 
-![token-allocation](../assets/token-allocation.png)
+![token-allocation](assets/token-allocation.png)
 
 <br />
 #### How do I get KDA?

@@ -22,7 +22,7 @@ Block rewards are readjusted against a set schedule every six months, with rough
 <br />
 #### What is KDA?
 
-See the [What is KDA](../what-is-kda) page for information regarding Kadena’s native cryptocurrency, KDA.
+See the [What is KDA](what-is-kda.html) page for information regarding Kadena’s native cryptocurrency, KDA.
 
 <br />
 #### Does Kadena have a block explorer?
@@ -71,9 +71,9 @@ Tokens are moved across chains using a Simple Payment Verification (SPV) smart c
 <br />
 #### How do I run a node?
 
-Official information for running a node is maintained at <a href="https://github.com/kadena-io/chainweb-node" target="_blank">this GitHub repository</a>, and supplementary community resources collected within this site’s [Public chain interaction](../Public-Chain-Docs) page.
+Official information for running a node is maintained at <a href="https://github.com/kadena-io/chainweb-node" target="_blank">this GitHub repository</a>, and supplementary community resources collected within this site’s [Public chain interaction](Public-Chain-Docs.html) page.
 
 <br />
 #### How do I become a miner?
 
-Official information for mining KDA is maintained at <a href="https://github.com/kadena-io/chainweb-miner" target="_blank">this GitHub repository</a>, and supplementary community resources collected within this site’s [Public chain interaction](../Public-Chain-Docs) page.
+Official information for mining KDA is maintained at <a href="https://github.com/kadena-io/chainweb-miner" target="_blank">this GitHub repository</a>, and supplementary community resources collected within this site’s [Public chain interaction](Public-Chain-Docs.html) page.

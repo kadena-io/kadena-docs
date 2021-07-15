@@ -2,7 +2,7 @@
 
 Blockchain transactions are irreversible and if you make a mistake, your coins may not be recoverable. A best practice with any blockchain is to always perform a small test transaction when executing a transfer for the first time. For added security, send those coins back to the sender to verify that the receiver's account works as expected.
 
-The main purpose of a cryptocurrency exchange is to allow users to buy and sell coins. They may also allow users to transfer their coins to some other wallet. Exchanges generally do not support the full range of features enabled by many blockchains, including Kadena. If you would like to interact with the Kadena blockchain in more ways than simply buying and selling KDA, then you will find [Wallet Resources](../Public-Chain-Docs) helpful.
+The main purpose of a cryptocurrency exchange is to allow users to buy and sell coins. They may also allow users to transfer their coins to some other wallet. Exchanges generally do not support the full range of features enabled by many blockchains, including Kadena. If you would like to interact with the Kadena blockchain in more ways than simply buying and selling KDA, then you will find [Wallet Resources](Public-Chain-Docs.html) helpful.
 
 Here is a summary of notable features regarding the exchanges that support KDA, for informational purposes only—
 

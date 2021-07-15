@@ -32,7 +32,7 @@ HEADLINE: Chainweb is a braided, parallelized proof-of-work consensus mechanism 
  - Article: <a href="https://medium.com/kadena-io/all-about-chainweb-101-and-faqs-6bd88c325b45" target="_blank">Kadena’s Public Blockchain 101</a>
  - Whitepaper: <a href="https://d31d887a-c1e0-47c2-aa51-c69f9f998b07.filesusr.com/ugd/86a16f_029c9991469e4565a7c334dd716345f4.pdf" target=""_blank">Chainweb</a>
 
-*Resources for interacting with Kadena’s public blockchain are available at the [Public chain interaction](../Public-Chain-Docs) page.*
+*Resources for interacting with Kadena’s public blockchain are available at the [Public chain interaction](Public-Chain-Docs.html) page.*
 
 ### **2. Kuro, Kadena’s private blockchain**
 HEADLINE: Kuro has been proven to support up to 8,000 transactions per second across 500 nodes, and is available for evaluation on <a href="https://aws.amazon.com/marketplace/pp/Kadena-LLC-Kadena-Blockchain-for-Enterprise-Commun/B07MKMKP4F" target="_blank">AWS</a> and <a href="https://azuremarketplace.microsoft.com/en-ca/marketplace/apps/kadenallc.scalablebft?tab=Overview" target="_blank">Azure</a>.
@@ -42,7 +42,7 @@ HEADLINE: Kuro has been proven to support up to 8,000 transactions per second ac
  - Article: <a href="https://medium.com/kadena-io/scalablebft-kadenas-private-blockchain-101-c99895c0fd50" target="_blank">Kadena’s Private Blockchain 101</a>
  - Whitepaper: <a href="https://d31d887a-c1e0-47c2-aa51-c69f9f998b07.filesusr.com/ugd/86a16f_aeb9004965c34efd9c48993c4e63a9bb.pdf" target="_blank">Private Blockchain</a>
 
-*Resources for deploying Kuro are available at the [Private chain deployment](../Private-Chain-Docs) page.*
+*Resources for deploying Kuro are available at the [Private chain deployment](Private-Chain-Docs.html) page.*
 
 ### **3. Pact, Kadena’s smart contract language**
 HEADLINE: Pact is a human readable and Turing Incomplete smart contract language purpose-built for blockchains with powerful security features including full Formal Verification of user code, error messages, contract upgradability, support for interoperability, and strong permission and access control.
@@ -54,7 +54,7 @@ HEADLINE: Pact is a human readable and Turing Incomplete smart contract language
  - Documentation: <a href="https://github.com/kadena-io/pact" target="_blank">Pact GitHub</a>
  - Documentation: <a href="https://pact-language.readthedocs.io/en/latest/pact-reference.html" target="_blank">Pact Language Reference</a>
 
-*Resources for using Pact are available at the [Public chain interaction](../Public-Chain-Docs) page.*
+*Resources for using Pact are available at the [Public chain interaction](Public-Chain-Docs.html) page.*
 
 ### ** Hybrid Blockchain**
 HEADLINE: Kadena’s hybrid blockchain allows users to interact between public and private networks, gaining the decentralization of public and the security controls of private, to make a more secure digital marketplace.
