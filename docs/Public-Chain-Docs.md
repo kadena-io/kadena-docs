@@ -4,6 +4,7 @@
 
 **Resources**
 
+- <a href="https://torus.chainweb.com" target="_blank">Torus</a> (web wallet): web wallet (Login Using Google Via Direct Auth)
 - <a href="https://www.kadena.io/chainweaver" target="_blank">Chainweaver</a> (wallet): Developer-friendly wallet and smart contract development environment
 - <a href="https://medium.com/@ZelOfficial/zelcore-adds-kadena-assets-store-kda-across-multiple-chains-3b8039f2777c" target="_blank">ZelCore</a> (wallet): User-friendly wallet for storing and trading KDA (3rd party)
 - <a href="https://github.com/kadena-community/bag-of-holding" target="_blank">Bag of Holding</a> (wallet): Terminal Wallet (Community contribution)
@@ -16,9 +17,6 @@
 
 **Guides**
 
-- [3 Key Concepts](key-concepts): A few things to know in order to more safely manage your KDA
-- [Exchange Summary](exchange-summary): A summary of notable features that are supported by exchanges that trade KDA
-- [Chainweaver User Guide](Chainweaver-Support): Official support resource for using Chainweaver
 - <a href="https://medium.com/kadena-io/beginners-guide-to-kadena-accounts-keysets-fb7f32104291" target="_blank">Beginner's Guide to Accounts & Keysets</a>: Brief description of keys, keysets, accounts and how they work in Kadena
 - <a href="https://medium.com/kadena-io/kadena-public-blockchain-getting-started-with-transfers-153bf87d6824" target="_blank">Getting Started with Transfers</a>: Brief description of transfer types and tools
 - "<a href="https://medium.com/kadenacoin/how-to-generate-a-kda-address-fd009a06ea05" target="_blank">How to generate a KDA address</a>": Article by <a href="https://medium.com/@Thanos_42" target="_blank">Thanos</a> (Community contribution)
@@ -28,8 +26,8 @@
 **Resources**
 
 - <a href="https://explorer.chainweb.com/mainnet" target="_blank">Block Explorer</a>: Analytics tool which visualizes the mining, propagation and braiding of blocks across multiple Kadena chains in real time
-- <a href="http://kdastats.sick.network/" target="_blank">Kadena Statistics</a>: Dashboard view of network activity and KDA metrics (Community contribution)
-- <a href="https://kadena.banteg.xyz/peers" target="_blank">Active Node List</a>: List of known node addresses (Community contribution)
+- <a href="https://anedak.com/beta" target="_blank">Kadena Statistics</a>: View of network activity and KDA metrics (Community contribution)
+- <a href="https://anedak.com/live" target="_blank">Multichain Proof of Work</a>: Live 3D Blockchain Visualization (Community contribution)
 
 ## **Write Smart Contracts**
 
@@ -54,7 +52,7 @@
 **Resources**
 
 - <a href="http://testnet.chainweb.com/" target="_blank">Testnet Portal</a>: Create an account, get free coins, and play games
-- <a href="http://testnet.chainweb.com/" target="_blank">Testnet Coin Faucet</a>: Get free coins to practice executing transfers and smart contracts
+- <a href="https://faucet.testnet.chainweb.com" target="_blank">Testnet Coin Faucet</a>: Get free coins to practice executing transfers and smart contracts
 - <a href="http://hybrid.chainweb.com/" target="_blank">Hybrid Blockchain Demo</a>: Interoperate between public and private blockchain networks through stablecoin smart contracts.
 - <a href="https://kadena-io.github.io/signing-api/" target="_blank">Wallet Signing API</a>: Documentation of the signing API which facilitates communication between dApps and wallets
 
