@@ -1,6 +1,8 @@
 # Kadena Docs
 
-This project contains all of the documentation used to support the Kadena Docs resource site.
+This project contains the old documentation used to support the [old Kadena Docs resource site](https://kadena-io.github.io/kadena-docs/).
+
+The new documentation site is at https://docs.kadena.io/, and it will be open sourced soon.
 
 ## Getting Started
 
