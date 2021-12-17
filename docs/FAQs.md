@@ -2,7 +2,7 @@
 
 #### What consensus mechanism does Kadena use?
 
-Proof of Work
+sharded and scalable layer-1 Proof of Work
 
 <br />
 #### What hashing algorithm does Kadena use?
@@ -37,16 +37,16 @@ Kadena has published whitepapers for the public protocol Chainweb, the private b
 <br />
 #### Is Kadena open source?
 
-Yes, the open-source repository for the Kadena public blockchain is <a href="https://github.com/kadena-io/chainweb-node" target="_blank">here</a>
+Yes, the open-source repository for the Kadena public blockchain is <a href="https://github.com/kadena-io" target="_blank">here</a>
 
 <br />
 #### Why does Kadena’s public blockchain use proof of work?
 
 Kadena uses proof of work for a few key reasons:
 
-1. Evidence: PoW is the only “battle-tested” consensus protocol primitive.
-2. Economic incentive alignment: PoW creates an economic incentive for the majority of the hashpower to validate and honestly support the entire network. It is an open research question if a non-PoW approach can reasonably achieve the same.
-3. Regulation: In the eyes of certain financial regulators, proof of work miners are not considered money transmitters, making a probabilistic PoW mining system safer from a US regulatory perspective than a system with more “finality” like PoS.
+1. Evidence: Proof of Work is the only “battle-tested” consensus protocol primitive.
+2. Economic incentive alignment: Proof of Work creates an economic incentive for the majority of the hashpower to validate and honestly support the entire network. It is an open research question if a non-Proof of Work approach can reasonably achieve the same.
+3. Regulation: In the eyes of certain financial regulators such as SEC, proof of work miners are not considered money transmitters, making a probabilistic Proof of Work mining system safer from a US regulatory perspective than a system with more “finality” like Proof of Stake.
 
 <br />
 #### How does Kadena scale?
@@ -56,7 +56,7 @@ Kadena’s public blockchain scales by providing a mechanism to asynchronously p
 <br />
 #### How does Kadena deal with congestion?
 
-Transaction costs will rise as the number of transactions rise on one chain. You can set up an account on a less congested chain, where transaction costs are cheaper, and move your tokens through a simple burn-receipt using on-chain SPV. Miners have economic incentive to cooperate with reconfiguring the network to a larger size when the entire network starts to become congested.
+Transaction costs will rise as the number of transactions rise on one chain. You can set up an account on a less congested chain, where transaction costs are cheaper, and move your tokens through a simple burn-receipt using on-chain Simple Payment Verification. Miners have economic incentive to cooperate with reconfiguring the network to a larger size when the entire network starts to become congested.
 
 <br />
 #### What does it mean to “braid multiple chains”?
