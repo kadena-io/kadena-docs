@@ -12,19 +12,19 @@ Kadena’s Token Economic Model describes the total supply, liquidity schedule, 
 <br />
 #### What is the total token supply?
 
-The total supply is fixed at 1 billion tokens to be mined over 120 years
+The total supply is fixed at 900,000,000.00 million tokens to be mined over 120 years
 
 <br />
 #### What is the total number of tokens in circulation?
 
-See <a href="https://medium.com/kadena-io/the-kadena-token-economic-model-8090d7545eef" target="_blank">Token Economic Model</a> for more detailed information
+See <a href="https://medium.com/kadena-io/update-to-the-kadena-token-economic-model-21e1ec18f099" target="_blank">Token Economic Model</a> for more detailed information
 
 ![coins-in-circulation](assets/coins-in-circulation.png)
 
 <br />
 #### How is the total token supply allocated?
 
-See <a href="https://medium.com/kadena-io/the-kadena-token-economic-model-8090d7545eef" target="_blank">Token Economic Model</a> for more detailed information
+See <a href="https://medium.com/kadena-io/update-to-the-kadena-token-economic-model-21e1ec18f099" target="_blank">Token Economic Model</a> for more detailed information
 
 ![token-allocation](assets/token-allocation.png)
 
