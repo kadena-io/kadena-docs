@@ -1,3 +1,5 @@
+Deprecated
+
 # Kadena Docs
 
 This project contains the old documentation used to support the [old Kadena Docs resource site](https://kadena-io.github.io/kadena-docs/).
