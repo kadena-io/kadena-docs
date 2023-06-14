@@ -9,9 +9,10 @@ repo_name: 'kadena-io/kadena-docs'
 repo_url: 'https://github.com/kadena-io/kadena-docs/'
 
 # Copyright
-copyright: 'Copyright &copy; 2018 - 2020 Kadena'
+copyright:
+  'Copyright &copy; 2018 - 2020 Kadena'
 
-    # Configuration
+  # Configuration
 theme:
   name: 'material'
   language: 'en'
@@ -33,8 +34,8 @@ extra:
       link: 'https://twitter.com/kadena_io'
 
 ## google_analytics:
-  ## - 'UA-127512784-3'
-  ## - 'auto'
+## - 'UA-127512784-3'
+## - 'auto'
 
 # Extensions
 markdown_extensions:
@@ -45,8 +46,37 @@ markdown_extensions:
       permalink: true
 
 nav:
-- What is Kadena?: what-is-kadena.md
-- What is KDA?: what-is-kda.md
-- Kadena FAQ: FAQs.md
-- Public Chain Resources: Public-Chain-Docs.md
-- Private Chain Resources: Private-Chain-Docs.md
+  - What is Kadena?: what-is-kadena.md
+  - What is KDA?: what-is-kda.md
+  - Kadena FAQ: FAQs.md
+  - Public Chain Resources: Public-Chain-Docs.md
+  - Private Chain Resources: Private-Chain-Docs.md
+
+plugins:
+  - redirects:
+      redirect_maps:
+        'Chainweaver-Support.md': 'https://docs.kadena.io/basics/chainweaver/chainweaver-user-guide'
+        'exchange-summary.md': 'https://docs.kadena.io/basics/exchanges'
+        'FAQs.md': 'https://docs.kadena.io/basics/faq'
+        'Glossary.md': 'https://docs.kadena.io/basics/resources/glossary'
+        'index.md': 'https://docs.kadena.io'
+        'key-concepts.md': 'https://docs.kadena.io/basics/kda/kda-concepts'
+        'pact-local-queries.md': 'https://docs.kadena.io/es/build/guides/pact-local-api-queries'
+        'Private-Chain-Docs.md': 'https://docs.kadena.io/contribute/node/overview'
+        'Public-Chain-Docs.md': 'https://docs.kadena.io/basics/kda/manage-kda'
+        'README.md': 'https://docs.kadena.io'
+        'rest-api-examples.md': 'https://docs.kadena.io/contribute/node/overview'
+        'troubleshoot-chainweaver.md': 'https://docs.kadena.io/basics/chainweaver/chainweaver-troubleshooting'
+        'troubleshoot-chainweb.md': 'https://docs.kadena.io/contribute/node/troubleshooting-chainweb'
+        'what-is-kadena.md': 'https://docs.kadena.io/basics/overview'
+        'what-is-kda.md': 'https://docs.kadena.io/basics/kda/what-is-kda'
+        'Pact/Pact.md': 'https://docs.kadena.io/learn-pact/intro'
+        'cookbook/index.md': 'https://docs.kadena.io'
+        'cookbook/safe-rotate-and-drain.md': 'https://docs.kadena.io/build/guides/safe-rotate-and-drain'
+        'cookbook/safe-transfer.md': 'https://docs.kadena.io/build/guides/safe-transfer'
+        'coming-soon/coming-soon.md': 'https://docs.kadena.io'
+        'coming-soon/my-file.md': 'https://docs.kadena.io'
+        'Chainweb/chainweb-miner-actions.md': 'https://docs.kadena.io/contribute/node/start-mining'
+        'Chainweb/chainweb-node-actions.md': 'https://docs.kadena.io/contribute/node/interact-with-nodes'
+        'Chainweb/Keys-and-wallets.md': 'https://docs.kadena.io/basics/wallets'
+        'Chainweb/Other.md': 'https://docs.kadena.io'
