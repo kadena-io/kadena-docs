@@ -1,4 +1,4 @@
-Deprecated
+Deprecated, see new docs at https://docs.kadena.io/
 
 # Kadena Docs
 
